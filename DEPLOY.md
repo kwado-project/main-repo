@@ -49,7 +49,7 @@ What `backend/.env` needs:
 |---|---|
 | `DJANGO_ALLOWED_HOSTS` | `api.yourdomain.com,localhost` (keep `localhost` — the health check uses it) |
 | `FRONTEND_URL`, `CORS_ALLOWED_ORIGINS`, `DJANGO_CSRF_TRUSTED_ORIGINS` | Your Vercel domain, e.g. `https://yourdomain.com` |
-| `AWS_SES_*` | AWS console → SES: verify your sending domain, request production access (leave the sandbox), create an IAM user with `ses:SendEmail` |
+| `EMAIL_HOST_USER`, `EMAIL_HOST_PASSWORD` | The Gmail address, and a Google **App Password** for it (see "Gmail App Password" below) |
 | `R2_*` | Cloudflare → R2: create a **private** bucket and an API token with read/write on it |
 | `PAYSTACK_SECRET_KEY` / `PAYSTACK_PUBLIC_KEY` | Paystack dashboard → Settings → API keys (use test keys first) |
 | `ANTHROPIC_API_KEY` | console.anthropic.com |
@@ -89,6 +89,17 @@ Backups are kept 14 days in `/var/backups/kwado`. Strongly recommended: also cop
 gunzip -c /var/backups/kwado/<file>.sql.gz | docker compose -f docker-compose.prod.yml exec -T db psql -U kwado -d kwado
 ```
 
+### Gmail App Password
+1. Sign in to the Gmail account that will send the codes (a dedicated account such as `kwado.noreply@gmail.com` is best).
+2. Google Account → **Security** → turn on **2-Step Verification** (App Passwords require it).
+3. Visit https://myaccount.google.com/apppasswords, create one named "Kwado", and copy the 16-character password.
+4. Put it in `backend/.env` as `EMAIL_HOST_PASSWORD` (spaces are fine), then `docker compose -f docker-compose.prod.yml up -d`.
+
+Things to know:
+- **Daily limit:** a personal Gmail account sends about **500 emails/day**; Google Workspace about **2,000/day**. Every sign-up and login sends one code, so plan to move to a dedicated email service (set `EMAIL_PROVIDER=ses`, or any SMTP provider such as Brevo, Mailgun or Postmark via `EMAIL_HOST`/`EMAIL_PORT`) before you outgrow it.
+- **Blocked ports:** some VPS hosts block outbound SMTP on new accounts (DigitalOcean always; Hetzner until you ask support). If sends time out, ask your host to unblock port 587, or try `EMAIL_PORT=465`.
+- **Sender address:** Gmail sends from the signed-in account. To show another address, add it in Gmail → Settings → Accounts → "Send mail as" first.
+
 ---
 
 ## Part 2 — Frontend on Vercel
@@ -101,7 +112,7 @@ The site calls `/api/...` on its own domain and Vercel forwards to the VPS, so t
 ---
 
 ## Part 3 — Check it end to end
-1. Register with a real email → the code arrives (SES).
+1. Register with a real email → the code arrives (from your Gmail account; check spam the first time).
 2. Finish onboarding → you have 100 credits, then a roadmap.
 3. Ask the AI tutor a question → the answer streams in.
 4. Buy the Starter package with a Paystack **test card** → credits arrive, the receipt shows.
@@ -139,5 +150,5 @@ $C exec api python manage.py shell
 | No HTTPS / certificate error | DNS points at the VPS? Ports 80+443 open? `$C logs caddy` |
 | `api` not healthy | `$C logs api` — usually a missing or invalid value in `backend/.env` |
 | 400 Bad Request | Domain missing from `DJANGO_ALLOWED_HOSTS` |
-| No OTP emails | `$C logs worker`; SES domain verified and out of sandbox? |
+| No OTP emails | `$C logs worker`. `535 Username and Password not accepted` → wrong or revoked App Password, or 2-Step Verification is off. Timeouts → your VPS host blocks outbound SMTP (see Gmail section) |
 | Credits not added after payment | Webhook URL in Paystack; `$C logs api` for `/payments/` |
