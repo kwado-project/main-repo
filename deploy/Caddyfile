@@ -1,0 +1,30 @@
+# Automatic HTTPS (Let's Encrypt) for the API domain.
+{$API_DOMAIN} {
+	encode gzip
+
+	# Django admin static files
+	handle_path /static/* {
+		root * /srv/static
+		file_server
+	}
+
+	handle {
+		reverse_proxy api:8000 {
+			# Stream AI tutor answers immediately instead of buffering them.
+			flush_interval -1
+			transport http {
+				read_timeout 180s
+			}
+		}
+	}
+
+	request_body {
+		max_size 25MB
+	}
+
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options nosniff
+		-Server
+	}
+}

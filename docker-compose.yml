@@ -1,5 +1,5 @@
 # Local full stack. Production: managed Postgres (+ read replica, PgBouncer),
-# managed Redis, AWS SES, Cloudflare R2, Paystack — see README.
+# managed Redis, SMTP email (Gmail), Cloudflare R2, Paystack — see README.
 services:
   db:
     image: pgvector/pgvector:pg16
