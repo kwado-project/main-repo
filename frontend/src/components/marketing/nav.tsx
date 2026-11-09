@@ -33,8 +33,11 @@ export function MarketingNav() {
   }, [open]);
 
   return (
-    <header className={cn("fixed inset-x-0 top-0 z-50 transition-all duration-300", scrolled || open ? "bg-white/85 shadow-[0_1px_0_#E5E7EB] backdrop-blur-xl" : "bg-transparent")}>
-      <nav className="container flex h-16 items-center justify-between lg:h-[72px]" aria-label="Main">
+    <header className="fixed inset-x-0 top-0 z-50">
+      {/* Blur lives on its own layer: backdrop-filter on <header> would make it the containing
+          block for the fixed mobile menu below and clip the menu to the header's height. */}
+      <div aria-hidden className={cn("absolute inset-x-0 top-0 h-16 transition-all duration-300 lg:h-[72px]", scrolled || open ? "bg-white/85 shadow-[0_1px_0_#E5E7EB] backdrop-blur-xl" : "bg-transparent")} />
+      <nav className="container relative flex h-16 items-center justify-between lg:h-[72px]" aria-label="Main">
         <Logo />
         <ul className="hidden items-center gap-1 lg:flex">
           {links.map((l) => (
@@ -64,7 +67,7 @@ export function MarketingNav() {
       <AnimatePresence>
         {open && (
           <motion.div
-            className="fixed inset-x-0 bottom-0 top-16 z-40 flex flex-col bg-white px-5 pb-8 pt-4 lg:hidden"
+            className="fixed inset-x-0 bottom-0 top-16 z-40 flex flex-col overflow-y-auto bg-white px-5 pb-8 pt-4 lg:hidden"
             initial={{ opacity: 0, clipPath: "inset(0 0 100% 0)" }}
             animate={{ opacity: 1, clipPath: "inset(0 0 0% 0)" }}
             exit={{ opacity: 0, clipPath: "inset(0 0 100% 0)" }}
