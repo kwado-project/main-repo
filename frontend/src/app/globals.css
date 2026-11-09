@@ -1,0 +1,65 @@
+@import "@fontsource-variable/plus-jakarta-sans";
+@import "katex/dist/katex.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: #16a34a;
+  --ink: #111827;
+  --canvas: #f7faf7;
+  color-scheme: light;
+}
+
+@layer base {
+  html { -webkit-tap-highlight-color: transparent; overflow-x: clip; }
+  body {
+    @apply bg-canvas text-ink antialiased;
+    font-feature-settings: "ss01", "cv11";
+    overflow-x: hidden;
+  }
+  ::selection { background: #bbf7d0; color: #14532d; }
+  :focus-visible { outline: 2px solid #16a34a; outline-offset: 2px; border-radius: 6px; }
+  h1, h2, h3, h4 { letter-spacing: -0.02em; }
+}
+
+@layer components {
+  .card { @apply rounded-2xl border border-line bg-white shadow-card; }
+  .eyebrow { @apply text-xs font-bold uppercase tracking-[0.14em] text-brand-700; }
+  .grid-bg {
+    background-image: linear-gradient(to right, rgba(17,24,39,.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(17,24,39,.045) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .grid-bg-dark {
+    background-image: linear-gradient(to right, rgba(255,255,255,.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,.05) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+  .text-gradient { @apply bg-gradient-to-r from-brand-600 via-brand-500 to-emerald-400 bg-clip-text text-transparent; }
+  .scrollbar-none { scrollbar-width: none; }
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+  .safe-bottom { padding-bottom: max(env(safe-area-inset-bottom), 0.5rem); }
+}
+
+.prose-kwado { @apply text-[15px] leading-7 text-ink; }
+.prose-kwado p { @apply my-2; }
+.prose-kwado h1, .prose-kwado h2, .prose-kwado h3 { @apply mt-4 mb-2 font-bold; }
+.prose-kwado h2 { @apply text-lg; }
+.prose-kwado h3 { @apply text-base; }
+.prose-kwado ul { @apply my-2 list-disc pl-5; }
+.prose-kwado ol { @apply my-2 list-decimal pl-5; }
+.prose-kwado li { @apply my-1; }
+.prose-kwado code { @apply rounded bg-ink/5 px-1.5 py-0.5 text-[13px]; }
+.prose-kwado pre { @apply my-3 overflow-x-auto rounded-xl bg-ink-deep p-4 text-[13px] text-white; }
+.prose-kwado pre code { @apply bg-transparent p-0; }
+.prose-kwado blockquote { @apply my-3 border-l-4 border-brand-300 bg-brand-50 px-4 py-2 text-ink/80; }
+.prose-kwado table { @apply my-3 w-full border-collapse text-sm; }
+.prose-kwado th, .prose-kwado td { @apply border border-line px-3 py-1.5 text-left; }
+.prose-kwado a { @apply font-semibold text-brand-700 underline underline-offset-2; }
+.prose-kwado .katex-display { @apply my-3 overflow-x-auto overflow-y-hidden py-1; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}

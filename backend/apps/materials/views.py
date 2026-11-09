@@ -5,7 +5,7 @@ from django.conf import settings
 from django.http import HttpResponse
 from rest_framework import mixins, serializers, viewsets
 from rest_framework.decorators import action
-from rest_framework.parsers import MultiPartParser
+from rest_framework.parsers import JSONParser, MultiPartParser
 from rest_framework.response import Response
 
 from apps.core.exceptions import InsufficientCredits
@@ -30,7 +30,7 @@ class MaterialSerializer(serializers.ModelSerializer):
 class MaterialViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, mixins.DestroyModelMixin,
                       viewsets.GenericViewSet):
     serializer_class = MaterialSerializer
-    parser_classes = [MultiPartParser]
+    parser_classes = [MultiPartParser, JSONParser]
     pagination_class = None
 
     def get_queryset(self):

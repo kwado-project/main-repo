@@ -19,7 +19,8 @@ class AttemptViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.
         # Ownership enforced server-side: a student only ever sees their own attempts.
         qs = QuizAttempt.objects.filter(user=self.request.user).select_related("subject", "topic")
         if self.action == "list":
-            qs = qs.filter(status="submitted")
+            status = self.request.query_params.get("status")
+            qs = qs.filter(status="in_progress" if status == "in_progress" else "submitted")
         return qs
 
     def _payload(self, attempt):

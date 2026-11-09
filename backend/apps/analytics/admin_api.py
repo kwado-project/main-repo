@@ -126,7 +126,7 @@ class QuestionVS(crud(Question, IsContentManager, search=("text",), ser=Question
 
     @action(detail=False)
     def stats(self, request):
-        return Response(dict(Question.objects.values_list("status").annotate(n=Count("id"))))
+        return Response(dict(Question.objects.order_by().values_list("status").annotate(n=Count("id"))))
 
 
 # ---------------------------------------------------------------- money

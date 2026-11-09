@@ -165,7 +165,7 @@ def _mock_stream(purpose, messages, route):
         raise AIError("mock_failure")
     body = (
         DEV_NOTICE
-        + f"You asked: *{last[:200]}*\n\n"
+        + (f"You asked: *{last[:160]}*\n\n" if purpose in ("tutor_chat", "topic_explanation", "practice_set") else "")
         + "When the AI provider is configured, Kwado's tutor will answer here with a step-by-step "
         "explanation grounded in your syllabus and approved materials.\n\n"
         "**Try this meanwhile:**\n1. Re-read the lesson summary.\n2. Attempt 5 practice questions on this topic.\n"
