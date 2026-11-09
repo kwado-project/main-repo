@@ -178,6 +178,7 @@ function Quiz({ id }: { id: string }) {
           <motion.div key={q.id} initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }} transition={{ duration: 0.2 }}>
             {q.passage && <Passage passage={q.passage} />}
             <Markdown className="mt-4 text-lg font-semibold leading-8 sm:text-xl">{q.text}</Markdown>
+            {/* eslint-disable-next-line @next/next/no-img-element -- admin-supplied diagram URLs from arbitrary hosts */}
             {q.image_url && <img src={q.image_url} alt="Diagram for this question" className="mt-4 max-h-80 rounded-2xl border border-line bg-white object-contain" />}
             {q.table && Array.isArray(q.table) && (
               <div className="mt-4 overflow-x-auto"><table className="w-full border-collapse text-sm">{q.table.map((r: any[], i: number) => <tr key={i}>{r.map((c, j) => <td key={j} className="border border-line bg-white px-3 py-2">{c}</td>)}</tr>)}</table></div>
