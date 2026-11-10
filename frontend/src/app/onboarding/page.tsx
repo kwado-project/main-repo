@@ -3,11 +3,12 @@ import { Suspense, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import useSWR from "swr";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, BrainCircuit, CalendarDays, Check, Clock, GraduationCap, Lock, Map, Rocket, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowRight, BrainCircuit, CalendarDays, Check, Clock, GraduationCap, Lock, LogOut, Map, Rocket, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge, Input, Progress, Skeleton } from "@/components/ui/primitives";
 import { CreditCoin, DynIcon, fireConfetti } from "@/components/ui/fun";
 import { Logo } from "@/components/ui/logo";
+import { ConfirmDialog } from "@/components/ui/overlay";
 import { useToast } from "@/components/ui/toast";
 import { api, ApiError } from "@/lib/api";
 import { useAuth, useRequireAuth } from "@/lib/auth";
@@ -23,7 +24,9 @@ export default function OnboardingPage() {
 
 function Onboarding() {
   const me = useRequireAuth();
-  const { reload } = useAuth();
+  const { reload, signOut } = useAuth();
+  const [confirmLogout, setConfirmLogout] = useState(false);
+  const [loggingOut, setLoggingOut] = useState(false);
   const router = useRouter();
   const params = useSearchParams();
   const toast = useToast();
@@ -156,12 +159,19 @@ function Onboarding() {
       <header className="sticky top-0 z-20 border-b border-line bg-white/85 backdrop-blur">
         <div className="container flex h-16 items-center gap-4">
           <Logo href={adding ? "/app" : "/"} />
-          <div className="ml-auto flex w-40 items-center gap-3 sm:w-64">
+          <div className="ml-auto flex w-24 items-center gap-3 sm:w-64">
             <Progress value={(step / (STEPS.length - 1)) * 100} className="h-2" animateIn={false} />
             <span className="shrink-0 text-xs font-semibold text-muted">{step + 1}/{STEPS.length}</span>
           </div>
+          <button onClick={() => setConfirmLogout(true)} aria-label="Log out"
+            className="-mr-2 inline-flex h-10 shrink-0 items-center gap-1.5 rounded-xl px-2.5 text-sm font-semibold text-muted transition hover:bg-red-50 hover:text-red-700 sm:px-3">
+            <LogOut className="h-5 w-5" /><span className="hidden sm:inline">Log out</span>
+          </button>
         </div>
       </header>
+      <ConfirmDialog open={confirmLogout} onClose={() => setConfirmLogout(false)} loading={loggingOut} danger confirmLabel="Log out" title="Log out?"
+        body="Your setup progress is saved. Log back in with your email any time to continue where you left off."
+        onConfirm={async () => { setLoggingOut(true); await signOut(); router.replace("/"); }} />
 
       <main className="container flex max-w-3xl flex-1 flex-col py-8 sm:py-12">
         <AnimatePresence mode="wait" custom={dir}>
