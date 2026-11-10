@@ -1,8 +1,8 @@
 """Transactional email.
 
 Providers (EMAIL_PROVIDER):
-  * "smtp"    — any SMTP server; configured for Gmail with an App Password by default.
-  * "ses"     — AWS SES (SESv2 API), for higher volumes.
+  * "ses"     — AWS SES (SESv2 API). The production default.
+  * "smtp"    — any SMTP server (e.g. Gmail with an App Password); alternative.
   * "console" — development only: messages are logged, clearly marked, never sent.
 """
 import logging

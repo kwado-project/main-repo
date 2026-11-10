@@ -4,7 +4,7 @@ An AI-powered, gamified exam-preparation platform for Nigerian students (JAMB, W
 
 ```
 frontend/   Next.js 15 · TypeScript · Tailwind · Framer Motion · Lucide · RHF + Zod · Recharts · KaTeX
-backend/    Django 5.2 · DRF · PostgreSQL + pgvector · Redis · Celery · Claude · Paystack · SMTP (Gmail) · Cloudflare R2
+backend/    Django 5.2 · DRF · PostgreSQL + pgvector · Redis · Celery · Claude · Paystack · AWS SES · Cloudflare R2
 ```
 
 ## Run it locally
@@ -25,7 +25,7 @@ pytest                                          # in backend/: 22 tests
 ### Development boundaries (never active in production)
 | Service | Without credentials (dev) | Production |
 |---|---|---|
-| Email OTP | Code logged and shown on the OTP screen in a labelled "Development mode" box | SMTP — Gmail with an App Password (`EMAIL_PROVIDER=smtp`); AWS SES optional |
+| Email OTP | Code logged and shown on the OTP screen in a labelled "Development mode" box | AWS SES (`EMAIL_PROVIDER=ses`); any SMTP server optional (`EMAIL_PROVIDER=smtp`) |
 | Payments | Labelled sandbox page that approves/declines (requires `DEBUG` **and** no Paystack key) | Paystack checkout + server verification + signed webhooks |
 | AI tutor | Placeholder answer prefixed "Development mode", badge in UI | Claude (`ANTHROPIC_API_KEY`), default `claude-opus-5-5` |
 | Embeddings | Hashed bag-of-words vectors | Voyage AI (`VOYAGE_API_KEY`) |
@@ -55,6 +55,6 @@ Modular monolith (`backend/apps/*`): `accounts` (users, profiles, email OTP), `e
 - Frontend: tree-shaken icons, code-split routes, KaTeX loaded only where maths is shown; reduced-motion respected.
 
 ## Production checklist
-Set `DJANGO_DEBUG=0`, `DJANGO_SECRET_KEY`, `EMAIL_PROVIDER=smtp` + `EMAIL_HOST_USER`/`EMAIL_HOST_PASSWORD` (Gmail App Password), `STORAGE_PROVIDER=r2` + R2 keys, `PAYSTACK_SECRET_KEY` (webhook URL `https://<api>/api/payments/webhooks/paystack/`), `ANTHROPIC_API_KEY`, `VOYAGE_API_KEY`. Run `celery worker` and `celery beat`. Enable daily Postgres backups/PITR, run `python manage.py flushexpiredtokens` daily, and complete an NDPA data-protection review.
+Set `DJANGO_DEBUG=0`, `DJANGO_SECRET_KEY`, `EMAIL_PROVIDER=ses` + SES keys and `DEFAULT_FROM_EMAIL` on a verified domain (out of the SES sandbox), `STORAGE_PROVIDER=r2` + R2 keys, `PAYSTACK_SECRET_KEY` (webhook URL `https://<api>/api/payments/webhooks/paystack/`), `ANTHROPIC_API_KEY`, `VOYAGE_API_KEY`. Run `celery worker` and `celery beat`. Enable daily Postgres backups/PITR, run `python manage.py flushexpiredtokens` daily, and complete an NDPA data-protection review.
 
 The bundled questions and lessons are **original sample content**, labelled as such. Load authorised examination material through the admin question-bank workflow.

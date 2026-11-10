@@ -13,7 +13,7 @@ Scaling notes (target: 1M+ students):
     Run PgBouncer in transaction mode in front of Postgres in production.
   * Redis backs the cache, throttling counters, leaderboards (sorted sets) and
     the Celery broker.
-  * Slow or external work (email via SMTP/Gmail, AI calls for document analysis,
+  * Slow or external work (email via AWS SES, AI calls for document analysis,
     roadmap generation, Paystack webhook post-processing) is done by Celery.
   * Uploaded files live in Cloudflare R2 (S3-compatible) and are only ever
     served through short-lived presigned URLs.
@@ -226,29 +226,33 @@ X_FRAME_OPTIONS = "DENY"
 DATA_UPLOAD_MAX_MEMORY_SIZE = 5 * 1024 * 1024
 
 # --------------------------------------------------------------------------
-# Email — SMTP, e.g. Gmail with an app password (production) / console (development)
-# AWS SES remains available with EMAIL_PROVIDER=ses.
+# Email — AWS SES (production) / console (development).
+# Generic SMTP (e.g. Gmail with an App Password) remains available with EMAIL_PROVIDER=smtp.
 # --------------------------------------------------------------------------
-EMAIL_PROVIDER = env("EMAIL_PROVIDER", "console")  # "smtp" | "ses" | "console"
-EMAIL_HOST = env("EMAIL_HOST", "smtp.gmail.com")
-EMAIL_PORT = int(env("EMAIL_PORT", "587"))
-EMAIL_HOST_USER = env("EMAIL_HOST_USER", "")
-# Gmail: a 16-character App Password (Google Account → Security → 2-Step Verification → App passwords),
-# never the normal account password. Spaces Google shows in it are ignored.
-EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD", "").replace(" ", "")
-EMAIL_USE_SSL = env_bool("EMAIL_USE_SSL", EMAIL_PORT == 465)
-EMAIL_USE_TLS = env_bool("EMAIL_USE_TLS", not EMAIL_USE_SSL)
-EMAIL_TIMEOUT = int(env("EMAIL_TIMEOUT", "20"))
+EMAIL_PROVIDER = env("EMAIL_PROVIDER", "console")  # "ses" | "smtp" | "console"
 AWS_SES_REGION = env("AWS_SES_REGION", "eu-west-1")
+# Leave the keys empty to use the standard AWS credential chain (e.g. an instance role).
 AWS_SES_ACCESS_KEY_ID = env("AWS_SES_ACCESS_KEY_ID")
 AWS_SES_SECRET_ACCESS_KEY = env("AWS_SES_SECRET_ACCESS_KEY")
 AWS_SES_CONFIGURATION_SET = env("AWS_SES_CONFIGURATION_SET")
+
+EMAIL_HOST = env("EMAIL_HOST", "smtp.gmail.com")
+EMAIL_PORT = int(env("EMAIL_PORT", "587"))
+EMAIL_HOST_USER = env("EMAIL_HOST_USER", "")
+EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD", "").replace(" ", "")  # Gmail App Passwords are shown with spaces
+EMAIL_USE_SSL = env_bool("EMAIL_USE_SSL", EMAIL_PORT == 465)
+EMAIL_USE_TLS = env_bool("EMAIL_USE_TLS", not EMAIL_USE_SSL)
+EMAIL_TIMEOUT = int(env("EMAIL_TIMEOUT", "20"))
+
 # Development only: echo OTP codes in the API response when no email provider is set.
 OTP_DEV_ECHO = DEBUG and EMAIL_PROVIDER == "console"
-# Gmail rewrites the From address to the authenticated account unless it's a verified "Send mail as" alias.
-DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL", f"Kwado AI <{EMAIL_HOST_USER}>" if EMAIL_HOST_USER else "Kwado AI <no-reply@kwado.ai>")
-if EMAIL_PROVIDER == "smtp" and not (EMAIL_HOST_USER and EMAIL_HOST_PASSWORD) and not DEBUG:
-    raise RuntimeError("EMAIL_PROVIDER=smtp needs EMAIL_HOST_USER and EMAIL_HOST_PASSWORD")
+# With SES this must be an address on a domain (or an address) verified in SES.
+DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL") or (f"Kwado AI <{EMAIL_HOST_USER}>" if EMAIL_HOST_USER else "Kwado AI <no-reply@kwado.ai>")
+if not DEBUG:
+    if EMAIL_PROVIDER == "ses" and not env("DEFAULT_FROM_EMAIL"):
+        raise RuntimeError("EMAIL_PROVIDER=ses needs DEFAULT_FROM_EMAIL on a domain verified in SES")
+    if EMAIL_PROVIDER == "smtp" and not (EMAIL_HOST_USER and EMAIL_HOST_PASSWORD):
+        raise RuntimeError("EMAIL_PROVIDER=smtp needs EMAIL_HOST_USER and EMAIL_HOST_PASSWORD")
 
 # --------------------------------------------------------------------------
 # Object storage — Cloudflare R2 (production) / local disk (development)
