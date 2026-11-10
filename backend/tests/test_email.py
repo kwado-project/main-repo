@@ -106,3 +106,51 @@ def test_ses_requires_verified_sender_in_production(monkeypatch):
     for k in ("DJANGO_DEBUG", "EMAIL_PROVIDER", "DEFAULT_FROM_EMAIL"):
         monkeypatch.delenv(k)
     importlib.reload(s)
+
+
+RESEND = dict(EMAIL_PROVIDER="resend", RESEND_API_KEY="re_test_123", DEFAULT_FROM_EMAIL="Kwado AI <no-reply@contact.kwado.example>")
+
+
+@override_settings(**RESEND)
+def test_resend_sends_html_text_with_idempotency_key():
+    import resend
+    with mock.patch.object(resend.Emails, "send", return_value={"id": "abc"}) as send:
+        send_email("student@example.com", "123456 is your Kwado AI code", "plain", "<b>html</b>", idempotency_key="otp/task-1")
+    assert resend.api_key == "re_test_123"
+    params, options = send.call_args.args
+    assert params == {"from": "Kwado AI <no-reply@contact.kwado.example>", "to": ["student@example.com"],
+                      "subject": "123456 is your Kwado AI code", "text": "plain", "html": "<b>html</b>"}
+    assert options == {"idempotency_key": "otp/task-1"}
+
+
+@override_settings(**RESEND)
+def test_resend_error_raises_so_celery_retries():
+    import resend
+    err = resend.exceptions.ValidationError("The contact.kwado.example domain is not verified.", "validation_error", 403)
+    with mock.patch.object(resend.Emails, "send", side_effect=err):
+        with pytest.raises(resend.exceptions.ResendError):
+            send_email("s@example.com", "subj", "body")
+
+
+@override_settings(**RESEND)
+def test_otp_task_uses_stable_idempotency_key_across_retries():
+    from apps.accounts.tasks import send_otp_email
+    with mock.patch("apps.accounts.tasks.send_email") as se:
+        send_otp_email.apply(args=("s@example.com", "123456", "register"), task_id="fixed-task-id")
+    assert se.call_args.kwargs["idempotency_key"] == "otp/fixed-task-id"
+
+
+def test_resend_requires_key_and_sender_in_production(monkeypatch):
+    import importlib
+    import config.settings as s
+    for k, v in {"DJANGO_DEBUG": "0", "KWADO_TESTING": "1", "EMAIL_PROVIDER": "resend", "DEFAULT_FROM_EMAIL": "Kwado AI <no-reply@x.example>",
+                 "RESEND_API_KEY": ""}.items():
+        monkeypatch.setenv(k, v)
+    with pytest.raises(RuntimeError, match="RESEND_API_KEY"):
+        importlib.reload(s)
+    monkeypatch.setenv("RESEND_API_KEY", '  "re_live_abc"  ')  # stray quotes/spaces from a pasted .env line
+    importlib.reload(s)
+    assert s.RESEND_API_KEY == "re_live_abc"
+    for k in ("DJANGO_DEBUG", "EMAIL_PROVIDER", "DEFAULT_FROM_EMAIL", "RESEND_API_KEY"):
+        monkeypatch.delenv(k)
+    importlib.reload(s)

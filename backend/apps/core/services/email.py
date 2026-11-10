@@ -1,7 +1,8 @@
 """Transactional email.
 
 Providers (EMAIL_PROVIDER):
-  * "ses"     — AWS SES (SESv2 API). The production default.
+  * "resend"  — Resend (official `resend` SDK). The production default.
+  * "ses"     — AWS SES (SESv2 API); alternative.
   * "smtp"    — any SMTP server (e.g. Gmail with an App Password); alternative.
   * "console" — development only: messages are logged, clearly marked, never sent.
 """
@@ -61,9 +62,23 @@ def _send_ses(to: str, subject: str, text: str, html: str | None) -> None:
     _ses().send_email(**params)
 
 
-def send_email(to: str, subject: str, text: str, html: str | None = None) -> None:
+def _send_resend(to: str, subject: str, text: str, html: str | None, idempotency_key: str | None) -> None:
+    import resend
+
+    resend.api_key = settings.RESEND_API_KEY
+    params = {"from": settings.DEFAULT_FROM_EMAIL, "to": [to], "subject": subject, "text": text}
+    if html:
+        params["html"] = html
+    # Same key on Celery retries → Resend delivers at most once even if a retry follows a timeout.
+    options = {"idempotency_key": idempotency_key[:256]} if idempotency_key else None
+    resend.Emails.send(params, options)  # raises resend.exceptions.ResendError on failure → task retries
+
+
+def send_email(to: str, subject: str, text: str, html: str | None = None, *, idempotency_key: str | None = None) -> None:
     provider = settings.EMAIL_PROVIDER
-    if provider == "smtp":
+    if provider == "resend":
+        _send_resend(to, subject, text, html, idempotency_key)
+    elif provider == "smtp":
         _send_smtp(to, subject, text, html)
     elif provider == "ses":
         _send_ses(to, subject, text, html)

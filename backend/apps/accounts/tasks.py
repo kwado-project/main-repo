@@ -8,8 +8,8 @@ from apps.core.services.email import send_email
 from .models import EmailOTP
 
 
-@shared_task(autoretry_for=(Exception,), retry_backoff=True, max_retries=5)
-def send_otp_email(email: str, code: str, purpose: str):
+@shared_task(bind=True, autoretry_for=(Exception,), retry_backoff=True, max_retries=5)
+def send_otp_email(self, email: str, code: str, purpose: str):
     action = "create your Kwado AI account" if purpose == "register" else "sign in to Kwado AI"
     text = (
         f"Your Kwado AI verification code is {code}\n\n"
@@ -22,7 +22,7 @@ def send_otp_email(email: str, code: str, purpose: str):
 <p style="font-size:32px;letter-spacing:8px;font-weight:700;color:#16A34A;margin:16px 0">{code}</p>
 <p style="color:#64748B;font-size:13px">Expires in 5 minutes. Single use. If you didn't request it, ignore this email.</p>
 </div>"""
-    send_email(email, f"{code} is your Kwado AI code", text, html)
+    send_email(email, f"{code} is your Kwado AI code", text, html, idempotency_key=f"otp/{self.request.id}")
 
 
 @shared_task
