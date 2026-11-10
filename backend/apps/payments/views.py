@@ -25,7 +25,7 @@ class PaymentThrottle(UserRateThrottle):
 
 
 class PaymentSerializer(serializers.ModelSerializer):
-    package_name = serializers.CharField(source="package.name")
+    package_name = serializers.CharField(source="label")
     amount_naira = serializers.SerializerMethodField()
 
     class Meta:
@@ -40,11 +40,23 @@ class PaymentSerializer(serializers.ModelSerializer):
 @api_view(["POST"])
 @throttle_classes([PaymentThrottle])
 def initialize(request):
-    pkg = CreditPackage.objects.filter(pk=request.data.get("package"), is_active=True).first()
-    if not pkg:
-        raise NotFound("Package not found.")
+    pkg = None
+    credits = None
+    if request.data.get("package"):
+        pkg = CreditPackage.objects.filter(pk=request.data.get("package"), is_active=True).first()
+        if not pkg:
+            raise NotFound("Package not found.")
+    else:
+        try:
+            credits = int(request.data.get("credits"))
+        except (TypeError, ValueError):
+            credits = None
+        lo, hi = settings.CUSTOM_CREDITS_MIN, settings.CUSTOM_CREDITS_MAX
+        if credits is None or not (lo <= credits <= hi) or str(request.data.get("credits")).strip() != str(credits):
+            return Response({"detail": f"Enter a whole number of credits between {lo:,} and {hi:,}.",
+                             "code": "invalid_credits"}, status=400)
     try:
-        payment = services.initialize_payment(request.user, pkg, request)
+        payment = services.initialize_payment(request.user, pkg, request, credits=credits)
     except paystack.PaystackError:
         logger.exception("paystack init failed")
         return Response({"detail": "We couldn't reach the payment provider. Please try again."}, status=502)

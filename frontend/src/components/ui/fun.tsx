@@ -1,9 +1,9 @@
 "use client";
 import { motion, useReducedMotion } from "framer-motion";
 import {
-  Atom, BookOpen, BookOpenCheck, Calculator, Church, Crown, Flame as FlameIcon, FlaskConical, Footprints, Globe, GraduationCap,
-  Landmark, Languages, Leaf, ListChecks, Lock, MoonStar, Pi, Sigma, Sparkles, Sprout, Star, Store, Target, TrendingUp, Trophy,
-  Users, Zap, type LucideIcon,
+  Atom, BookOpen, BookOpenCheck, Calculator, ChefHat, Church, Crown, Flame as FlameIcon, FlaskConical, Footprints, Globe,
+  GraduationCap, HeartPulse, Landmark, Languages, Laptop, Leaf, ListChecks, Lock, MessageCircle, MoonStar, Music, Palette, Pi,
+  ScrollText, Sigma, Sparkles, Sprout, Star, Store, Target, TrendingUp, Trophy, Users, Zap, type LucideIcon,
 } from "lucide-react";
 
 // Explicit map (instead of importing every icon) keeps the bundle small on mobile data.
@@ -12,7 +12,8 @@ const ICONS: Record<string, LucideIcon> = {
   flame: FlameIcon, "flask-conical": FlaskConical, footprints: Footprints, globe: Globe, "graduation-cap": GraduationCap,
   landmark: Landmark, languages: Languages, leaf: Leaf, "list-checks": ListChecks, lock: Lock, "moon-star": MoonStar, pi: Pi,
   sigma: Sigma, sparkles: Sparkles, sprout: Sprout, star: Star, store: Store, target: Target, "trending-up": TrendingUp,
-  trophy: Trophy, users: Users, zap: Zap,
+  trophy: Trophy, users: Users, zap: Zap, laptop: Laptop, palette: Palette, music: Music, "chef-hat": ChefHat,
+  "heart-pulse": HeartPulse, "scroll-text": ScrollText, "message-circle": MessageCircle,
 };
 import { cn } from "@/lib/utils";
 

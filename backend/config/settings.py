@@ -289,9 +289,20 @@ PAYMENTS_DEV_SANDBOX = DEBUG and not PAYSTACK_SECRET_KEY
 # --------------------------------------------------------------------------
 # AI — Anthropic Claude
 # --------------------------------------------------------------------------
-ANTHROPIC_API_KEY = env("ANTHROPIC_API_KEY")
-AI_PROVIDER = env("AI_PROVIDER", "anthropic" if ANTHROPIC_API_KEY else "dev_mock")
-AI_DEFAULT_MODEL = env("AI_DEFAULT_MODEL", "claude-opus-5-5")
+# Provider selection: AI_PROVIDER forces "anthropic" | "openai" | "dev_mock". If unset,
+# Anthropic is used when its key is present, otherwise OpenAI when its key is present,
+# otherwise the clearly-labelled development mock.
+ANTHROPIC_API_KEY = (env("ANTHROPIC_API_KEY") or "").strip() or None
+OPENAI_API_KEY = (env("OPENAI_API_KEY") or "").strip() or None
+AI_PROVIDER = (env("AI_PROVIDER") or "").strip().lower() or (
+    "anthropic" if ANTHROPIC_API_KEY else "openai" if OPENAI_API_KEY else "dev_mock")
+if AI_PROVIDER not in ("anthropic", "openai", "dev_mock"):
+    raise RuntimeError("AI_PROVIDER must be anthropic, openai or dev_mock")
+if AI_PROVIDER == "anthropic" and not ANTHROPIC_API_KEY or AI_PROVIDER == "openai" and not OPENAI_API_KEY:
+    raise RuntimeError(f"AI_PROVIDER={AI_PROVIDER} but its API key is not set")
+AI_ANTHROPIC_MODEL = env("AI_ANTHROPIC_MODEL") or env("AI_DEFAULT_MODEL") or "claude-opus-5-5"
+AI_OPENAI_MODEL = env("AI_OPENAI_MODEL") or "gpt-5.5"
+AI_DEFAULT_MODEL = AI_OPENAI_MODEL if AI_PROVIDER == "openai" else AI_ANTHROPIC_MODEL
 AI_MAX_OUTPUT_TOKENS = int(env("AI_MAX_OUTPUT_TOKENS", "4000"))
 EMBEDDING_DIMENSIONS = 1024
 
@@ -300,6 +311,9 @@ EMBEDDING_DIMENSIONS = 1024
 # --------------------------------------------------------------------------
 SIGNUP_BONUS_CREDITS = 100
 NAIRA_PER_CREDIT = 10
+# Students may buy any whole number of credits in this range (price = credits × ₦10).
+CUSTOM_CREDITS_MIN = int(env("CUSTOM_CREDITS_MIN", "50"))
+CUSTOM_CREDITS_MAX = int(env("CUSTOM_CREDITS_MAX", "100000"))
 REFERRAL_REWARD_PERCENT = 20
 OTP_TTL_SECONDS = 300
 OTP_RESEND_COOLDOWN_SECONDS = 60

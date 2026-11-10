@@ -17,7 +17,12 @@ class Payment(TimeStampedModel):
         DEV_SANDBOX = "dev_sandbox"
 
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.PROTECT, related_name="payments")
-    package = models.ForeignKey("wallet.CreditPackage", on_delete=models.PROTECT)
+    package = models.ForeignKey("wallet.CreditPackage", null=True, blank=True, on_delete=models.PROTECT,
+                                help_text="Empty for a custom-amount purchase")
+
+    @property
+    def label(self):
+        return f"{self.package.name} package" if self.package_id else "Custom amount"
     reference = models.CharField(max_length=64, unique=True)
     provider = models.CharField(max_length=20, choices=Provider.choices, default=Provider.PAYSTACK)
     amount_kobo = models.PositiveBigIntegerField()

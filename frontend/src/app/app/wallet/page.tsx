@@ -4,7 +4,7 @@ import { useState } from "react";
 import useSWR from "swr";
 import useSWRInfinite from "swr/infinite";
 import { motion } from "framer-motion";
-import { ArrowDownLeft, ArrowUpRight, Gift, Lock, Receipt, ShieldCheck, Sparkles, Wallet as WalletIcon } from "lucide-react";
+import { ArrowDownLeft, ArrowUpRight, Gift, Lock, Minus, Plus, Receipt, ShieldCheck, Sparkles, Wallet as WalletIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge, CountUp, EmptyState, Skeleton, Tabs } from "@/components/ui/primitives";
 import { Modal } from "@/components/ui/overlay";
@@ -25,7 +25,7 @@ export default function WalletPage() {
   async function checkout() {
     setBusy(true);
     try {
-      const p = await api<any>("/payments/initialize", { method: "POST", json: { package: pick.id } });
+      const p = await api<any>("/payments/initialize", { method: "POST", json: pick.custom ? { credits: pick.credits } : { package: pick.id } });
       window.location.href = p.authorization_url;
     } catch (e) {
       toast({ tone: "error", title: "Checkout failed", body: (e as ApiError).message });
@@ -62,7 +62,10 @@ export default function WalletPage() {
       <section id="buy" className="scroll-mt-24">
         <h2 className="text-xl font-extrabold">Buy credits</h2>
         <p className="mt-1 text-sm text-muted">Exact credits, no hidden fees. Secure payment by Paystack (cards, bank transfer, USSD).</p>
-        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+        <CustomAmount min={w?.custom_min ?? 50} max={w?.custom_max ?? 100000} rate={w?.naira_per_credit ?? 10}
+          onBuy={(credits) => setPick({ custom: true, name: "Custom amount", credits, price_naira: credits * (w?.naira_per_credit ?? 10) })} />
+        {packages && packages.length > 0 && <h3 className="mt-6 text-sm font-bold uppercase tracking-wider text-muted">Or choose a package</h3>}
+        <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
           {!packages && Array.from({ length: 5 }).map((_, i) => <Skeleton key={i} className="h-48" />)}
           {packages?.map((p, i) => (
             <motion.button key={p.id} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} whileHover={{ y: -4 }} whileTap={{ scale: 0.98 }}
@@ -98,7 +101,7 @@ export default function WalletPage() {
         {pick && (
           <div>
             <div className="rounded-2xl bg-canvas p-5">
-              <div className="flex items-center justify-between"><span className="font-semibold">{pick.name} package</span><Badge>{pick.credits} credits</Badge></div>
+              <div className="flex items-center justify-between"><span className="font-semibold">{pick.custom ? "Custom amount" : `${pick.name} package`}</span><Badge>{pick.credits} credits</Badge></div>
               <div className="mt-4 space-y-2 text-sm">
                 <div className="flex justify-between"><span className="text-muted">Credits you receive</span><span className="flex items-center gap-1 font-bold"><CreditCoin size={14} />{pick.credits.toLocaleString()}</span></div>
                 <div className="flex justify-between"><span className="text-muted">Price</span><span className="font-bold">{naira(pick.price_naira)}</span></div>
@@ -113,6 +116,52 @@ export default function WalletPage() {
           </div>
         )}
       </Modal>
+    </div>
+  );
+}
+
+function CustomAmount({ min, max, rate, onBuy }: { min: number; max: number; rate: number; onBuy: (credits: number) => void }) {
+  const [value, setValue] = useState("500");
+  const n = Number(value);
+  const valid = /^\d+$/.test(value) && n >= min && n <= max;
+  const step = (d: number) => setValue(String(Math.min(max, Math.max(min, (Number.isFinite(n) ? n : min) + d))));
+  return (
+    <div className="card mt-4 p-5 sm:p-6">
+      <label htmlFor="credits" className="font-bold">How many credits do you want?</label>
+      <div className="mt-3 flex flex-col gap-4 lg:flex-row lg:items-end">
+        <div className="flex-1">
+          <div className="flex items-center gap-2">
+            <button type="button" onClick={() => step(-50)} className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-line bg-white hover:bg-slate-50" aria-label="50 fewer credits"><Minus className="h-5 w-5" /></button>
+            <div className="relative flex-1">
+              <CreditCoin size={22} className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2" />
+              <input id="credits" inputMode="numeric" value={value} onChange={(e) => setValue(e.target.value.replace(/[^\d]/g, "").slice(0, 7))}
+                onKeyDown={(e) => { if (e.key === "Enter" && valid) onBuy(n); }}
+                aria-invalid={!valid} aria-describedby="credits-help"
+                className={cn("h-14 w-full rounded-xl border bg-white pl-12 pr-4 text-2xl font-extrabold tabular-nums focus:outline-none focus:ring-4",
+                  valid || !value ? "border-line focus:border-brand-500 focus:ring-brand-100" : "border-red-400 focus:ring-red-100")} />
+            </div>
+            <button type="button" onClick={() => step(50)} className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-line bg-white hover:bg-slate-50" aria-label="50 more credits"><Plus className="h-5 w-5" /></button>
+          </div>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {[100, 250, 500, 1000, 2500].filter((q) => q >= min && q <= max).map((q) => (
+              <button key={q} type="button" onClick={() => setValue(String(q))}
+                className={cn("rounded-full border px-3.5 py-1.5 text-sm font-semibold transition", n === q ? "border-brand-600 bg-brand-50 text-brand-800" : "border-line bg-white hover:border-brand-300")}>
+                {q.toLocaleString()}
+              </button>
+            ))}
+          </div>
+          <p id="credits-help" className={cn("mt-2 text-xs", valid || !value ? "text-muted" : "font-semibold text-red-600")}>
+            {valid || !value ? `Any whole number from ${min.toLocaleString()} to ${max.toLocaleString()} credits.` : `Enter between ${min.toLocaleString()} and ${max.toLocaleString()} credits.`}
+          </p>
+        </div>
+        <div className="rounded-2xl bg-canvas p-4 lg:w-72">
+          <div className="flex justify-between text-sm"><span className="text-muted">You pay</span><span className="text-2xl font-extrabold tabular-nums">{valid ? naira(n * rate) : "—"}</span></div>
+          <p className="mt-1 text-right text-xs text-muted">1 credit = {naira(rate)}</p>
+          <Button size="lg" className="mt-3 w-full" disabled={!valid} onClick={() => onBuy(n)}>
+            {valid ? `Buy ${n.toLocaleString()} credits` : "Buy credits"}
+          </Button>
+        </div>
+      </div>
     </div>
   );
 }

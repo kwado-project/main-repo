@@ -1,3 +1,4 @@
+from django.conf import settings
 from rest_framework import generics, serializers
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
@@ -30,7 +31,8 @@ class TransactionSerializer(serializers.ModelSerializer):
 def wallet_summary(request):
     w = get_wallet(request.user)
     return Response({"balance": w.balance, "total_purchased": w.total_purchased, "total_earned": w.total_earned,
-                     "total_spent": w.total_spent, "naira_per_credit": 10})
+                     "total_spent": w.total_spent, "naira_per_credit": settings.NAIRA_PER_CREDIT,
+                     "custom_min": settings.CUSTOM_CREDITS_MIN, "custom_max": settings.CUSTOM_CREDITS_MAX})
 
 
 class TransactionList(generics.ListAPIView):

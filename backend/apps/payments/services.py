@@ -27,10 +27,24 @@ def new_reference() -> str:
     return f"KWD-{timezone.now():%y%m%d}-{secrets.token_hex(8).upper()}"
 
 
-def initialize_payment(user, package, request=None) -> Payment:
+def custom_price_kobo(credits: int) -> int:
+    return credits * settings.NAIRA_PER_CREDIT * 100
+
+
+def initialize_payment(user, package=None, request=None, *, credits: int | None = None) -> Payment:
+    """Start a purchase of a package, or of a custom number of credits.
+
+    The price is always computed here on the server, never taken from the client.
+    """
+    if package is not None:
+        amount_kobo, credits = package.price_kobo, package.credits
+    else:
+        if credits is None or not (settings.CUSTOM_CREDITS_MIN <= credits <= settings.CUSTOM_CREDITS_MAX):
+            raise ValueError("invalid credit amount")
+        amount_kobo = custom_price_kobo(credits)
     payment = Payment.objects.create(
-        user=user, package=package, reference=new_reference(), amount_kobo=package.price_kobo,
-        credits=package.credits,
+        user=user, package=package, reference=new_reference(), amount_kobo=amount_kobo,
+        credits=credits,
         provider=Payment.Provider.DEV_SANDBOX if settings.PAYMENTS_DEV_SANDBOX else Payment.Provider.PAYSTACK,
     )
     callback = f"{settings.FRONTEND_URL}/app/wallet/payment/callback"
@@ -39,11 +53,13 @@ def initialize_payment(user, package, request=None) -> Payment:
     else:
         data = paystack.initialize(
             email=user.email, amount_kobo=payment.amount_kobo, reference=payment.reference,
-            callback_url=callback, metadata={"user_id": user.id, "package": package.slug},
+            callback_url=callback,
+            metadata={"user_id": user.id, "package": package.slug if package else "custom", "credits": credits},
         )
         payment.authorization_url = data["authorization_url"]
     payment.save(update_fields=["authorization_url"])
-    audit("payment.initialized", actor=user, target=payment, request=request, package=package.slug)
+    audit("payment.initialized", actor=user, target=payment, request=request,
+          package=package.slug if package else "custom", credits=credits)
     return payment
 
 
@@ -86,7 +102,7 @@ def fulfil_payment(payment: Payment, data: dict) -> Payment:
             return p
         txn = wallet.credit(
             p.user, p.credits, CreditTransaction.Kind.PURCHASE, f"payment:{p.reference}",
-            f"Purchased {p.package.name} package ({p.credits} credits)",
+            f"Purchased {p.credits} credits ({p.label})",
             reference_type="payment", reference_id=p.reference,
         )
         p.status = Payment.Status.SUCCESS
