@@ -5,6 +5,7 @@ for k, v in {"KWADO_TESTING": "1", "DJANGO_DEBUG": "1", "CELERY_TASK_ALWAYS_EAGE
     os.environ[k] = v
 os.environ.pop("PAYSTACK_SECRET_KEY", None)
 os.environ.pop("ANTHROPIC_API_KEY", None)
+os.environ.pop("OPENAI_API_KEY", None)
 
 from .settings import *  # noqa: E402,F401,F403
 

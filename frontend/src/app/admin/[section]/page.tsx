@@ -89,7 +89,7 @@ export default function AdminSection({ params }: { params: Promise<{ section: st
       return <ResourceTable title="AI configuration" endpoint="/admin-api/ai-config" searchable={false} description="Per-purpose model routing, effort and token limits. Leave blank to use the defaults."
         columns={[{ key: "purpose", label: "Purpose" }, { key: "model", label: "Model", render: (r) => r.model || <span className="text-muted">default</span> }, { key: "effort", label: "Effort", render: (r) => r.effort || <span className="text-muted">default</span> },
           { key: "max_tokens", label: "Max tokens" }, { key: "daily_user_limit", label: "Daily limit / student" }, { key: "is_enabled", label: "Enabled" }]}
-        fields={[{ name: "purpose", label: "Purpose" }, { name: "model", label: "Model ID", help: "e.g. claude-opus-5-5" },
+        fields={[{ name: "purpose", label: "Purpose" }, { name: "model", label: "Model ID", help: "Anthropic (claude-…, e.g. claude-opus-5-5) or OpenAI (e.g. gpt-5.5). Only used when that provider is active; blank = default." },
           { name: "effort", label: "Effort", type: "select", options: ["low", "medium", "high", "xhigh", "max"].map((v) => ({ value: v, label: v })) },
           { name: "max_tokens", label: "Max output tokens", type: "number" }, { name: "daily_user_limit", label: "Daily calls per student", type: "number" }, { name: "is_enabled", label: "Enabled", type: "bool" }]} />;
     case "materials":

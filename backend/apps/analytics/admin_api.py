@@ -165,7 +165,7 @@ class TransactionVS(viewsets.ReadOnlyModelViewSet):
 
 class PaymentAdminSer(serializers.ModelSerializer):
     user_email = serializers.CharField(source="user.email")
-    package_name = serializers.CharField(source="package.name")
+    package_name = serializers.CharField(source="label")
 
     class Meta:
         model = Payment

@@ -52,8 +52,8 @@ What `backend/.env` needs:
 | `RESEND_API_KEY`, `DEFAULT_FROM_EMAIL` | Resend — see "Resend setup" below |
 | `R2_*` | Cloudflare → R2: create a **private** bucket and an API token with read/write on it |
 | `PAYSTACK_SECRET_KEY` / `PAYSTACK_PUBLIC_KEY` | Paystack dashboard → Settings → API keys (use test keys first) |
-| `ANTHROPIC_API_KEY` | console.anthropic.com |
-| `VOYAGE_API_KEY` | voyageai.com (embeddings for searching student notes) |
+| `ANTHROPIC_API_KEY` and/or `OPENAI_API_KEY` | console.anthropic.com / platform.openai.com. Anthropic is used when its key is set, otherwise OpenAI. Set `AI_PROVIDER=openai` to force OpenAI when both are set |
+| `VOYAGE_API_KEY` | voyageai.com (optional; embeddings for searching student notes; without it, OpenAI embeddings are used if `OPENAI_API_KEY` is set) |
 
 ### 6. Start everything
 ```bash

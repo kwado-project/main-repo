@@ -76,3 +76,36 @@ def test_self_referral_ignored(make_student):
     from apps.referrals.services import bind_referral
     u = make_student("self@example.com")
     assert bind_referral(u, u.referral_code) is None
+
+
+@override_settings(PAYMENTS_DEV_SANDBOX=False, PAYSTACK_SECRET_KEY="sk_test_x")
+def test_custom_amount_purchase_priced_on_server_with_referral(seeded, make_student, auth):
+    referrer = make_student("cref@example.com")
+    buyer = make_student("cbuy@example.com", referral_code=referrer.referral_code)
+    api = auth(buyer)
+    with mock.patch("apps.payments.paystack.initialize", return_value={"authorization_url": "https://checkout.paystack.com/y"}) as init:
+        r = api.post("/api/payments/initialize/", {"credits": 730, "amount": 1}, format="json")  # client "amount" is ignored
+    assert r.status_code == 201, r.data
+    assert r.data["credits"] == 730 and r.data["amount_naira"] == 7300 and r.data["package_name"] == "Custom amount"
+    assert init.call_args.kwargs["amount_kobo"] == 730_000
+    p = Payment.objects.get(reference=r.data["reference"])
+    with mock.patch("apps.payments.paystack.verify", return_value=_paystack_ok(p)):
+        assert api.get(f"/api/payments/verify/{p.reference}/").data["status"] == "success"
+    buyer.wallet.refresh_from_db(); referrer.wallet.refresh_from_db()
+    assert buyer.wallet.balance == 100 + 730
+    assert referrer.wallet.balance == 100 + 146  # 20% of 730
+    receipt = api.get(f"/api/payments/receipt/{p.reference}/").data
+    assert receipt["package_name"] == "Custom amount" and receipt["credits"] == 730
+
+
+@pytest.mark.parametrize("credits", [0, 49, 100001, -5, "abc", "12.5", None])
+def test_custom_amount_validation(seeded, make_student, auth, credits):
+    api = auth(make_student("cval@example.com"))
+    r = api.post("/api/payments/initialize/", {"credits": credits}, format="json")
+    assert r.status_code == 400 and r.data["code"] == "invalid_credits"
+    assert not Payment.objects.exists()
+
+
+def test_wallet_reports_custom_limits(make_student, auth):
+    d = auth(make_student("lim@example.com")).get("/api/wallet/").data
+    assert (d["custom_min"], d["custom_max"], d["naira_per_credit"]) == (50, 100000, 10)
