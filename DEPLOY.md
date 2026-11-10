@@ -49,7 +49,7 @@ What `backend/.env` needs:
 |---|---|
 | `DJANGO_ALLOWED_HOSTS` | `api.yourdomain.com,localhost` (keep `localhost` — the health check uses it) |
 | `FRONTEND_URL`, `CORS_ALLOWED_ORIGINS`, `DJANGO_CSRF_TRUSTED_ORIGINS` | Your Vercel domain, e.g. `https://yourdomain.com` |
-| `AWS_SES_REGION`, `AWS_SES_ACCESS_KEY_ID`, `AWS_SES_SECRET_ACCESS_KEY`, `DEFAULT_FROM_EMAIL` | AWS SES — see "AWS SES setup" below |
+| `RESEND_API_KEY`, `DEFAULT_FROM_EMAIL` | Resend — see "Resend setup" below |
 | `R2_*` | Cloudflare → R2: create a **private** bucket and an API token with read/write on it |
 | `PAYSTACK_SECRET_KEY` / `PAYSTACK_PUBLIC_KEY` | Paystack dashboard → Settings → API keys (use test keys first) |
 | `ANTHROPIC_API_KEY` | console.anthropic.com |
@@ -89,22 +89,30 @@ Backups are kept 14 days in `/var/backups/kwado`. Strongly recommended: also cop
 gunzip -c /var/backups/kwado/<file>.sql.gz | docker compose -f docker-compose.prod.yml exec -T db psql -U kwado -d kwado
 ```
 
-### AWS SES setup
-1. **Pick a region** in the AWS console (e.g. `eu-west-1`, Ireland) and use it for every step below and for `AWS_SES_REGION`.
-2. **Verify your domain:** SES → Configuration → **Identities** → Create identity → Domain → `yourdomain.com`, with Easy DKIM (RSA 2048). Add the 3 DKIM CNAME records SES shows at your DNS provider. Status turns **Verified** within minutes to a few hours.
-3. **Improve deliverability** (strongly recommended): on the identity, set a custom MAIL FROM domain such as `mail.yourdomain.com` and add the MX and SPF (TXT) records SES shows. Add a DMARC record: TXT `_dmarc.yourdomain.com` = `v=DMARC1; p=none; rua=mailto:you@yourdomain.com`.
-4. **Leave the sandbox:** SES → Account dashboard → **Request production access**. Describe it as transactional email (one-time sign-in codes for students who requested them; bounces and complaints monitored). Until it's approved you can only send to addresses you've verified in SES, so verify your own email to test meanwhile. Approval usually takes about a day.
-5. **Create sending credentials:** IAM → Users → Create user `kwado-ses` (no console access) → attach this inline policy, then create an **access key** (use case "Application running outside AWS"):
-   ```json
-   {"Version": "2012-10-17", "Statement": [{"Effect": "Allow", "Action": "ses:SendEmail", "Resource": "*"}]}
+### Resend setup
+1. Create an account at https://resend.com.
+2. **Add your sending domain:** Domains → **Add Domain** → enter the domain your sender uses (for `no-reply@contact.yourdomain.com` that's `contact.yourdomain.com`). Pick the region closest to your users (e.g. Ireland, `eu-west-1`).
+3. **Add the DNS records** Resend shows at your DNS provider: an MX and a TXT (SPF) record on a `send` subdomain, and a TXT (DKIM) record `resend._domainkey`. Click **Verify DNS Records**; it turns **Verified** within minutes to a few hours.
+4. **Recommended:** add a DMARC record: TXT `_dmarc.yourdomain.com` = `v=DMARC1; p=none; rua=mailto:you@yourdomain.com`.
+5. **Create an API key:** API Keys → **Create API Key** → permission **Sending access**, domain = your verified domain. Copy it (starts with `re_`); it's shown once.
+6. In `backend/.env`:
    ```
-6. Put the values in `backend/.env`: `EMAIL_PROVIDER=ses`, `AWS_SES_REGION`, `AWS_SES_ACCESS_KEY_ID`, `AWS_SES_SECRET_ACCESS_KEY`, and `DEFAULT_FROM_EMAIL=Kwado AI <no-reply@yourdomain.com>`. Then run `docker compose -f docker-compose.prod.yml up -d`.
+   EMAIL_PROVIDER=resend
+   RESEND_API_KEY=re_...
+   DEFAULT_FROM_EMAIL=Kwado AI <no-reply@contact.yourdomain.com>
+   ```
+   Then `docker compose -f docker-compose.prod.yml up -d --force-recreate api worker beat`.
+7. **Test it** (use any address, e.g. your own):
+   ```bash
+   docker compose -f docker-compose.prod.yml exec api python manage.py shell -c "from apps.core.services.email import send_email; send_email('you@example.com','Kwado test','It works'); print('SENT')"
+   ```
 
 Things to know:
-- **Cost:** about **$0.10 per 1,000 emails**; sending limits start around 50,000/day after approval and rise with good sending history.
-- **Bounces and complaints:** keep the bounce rate under 5% and complaints under 0.1% or AWS may pause sending. Check them under SES → Reputation metrics. For per-message tracking, create a configuration set and put its name in `AWS_SES_CONFIGURATION_SET`.
-- SES uses HTTPS (port 443), so VPS hosts that block email ports don't affect it.
-- **Alternative:** any SMTP server still works. Set `EMAIL_PROVIDER=smtp` with `EMAIL_HOST`, `EMAIL_PORT`, `EMAIL_HOST_USER`, `EMAIL_HOST_PASSWORD` (e.g. Gmail with an App Password, limited to ~500 emails/day).
+- **Plan limits:** the free plan has a small daily and monthly quota, and every sign-up and login sends one email. Check https://resend.com/pricing and move to a paid plan before launch traffic.
+- Sent emails, bounces and complaints are visible under **Emails** and **Logs** in the Resend dashboard.
+- Resend uses HTTPS (port 443), so VPS hosts that block email ports don't affect it.
+- Retries reuse an idempotency key, so a student never receives the same code twice.
+- **Alternatives:** AWS SES (`EMAIL_PROVIDER=ses` with `AWS_SES_REGION`, `AWS_SES_ACCESS_KEY_ID`, `AWS_SES_SECRET_ACCESS_KEY`) or any SMTP server (`EMAIL_PROVIDER=smtp` with `EMAIL_HOST`, `EMAIL_PORT`, `EMAIL_HOST_USER`, `EMAIL_HOST_PASSWORD`).
 
 ---
 
@@ -118,7 +126,7 @@ The site calls `/api/...` on its own domain and Vercel forwards to the VPS, so t
 ---
 
 ## Part 3 — Check it end to end
-1. Register with a real email → the code arrives (from `DEFAULT_FROM_EMAIL` via SES; if SES is still in the sandbox, use an address you've verified in SES).
+1. Register with a real email → the code arrives from `DEFAULT_FROM_EMAIL` (check spam the first time).
 2. Finish onboarding → you have 100 credits, then a roadmap.
 3. Ask the AI tutor a question → the answer streams in.
 4. Buy the Starter package with a Paystack **test card** → credits arrive, the receipt shows.
@@ -156,5 +164,5 @@ $C exec api python manage.py shell
 | No HTTPS / certificate error | DNS points at the VPS? Ports 80+443 open? `$C logs caddy` |
 | `api` not healthy | `$C logs api` — usually a missing or invalid value in `backend/.env` |
 | 400 Bad Request | Domain missing from `DJANGO_ALLOWED_HOSTS` |
-| No OTP emails | `$C logs worker`. `MessageRejected: Email address is not verified` → SES still in the sandbox, or `DEFAULT_FROM_EMAIL` isn't on your verified domain. `AccessDenied` → IAM policy missing `ses:SendEmail`. Wrong-region errors → `AWS_SES_REGION` must match the region where the domain is verified |
+| No OTP emails | `$C logs worker`. `domain is not verified` → finish DNS verification in Resend, or `DEFAULT_FROM_EMAIL` isn't on that domain. `API key is invalid` → wrong `RESEND_API_KEY` (recreate containers after editing `.env`). `restricted_api_key` → the key is limited to a different domain. Also check Resend → Logs |
 | Credits not added after payment | Webhook URL in Paystack; `$C logs api` for `/payments/` |
