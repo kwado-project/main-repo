@@ -49,7 +49,7 @@ What `backend/.env` needs:
 |---|---|
 | `DJANGO_ALLOWED_HOSTS` | `api.yourdomain.com,localhost` (keep `localhost` — the health check uses it) |
 | `FRONTEND_URL`, `CORS_ALLOWED_ORIGINS`, `DJANGO_CSRF_TRUSTED_ORIGINS` | Your Vercel domain, e.g. `https://yourdomain.com` |
-| `EMAIL_HOST_USER`, `EMAIL_HOST_PASSWORD` | The Gmail address, and a Google **App Password** for it (see "Gmail App Password" below) |
+| `AWS_SES_REGION`, `AWS_SES_ACCESS_KEY_ID`, `AWS_SES_SECRET_ACCESS_KEY`, `DEFAULT_FROM_EMAIL` | AWS SES — see "AWS SES setup" below |
 | `R2_*` | Cloudflare → R2: create a **private** bucket and an API token with read/write on it |
 | `PAYSTACK_SECRET_KEY` / `PAYSTACK_PUBLIC_KEY` | Paystack dashboard → Settings → API keys (use test keys first) |
 | `ANTHROPIC_API_KEY` | console.anthropic.com |
@@ -89,16 +89,22 @@ Backups are kept 14 days in `/var/backups/kwado`. Strongly recommended: also cop
 gunzip -c /var/backups/kwado/<file>.sql.gz | docker compose -f docker-compose.prod.yml exec -T db psql -U kwado -d kwado
 ```
 
-### Gmail App Password
-1. Sign in to the Gmail account that will send the codes (a dedicated account such as `kwado.noreply@gmail.com` is best).
-2. Google Account → **Security** → turn on **2-Step Verification** (App Passwords require it).
-3. Visit https://myaccount.google.com/apppasswords, create one named "Kwado", and copy the 16-character password.
-4. Put it in `backend/.env` as `EMAIL_HOST_PASSWORD` (spaces are fine), then `docker compose -f docker-compose.prod.yml up -d`.
+### AWS SES setup
+1. **Pick a region** in the AWS console (e.g. `eu-west-1`, Ireland) and use it for every step below and for `AWS_SES_REGION`.
+2. **Verify your domain:** SES → Configuration → **Identities** → Create identity → Domain → `yourdomain.com`, with Easy DKIM (RSA 2048). Add the 3 DKIM CNAME records SES shows at your DNS provider. Status turns **Verified** within minutes to a few hours.
+3. **Improve deliverability** (strongly recommended): on the identity, set a custom MAIL FROM domain such as `mail.yourdomain.com` and add the MX and SPF (TXT) records SES shows. Add a DMARC record: TXT `_dmarc.yourdomain.com` = `v=DMARC1; p=none; rua=mailto:you@yourdomain.com`.
+4. **Leave the sandbox:** SES → Account dashboard → **Request production access**. Describe it as transactional email (one-time sign-in codes for students who requested them; bounces and complaints monitored). Until it's approved you can only send to addresses you've verified in SES, so verify your own email to test meanwhile. Approval usually takes about a day.
+5. **Create sending credentials:** IAM → Users → Create user `kwado-ses` (no console access) → attach this inline policy, then create an **access key** (use case "Application running outside AWS"):
+   ```json
+   {"Version": "2012-10-17", "Statement": [{"Effect": "Allow", "Action": "ses:SendEmail", "Resource": "*"}]}
+   ```
+6. Put the values in `backend/.env`: `EMAIL_PROVIDER=ses`, `AWS_SES_REGION`, `AWS_SES_ACCESS_KEY_ID`, `AWS_SES_SECRET_ACCESS_KEY`, and `DEFAULT_FROM_EMAIL=Kwado AI <no-reply@yourdomain.com>`. Then run `docker compose -f docker-compose.prod.yml up -d`.
 
 Things to know:
-- **Daily limit:** a personal Gmail account sends about **500 emails/day**; Google Workspace about **2,000/day**. Every sign-up and login sends one code, so plan to move to a dedicated email service (set `EMAIL_PROVIDER=ses`, or any SMTP provider such as Brevo, Mailgun or Postmark via `EMAIL_HOST`/`EMAIL_PORT`) before you outgrow it.
-- **Blocked ports:** some VPS hosts block outbound SMTP on new accounts (DigitalOcean always; Hetzner until you ask support). If sends time out, ask your host to unblock port 587, or try `EMAIL_PORT=465`.
-- **Sender address:** Gmail sends from the signed-in account. To show another address, add it in Gmail → Settings → Accounts → "Send mail as" first.
+- **Cost:** about **$0.10 per 1,000 emails**; sending limits start around 50,000/day after approval and rise with good sending history.
+- **Bounces and complaints:** keep the bounce rate under 5% and complaints under 0.1% or AWS may pause sending. Check them under SES → Reputation metrics. For per-message tracking, create a configuration set and put its name in `AWS_SES_CONFIGURATION_SET`.
+- SES uses HTTPS (port 443), so VPS hosts that block email ports don't affect it.
+- **Alternative:** any SMTP server still works. Set `EMAIL_PROVIDER=smtp` with `EMAIL_HOST`, `EMAIL_PORT`, `EMAIL_HOST_USER`, `EMAIL_HOST_PASSWORD` (e.g. Gmail with an App Password, limited to ~500 emails/day).
 
 ---
 
@@ -112,7 +118,7 @@ The site calls `/api/...` on its own domain and Vercel forwards to the VPS, so t
 ---
 
 ## Part 3 — Check it end to end
-1. Register with a real email → the code arrives (from your Gmail account; check spam the first time).
+1. Register with a real email → the code arrives (from `DEFAULT_FROM_EMAIL` via SES; if SES is still in the sandbox, use an address you've verified in SES).
 2. Finish onboarding → you have 100 credits, then a roadmap.
 3. Ask the AI tutor a question → the answer streams in.
 4. Buy the Starter package with a Paystack **test card** → credits arrive, the receipt shows.
@@ -150,5 +156,5 @@ $C exec api python manage.py shell
 | No HTTPS / certificate error | DNS points at the VPS? Ports 80+443 open? `$C logs caddy` |
 | `api` not healthy | `$C logs api` — usually a missing or invalid value in `backend/.env` |
 | 400 Bad Request | Domain missing from `DJANGO_ALLOWED_HOSTS` |
-| No OTP emails | `$C logs worker`. `535 Username and Password not accepted` → wrong or revoked App Password, or 2-Step Verification is off. Timeouts → your VPS host blocks outbound SMTP (see Gmail section) |
+| No OTP emails | `$C logs worker`. `MessageRejected: Email address is not verified` → SES still in the sandbox, or `DEFAULT_FROM_EMAIL` isn't on your verified domain. `AccessDenied` → IAM policy missing `ses:SendEmail`. Wrong-region errors → `AWS_SES_REGION` must match the region where the domain is verified |
 | Credits not added after payment | Webhook URL in Paystack; `$C logs api` for `/payments/` |
