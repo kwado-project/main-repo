@@ -306,6 +306,9 @@ OTP_RESEND_COOLDOWN_SECONDS = 60
 OTP_MAX_ATTEMPTS = 5
 
 # --------------------------------------------------------------------------
+# Opt in to the Django 6 default: URL form fields assume https:// when no scheme is typed.
+FORMS_URLFIELD_ASSUME_HTTPS = True
+
 LANGUAGE_CODE = "en-gb"
 TIME_ZONE = "Africa/Lagos"
 USE_I18N = True
