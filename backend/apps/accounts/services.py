@@ -14,13 +14,19 @@ from .models import SignupBonusClaim, StudentProfile, User
 def create_student(email: str, *, referral_code: str = "", ip=None, request=None) -> User:
     with transaction.atomic():
         user = User.objects.create_user(email=email, email_verified_at=timezone.now())
-        StudentProfile.objects.create(user=user)
-        Streak.objects.create(user=user)
-        wallet.get_wallet(user)
+        ensure_account_records(user)
         bind_referral(user, referral_code)
         grant_signup_bonus(user, ip=ip)
     audit("account.created", actor=user, target=user, request=request, referred=bool(referral_code))
     return user
+
+
+def ensure_account_records(user: User) -> None:
+    """Every account needs a profile, streak and wallet, however it was created
+    (OTP sign-up, createsuperuser, Django admin, shell). Idempotent."""
+    StudentProfile.objects.get_or_create(user=user)
+    Streak.objects.get_or_create(user=user)
+    wallet.get_wallet(user)
 
 
 def grant_signup_bonus(user: User, ip=None) -> bool:
