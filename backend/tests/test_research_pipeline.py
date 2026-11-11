@@ -163,3 +163,38 @@ def test_cli_matrix_report_and_export(seeded, internet, tmp_path, capsys):
     out = tmp_path / "x.json"
     call_command("research", "export", "--out", str(out))
     assert json.loads(out.read_text()) == []
+
+
+@pytest.mark.parametrize("what", ["cycle", "verify", "matrix"])
+def test_run_button_succeeds_and_is_audited(seeded, make_student, auth, what, monkeypatch):
+    from apps.core.models import AuditLog
+    from apps.research import tasks
+
+    queued = []
+    monkeypatch.setattr(tasks.research_cycle, "delay", lambda *a, **k: queued.append("cycle") or type("R", (), {"id": "t1"})())
+    monkeypatch.setattr(tasks.verify_pending_task, "delay", lambda *a, **k: queued.append("verify") or type("R", (), {"id": "t2"})())
+    _, api = admin_client(make_student, auth)
+    r = api.post("/api/admin-api/research/run/", {"action": what}, format="json")
+    assert r.status_code in (200, 202), r.content
+    if what != "matrix":
+        assert queued == [what] and AuditLog.objects.filter(action="research.run", metadata__run=what).exists()
+    assert api.post("/api/admin-api/research/run/", {"action": "nope"}, format="json").status_code == 400
+
+
+def test_other_research_admin_endpoints_succeed(seeded, internet, make_student, auth):
+    pipeline.run_cycle("jamb", targets=500)
+    _, api = admin_client(make_student, auth)
+    src = Source.objects.get(domain="good.ng")
+    for path, method, body in [
+        ("/api/admin-api/research/overview/", "get", None),
+        ("/api/admin-api/research/jobs/?status=failed", "get", None),
+        ("/api/admin-api/research/sources/", "get", None),
+        (f"/api/admin-api/research/sources/{src.id}/", "get", None),
+        (f"/api/admin-api/research/sources/{src.id}/check/", "post", {}),
+        (f"/api/admin-api/research/sources/{src.id}/active/", "post", {"is_active": True}),
+        ("/api/admin-api/research/documents/", "get", None),
+        ("/api/admin-api/research/questions/?awaiting=1", "get", None),
+        ("/api/admin-api/research/seeds/", "post", {"url": "https://new.ng/", "name": "New"}),
+    ]:
+        r = getattr(api, method)(path, body, format="json") if body is not None else api.get(path)
+        assert r.status_code < 300, (path, r.status_code, getattr(r, "data", None))

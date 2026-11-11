@@ -247,7 +247,7 @@ def run(request):
         return Response(matrix.ensure_matrix(request.data.get("exam", "jamb")))
     else:
         raise ValidationError({"action": "Use cycle, verify or matrix."})
-    audit("research.run", actor=request.user, request=request, action=what)
+    audit("research.run", actor=request.user, request=request, run=what)
     return Response({"queued": what, "task_id": r.id}, status=202)
 
 
