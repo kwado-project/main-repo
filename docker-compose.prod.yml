@@ -56,6 +56,11 @@ services:
     <<: *backend
     command: celery -A config worker -Q celery,email,ai -l info --concurrency ${WORKER_CONCURRENCY:-4}
 
+  research-worker:
+    # Past-question research pipeline (queue "research"): low concurrency, polite crawling.
+    <<: *backend
+    command: celery -A config worker -Q research -l info --concurrency ${RESEARCH_CONCURRENCY:-2} -n research@%h
+
   beat:
     <<: *backend
     command: celery -A config beat -l info --schedule /tmp/celerybeat-schedule

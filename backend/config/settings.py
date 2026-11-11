@@ -85,6 +85,7 @@ INSTALLED_APPS = [
     "apps.materials",
     "apps.notifications",
     "apps.analytics",
+    "apps.research",
 ]
 
 MIDDLEWARE = [
@@ -165,6 +166,7 @@ CELERY_TASK_ROUTES = {
     "apps.notifications.tasks.*": {"queue": "email"},
     "apps.materials.tasks.*": {"queue": "ai"},
     "apps.roadmaps.tasks.*": {"queue": "ai"},
+    "apps.research.tasks.*": {"queue": "research"},
 }
 
 # --------------------------------------------------------------------------
@@ -318,6 +320,30 @@ REFERRAL_REWARD_PERCENT = 20
 OTP_TTL_SECONDS = 300
 OTP_RESEND_COOLDOWN_SECONDS = 60
 OTP_MAX_ATTEMPTS = 5
+
+# --------------------------------------------------------------------------
+# Past-question research pipeline (apps.research)
+# --------------------------------------------------------------------------
+# Honest, contactable User-Agent so site owners can identify and reach us.
+RESEARCH_USER_AGENT = env("RESEARCH_USER_AGENT", "KwadoResearchBot/1.0 (+https://kwado.com.ng/research-bot)")
+RESEARCH_YEAR_FROM = int(env("RESEARCH_YEAR_FROM", "2000"))
+RESEARCH_YEAR_TO = int(env("RESEARCH_YEAR_TO", "2026"))
+RESEARCH_DEFAULT_CRAWL_DELAY = float(env("RESEARCH_DEFAULT_CRAWL_DELAY", "5"))
+RESEARCH_MAX_CRAWL_DEPTH = int(env("RESEARCH_MAX_CRAWL_DEPTH", "2"))
+RESEARCH_MAX_PAGES_PER_SOURCE = int(env("RESEARCH_MAX_PAGES_PER_SOURCE", "300"))
+RESEARCH_SEARCH_RESULTS_PER_QUERY = int(env("RESEARCH_SEARCH_RESULTS_PER_QUERY", "10"))
+RESEARCH_SEARCH_AGAIN_AFTER_DAYS = int(env("RESEARCH_SEARCH_AGAIN_AFTER_DAYS", "14"))
+RESEARCH_MAX_SEARCH_ATTEMPTS = int(env("RESEARCH_MAX_SEARCH_ATTEMPTS", "4"))
+RESEARCH_TARGETS_PER_CYCLE = int(env("RESEARCH_TARGETS_PER_CYCLE", "20"))
+RESEARCH_AUTORUN = env_bool("RESEARCH_AUTORUN", False)  # hourly autonomous cycle via Celery beat
+RESEARCH_AI_REVIEW = env_bool("RESEARCH_AI_REVIEW", False)  # advisory AI answer check (costs AI credits)
+RESEARCH_USE_PLAYWRIGHT = env_bool("RESEARCH_USE_PLAYWRIGHT", False)
+# Search providers: every one with a key is used. Search-engine result pages are never scraped.
+BRAVE_SEARCH_API_KEY = (env("BRAVE_SEARCH_API_KEY") or "").strip() or None
+GOOGLE_CSE_API_KEY = (env("GOOGLE_CSE_API_KEY") or "").strip() or None
+GOOGLE_CSE_CX = (env("GOOGLE_CSE_CX") or "").strip() or None
+SERPAPI_API_KEY = (env("SERPAPI_API_KEY") or "").strip() or None
+FIRECRAWL_API_KEY = (env("FIRECRAWL_API_KEY") or "").strip() or None
 
 # --------------------------------------------------------------------------
 # Opt in to the Django 6 default: URL form fields assume https:// when no scheme is typed.

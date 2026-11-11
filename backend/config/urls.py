@@ -32,6 +32,7 @@ api = [
     path("", include("apps.materials.urls")),
     path("", include("apps.notifications.urls")),
     path("", include("apps.analytics.urls")),
+    path("", include("apps.research.urls")),
 ]
 
 urlpatterns = [

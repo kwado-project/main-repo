@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import {
   Activity, ArrowLeft, Bot, BookMarked, Coins, CreditCard, FileQuestion, FileText, Gift, GraduationCap, Layers,
-  LayoutDashboard, Megaphone, Menu, Receipt, ScrollText, Settings, Users,
+  LayoutDashboard, Megaphone, Menu, Microscope, Receipt, ScrollText, Settings, Users,
 } from "lucide-react";
 import { Logo } from "@/components/ui/logo";
 import { Badge, Skeleton } from "@/components/ui/primitives";
@@ -16,6 +16,7 @@ const ADMIN_NAV = [
   { group: "Overview", items: [{ href: "/admin", label: "Analytics", icon: LayoutDashboard, staff: true }] },
   { group: "Content", items: [
     { href: "/admin/questions", label: "Question bank", icon: FileQuestion, staff: true },
+    { href: "/admin/research", label: "Past-question research", icon: Microscope, staff: true },
     { href: "/admin/examinations", label: "Examinations", icon: GraduationCap, staff: true },
     { href: "/admin/exam-subjects", label: "Exam rules", icon: Layers, staff: true },
     { href: "/admin/subjects", label: "Subjects", icon: BookMarked, staff: true },
