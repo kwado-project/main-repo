@@ -149,6 +149,13 @@ class QuestionViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets
               .prefetch_related("options", "answers").order_by("year", "subject__name", "question_number"))
         if self.request.query_params.get("include_duplicates") != "1":
             qs = qs.filter(duplicate_of__isnull=True)
+        if self.request.query_params.get("awaiting") == "1":
+            # The human work queue: flagged questions first, then ones that passed automatic checks.
+            from django.db.models import Case, IntegerField, Value, When
+            V = PastQuestion.Verification
+            qs = (qs.filter(verification_status__in=[V.NEEDS_REVIEW, V.AUTO_CHECKED, V.UNVERIFIED])
+                  .annotate(_p=Case(When(verification_status=V.NEEDS_REVIEW, then=Value(0)), default=Value(1), output_field=IntegerField()))
+                  .order_by("_p", "year", "subject__name", "question_number"))
         return qs
 
     def retrieve(self, request, pk=None):
