@@ -28,15 +28,8 @@ def get_or_create_source(url: str, via: str, name: str = "") -> Source:
     return src
 
 
-_subject_cache = {}
-
-
 def subject_for(slug: str):
-    if not slug:
-        return None
-    if slug not in _subject_cache:
-        _subject_cache[slug] = Subject.objects.filter(slug=slug).first()
-    return _subject_cache[slug]
+    return Subject.objects.filter(slug=slug).first() if slug else None
 
 
 def record_document(source: Source, url: str, *, title="", snippet="", via="", query="", depth=0) -> SourceDocument | None:

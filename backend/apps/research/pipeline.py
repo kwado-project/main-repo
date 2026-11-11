@@ -82,3 +82,95 @@ def add_seed(url: str, name: str = "") -> Source:
         src.is_seed = True
         src.save(update_fields=["is_seed", "updated_at"])
     return src
+
+
+# --------------------------------------------------------------------- extraction
+def extract_document(doc: SourceDocument, force: bool = False) -> dict:
+    """Fetch one permitted document, parse it and stage its questions. Never runs twice for the same content."""
+    import hashlib
+
+    from apps.core.services import storage
+
+    from .extraction import html as html_ex
+    from .extraction import pdf as pdf_ex
+    from .extraction.parser import parse_text
+    from .extraction.structure import save_parsed
+
+    key = f"extract:{doc.pk}" + (f":force:{timezone.now():%Y%m%d%H%M}" if force else "")
+    with jobs.run(K.EXTRACT, key, document=doc, source=doc.source) as job:
+        if job is None:
+            return {"skipped": "already extracted"}
+        source = doc.source
+        if not source.may_extract:
+            doc.status, doc.status_reason = SourceDocument.Status.BLOCKED, f"source is {source.permission_status}"
+            doc.save(update_fields=["status", "status_reason", "updated_at"])
+            job["status"] = ExtractionJob.Status.SKIPPED
+            job["result"] = {"blocked": doc.status_reason}
+            return job["result"]
+        doc.attempts += 1
+        try:
+            res = fetch.fetch(source, doc.url, purpose="extraction")
+        except fetch.FetchBlocked as e:
+            doc.status, doc.status_reason = SourceDocument.Status.BLOCKED, str(e)[:255]
+            doc.save(update_fields=["status", "status_reason", "attempts", "updated_at"])
+            job["status"] = ExtractionJob.Status.SKIPPED
+            job["result"] = {"blocked": str(e)}
+            return job["result"]
+        doc.http_status, doc.content_type, doc.fetch_backend = res.status, res.content_type[:120], res.backend
+        doc.fetched_at = timezone.now()
+        if res.status != 200 or not res.content:
+            doc.status, doc.status_reason = SourceDocument.Status.FAILED, f"HTTP {res.status}"
+            doc.save()
+            raise RuntimeError(f"HTTP {res.status} for {doc.url}")
+        sha = hashlib.sha256(res.content).hexdigest()
+        doc.content_hash = sha
+        twin = SourceDocument.objects.filter(content_hash=sha, status=SourceDocument.Status.EXTRACTED).exclude(pk=doc.pk).first()
+        if twin:
+            doc.status, doc.status_reason = SourceDocument.Status.SKIPPED, f"identical content to document {twin.pk}"
+            doc.save()
+            job["result"] = {"duplicate_of_document": twin.pk}
+            return job["result"]
+        ext = "pdf" if res.is_pdf else "html"
+        doc.kind = SourceDocument.Kind.PDF if res.is_pdf else SourceDocument.Kind.HTML
+        doc.storage_key = f"research/raw/{source.domain}/{sha}.{ext}"
+        storage.put_object(doc.storage_key, res.content, "application/pdf" if res.is_pdf else "text/html")
+        warnings = []
+        if res.is_pdf:
+            pdf = pdf_ex.pdf_to_text(res.content)
+            text, method, title, warnings = pdf.text, pdf.method, doc.title, pdf.warnings
+        else:
+            text, title = html_ex.html_to_text(res.text, res.url)
+            method = "html"
+        paper = parse_text(text)
+        doc.title = doc.title or (title or "")[:500]
+        result = save_parsed(doc, paper, method, header_text=title or "")
+        result["warnings"] = warnings + result["warnings"]
+        if res.is_pdf and pdf.images:
+            result["images_stored"] = _store_pdf_diagrams(doc, pdf.images, sha)
+        doc.status = SourceDocument.Status.EXTRACTED if paper.questions else SourceDocument.Status.NO_QUESTIONS
+        doc.status_reason = "" if paper.questions else "no numbered questions with options found"
+        doc.save()
+        job["result"] = {**result, "method": method, "questions_parsed": len(paper.questions)}
+        return job["result"]
+
+
+def _store_pdf_diagrams(doc: SourceDocument, images, sha: str) -> int:
+    """Attach images from a PDF page to that page's questions that mention a diagram."""
+    from apps.core.services import storage
+
+    from .models import PastQuestion
+
+    by_page = {}
+    for page, data, ext in images:
+        by_page.setdefault(page, []).append((data, ext))
+    stored = 0
+    for q in PastQuestion.objects.filter(document=doc, has_diagram=True, page_number__in=list(by_page)):
+        refs = list(q.image_refs)
+        for i, (data, ext) in enumerate(by_page[q.page_number][:4]):
+            key = f"research/img/{sha[:16]}-p{q.page_number}-{i}.{ext}"
+            if key not in refs:
+                storage.put_object(key, data, f"image/{'jpeg' if ext in ('jpg', 'jpeg') else ext}")
+                refs.append(key)
+                stored += 1
+        PastQuestion.objects.filter(pk=q.pk).update(image_refs=refs)
+    return stored
