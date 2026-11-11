@@ -174,3 +174,82 @@ def _store_pdf_diagrams(doc: SourceDocument, images, sha: str) -> int:
                 stored += 1
         PastQuestion.objects.filter(pk=q.pk).update(image_refs=refs)
     return stored
+
+
+# --------------------------------------------------------------------- verification
+def verify_question(q, force: bool = False) -> dict:
+    """Run automatic checks, de-duplication and cross-source comparison for one question."""
+    from django.conf import settings as dj
+
+    from .models import PastAnswer, PastQuestion, VerificationRecord
+    from .quality import checks, dedupe
+
+    key = f"verify:{q.pk}:v{checks.CHECKS_VERSION}" + (f":force:{timezone.now():%Y%m%d%H%M%S%f}" if force else "")
+    with jobs.run(K.VERIFY, key, document=q.document, source=q.source) as job:
+        if job is None:
+            return {"skipped": "already verified with these checks"}
+        V = PastQuestion.Verification
+        results = checks.run_checks(q)
+
+        dup = q.duplicate_of or dedupe.find_duplicate(q)
+        if dup and not q.duplicate_of_id:
+            PastQuestion.objects.filter(pk=q.pk).update(duplicate_of=dup)
+            q.duplicate_of = dup
+        canonical = q.duplicate_of or q
+        if q.duplicate_of_id:
+            results.append(("duplicate", "info", {"duplicate_of": dup.pk, "same_source": dup.source_id == q.source_id}))
+        xs = dedupe.cross_source(canonical)
+        if xs["conflict"]:
+            results.append(("cross_source", "fail", {**xs, "reason": "independent sources give different answers"}))
+        elif xs["agree"]:
+            results.append(("cross_source", "pass", xs))
+
+        if dj.RESEARCH_AI_REVIEW and q.rights_status == PastQuestion.Rights.CLEARED and not q.duplicate_of_id:
+            results.append(_ai_check(q))
+
+        VerificationRecord.objects.bulk_create([
+            VerificationRecord(question=q, check_name=name, result=res, details=details,
+                               actor=VerificationRecord.Actor.AI if name == "ai_answer_check" else VerificationRecord.Actor.SYSTEM)
+            for name, res, details in results])
+
+        new_status = q.verification_status
+        if q.verification_status not in (V.VERIFIED, V.REJECTED):  # never override a human decision
+            bad = [r for r in results if r[1] in ("warn", "fail")]
+            new_status = V.NEEDS_REVIEW if bad else V.AUTO_CHECKED
+        conf = checks.confidence(q.extraction_method, results, 1 if xs["agree"] else 0)
+        PastQuestion.objects.filter(pk=q.pk).update(verification_status=new_status, extraction_confidence=conf)
+        job["result"] = {"status": new_status, "confidence": conf,
+                         "issues": [f"{n}: {d.get('reason', r)}" for n, r, d in results if r in ("warn", "fail")]}
+        return job["result"]
+
+
+def _ai_check(q) -> tuple:
+    from .models import PastAnswer
+    from .quality import ai_review
+
+    try:
+        r = ai_review.review(q)
+    except Exception as e:  # noqa: BLE001
+        return ("ai_answer_check", "info", {"error": str(e)[:200]})
+    if r["answer"]:
+        PastAnswer.objects.create(question=q, label=r["answer"], origin=PastAnswer.Origin.AI,
+                                  confidence=r["confidence"], note=f"advisory ({r['model']})")
+    source = next((a.label for a in q.answers.all() if a.origin == "source"), None)
+    if r["is_mock"]:
+        return ("ai_answer_check", "info", {**r, "reason": "AI provider not configured (dev mock)"})
+    if source and r["answer"] and r["answer"] != source:
+        return ("ai_answer_check", "warn", {**r, "source_answer": source, "reason": "AI disagrees with the source answer key"})
+    if r["issues"]:
+        return ("ai_answer_check", "warn", {**r, "reason": "; ".join(r["issues"])[:200]})
+    return ("ai_answer_check", "pass", r)
+
+
+def verify_pending(limit: int = 500) -> dict:
+    from .models import PastQuestion
+
+    done = 0
+    for q in (PastQuestion.objects.filter(verification_status=PastQuestion.Verification.UNVERIFIED)
+              .select_related("document", "source", "subject").prefetch_related("options", "answers")[:limit]):
+        verify_question(q)
+        done += 1
+    return {"verified": done}
