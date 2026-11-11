@@ -253,3 +253,82 @@ def verify_pending(limit: int = 500) -> dict:
         verify_question(q)
         done += 1
     return {"verified": done}
+
+
+# --------------------------------------------------------------------- autonomous cycle
+def run_cycle(exam_code: str = "jamb", *, targets: int | None = None, extract_limit: int = 50, source_limit: int = 25) -> dict:
+    """One pass of the whole pipeline. Every step is idempotent, so cycles can be interrupted and re-run.
+
+    1 resume interrupted jobs · 2 research matrix · 3 search the biggest gaps · 4 compliance for new
+    sources · 5 crawl seed and permitted sites · 6 extract permitted documents · 7 verify · 8 coverage.
+    """
+    from .models import PastQuestion
+
+    summary = {"started_at": timezone.now().isoformat(), "errors": []}
+
+    def step(name, fn):
+        try:
+            summary[name] = fn()
+        except Exception as e:  # noqa: BLE001 — one failing step must not stop the cycle
+            logger.exception("research cycle step %s failed", name)
+            summary["errors"].append(f"{name}: {type(e).__name__}: {str(e)[:200]}")
+
+    step("resumed_jobs", jobs.resume_stale)
+    step("matrix", lambda: matrix.ensure_matrix(exam_code))
+
+    def discover():
+        out = {"targets": 0, "documents_recorded": 0}
+        for t in matrix.targets_needing_search(exam_code, targets or settings.RESEARCH_TARGETS_PER_CYCLE):
+            r = discover_target(t)
+            out["targets"] += 1
+            out["documents_recorded"] += r.get("recorded", 0)
+            if r.get("note"):
+                out["note"] = r["note"]
+        return out
+    step("discovery", discover)
+
+    def compliance_new():
+        n = 0
+        for s in Source.objects.filter(is_active=True, robots_checked_at__isnull=True)[:source_limit]:
+            check_source(s)
+            n += 1
+        return {"sources_checked": n}
+    step("compliance", compliance_new)
+
+    def crawl():
+        out = {"sources": 0, "documents_recorded": 0}
+        for s in Source.objects.filter(is_active=True).filter(
+                models_q(is_seed=True) | models_q(permission_status__in=[Source.Permission.PERMITTED, Source.Permission.OPEN_LICENSE]))[:source_limit]:
+            r = crawl_source(s)
+            out["sources"] += 1
+            out["documents_recorded"] += r.get("documents_recorded", 0)
+        return out
+    step("crawl", crawl)
+
+    def extract():
+        out = {"documents": 0, "questions": 0, "blocked": 0}
+        docs = (SourceDocument.objects.filter(status=SourceDocument.Status.DISCOVERED, source__is_active=True,
+                                              source__permission_status__in=[Source.Permission.PERMITTED, Source.Permission.OPEN_LICENSE])
+                .exclude(examination_guess__in=["waec", "neco", "gce", "nabteb", "post-utme"])
+                .select_related("source").order_by("-classification_confidence")[:extract_limit])
+        for d in docs:
+            try:
+                r = extract_document(d)
+            except Exception as e:  # noqa: BLE001
+                summary["errors"].append(f"extract {d.url}: {str(e)[:150]}")
+                continue
+            out["documents"] += 1
+            out["questions"] += r.get("created", 0)
+            out["blocked"] += 1 if "blocked" in r else 0
+        return out
+    step("extraction", extract)
+    step("verification", verify_pending)
+    step("coverage", lambda: (matrix.refresh_all(exam_code), matrix.status_counts(exam_code))[1])
+    summary["questions_total"] = PastQuestion.objects.filter(duplicate_of__isnull=True).count()
+    summary["finished_at"] = timezone.now().isoformat()
+    return summary
+
+
+def models_q(**kw):
+    from django.db.models import Q
+    return Q(**kw)

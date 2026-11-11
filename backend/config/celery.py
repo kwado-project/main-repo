@@ -13,4 +13,7 @@ app.conf.beat_schedule = {
     "streak-reminders": {"task": "apps.notifications.tasks.send_streak_reminders", "schedule": crontab(hour=18, minute=7)},
     "expire-stale-payments": {"task": "apps.payments.tasks.expire_stale_payments", "schedule": crontab(minute="*/30")},
     "purge-expired-otps": {"task": "apps.accounts.tasks.purge_expired_otps", "schedule": crontab(hour=3, minute=13)},
+    # Autonomous past-question research. Does nothing unless RESEARCH_AUTORUN=1.
+    "research-cycle": {"task": "apps.research.tasks.research_cycle", "schedule": crontab(minute=23),
+                       "kwargs": {"scheduled": True}},
 }
