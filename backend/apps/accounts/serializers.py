@@ -23,7 +23,7 @@ class ProfileSerializer(serializers.ModelSerializer):
         fields = (
             "display_name", "avatar_color", "state", "school", "study_goal", "daily_goal_minutes",
             "leaderboard_visibility", "notify_email_reminders", "notify_streak", "notify_product",
-            "total_xp", "level", "onboarding_completed", "active_student_exam",
+            "total_xp", "level", "onboarding_completed", "active_student_exam", "tour_completed",
         )
         read_only_fields = ("total_xp", "level", "onboarding_completed")
 

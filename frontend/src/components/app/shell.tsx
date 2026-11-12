@@ -6,8 +6,9 @@ import useSWR from "swr";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   Award, Bell, BookOpen, Bot, ChevronDown, CirclePlus, FileUp, Gift, GraduationCap, Home, LayoutDashboard, LogOut,
-  Map, Menu, Settings, Shield, Swords, Trophy, Wallet,
+  Map, Menu, Settings, Shield, Sparkles, Swords, Trophy, Wallet,
 } from "lucide-react";
+import { ProductTour, TOUR_EVENT, startTour } from "@/components/app/tour";
 import { Logo } from "@/components/ui/logo";
 import { Avatar, Skeleton } from "@/components/ui/primitives";
 import { CreditCoin, Flame, XPGem } from "@/components/ui/fun";
@@ -30,6 +31,9 @@ const NAV = [
 ];
 const BOTTOM = [NAV[0], NAV[1], NAV[2], NAV[3], NAV[4]];
 
+/** data-tour key for a nav link, e.g. "/app/learn" → "learn" (used by the first-visit tour). */
+const tourKey = (href: string) => href.split("/")[2] || "home";
+
 function isActive(path: string, href: string) {
   return href === "/app" ? path === "/app" : path.startsWith(href);
 }
@@ -42,6 +46,11 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const immersive = /^\/app\/(quiz|lesson)\//.test(path);
 
   useEffect(() => setDrawer(false), [path]);
+  useEffect(() => {
+    const close = () => setDrawer(false);
+    window.addEventListener(TOUR_EVENT, close);
+    return () => window.removeEventListener(TOUR_EVENT, close);
+  }, []);
   useEffect(() => {
     // Quizzes and lessons stay reachable mid-onboarding (the diagnostic runs inside onboarding).
     if (me && !immersive && me.role === "student" && !me.profile.onboarding_completed && me.student_exams.every((x) => x.onboarding_step !== "done")) {
@@ -82,7 +91,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             const active = isActive(path, n.href);
             return (
               <li key={n.href}>
-                <Link href={n.href} className="relative flex flex-col items-center gap-0.5 pb-1 pt-2.5 text-[11px] font-semibold" aria-current={active ? "page" : undefined}>
+                <Link href={n.href} data-tour={tourKey(n.href)} className="relative flex flex-col items-center gap-0.5 pb-1 pt-2.5 text-[11px] font-semibold" aria-current={active ? "page" : undefined}>
                   {active && <motion.span layoutId="bottom-pill" className="absolute top-1 h-8 w-14 rounded-full bg-brand-50" transition={{ type: "spring", stiffness: 500, damping: 35 }} />}
                   <n.icon className={cn("relative h-[22px] w-[22px]", active ? "text-brand-700" : "text-slate-400")} strokeWidth={active ? 2.4 : 2} />
                   <span className={cn("relative", active ? "text-brand-800" : "text-slate-500")}>{n.label}</span>
@@ -97,6 +106,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <div className="flex h-16 items-center px-5"><Logo href="/app" /></div>
         <SidebarNav path={path} role={me.role} />
       </Drawer>
+      <ProductTour />
     </div>
   );
 }
@@ -111,7 +121,7 @@ function SidebarNav({ path, role }: { path: string; role: string }) {
           const active = isActive(path, n.href);
           return (
             <li key={n.href}>
-              <Link href={n.href} aria-current={active ? "page" : undefined}
+              <Link href={n.href} data-tour={tourKey(n.href)} aria-current={active ? "page" : undefined}
                 className={cn("relative flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-[15px] font-semibold transition", active ? "text-brand-800" : "text-slate-600 hover:bg-slate-50 hover:text-ink")}>
                 {active && <motion.span layoutId="side-pill" className="absolute inset-0 rounded-xl bg-brand-50 ring-1 ring-brand-100" transition={{ type: "spring", stiffness: 500, damping: 38 }} />}
                 <n.icon className={cn("relative h-5 w-5", active && "text-brand-600")} />
@@ -126,6 +136,7 @@ function SidebarNav({ path, role }: { path: string; role: string }) {
           <Link href="/admin" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-[15px] font-semibold text-slate-600 hover:bg-slate-50"><Shield className="h-5 w-5" /> Admin console</Link>
         )}
         <Link href="/app/profile" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-[15px] font-semibold text-slate-600 hover:bg-slate-50"><Settings className="h-5 w-5" /> Settings</Link>
+        <button onClick={startTour} className="flex w-full items-center gap-3 rounded-xl px-3.5 py-2.5 text-[15px] font-semibold text-slate-600 hover:bg-slate-50"><Sparkles className="h-5 w-5" /> Take the tour</button>
         <button onClick={async () => { await signOut(); router.replace("/"); }} className="flex w-full items-center gap-3 rounded-xl px-3.5 py-2.5 text-[15px] font-semibold text-slate-600 hover:bg-red-50 hover:text-red-700"><LogOut className="h-5 w-5" /> Log out</button>
       </div>
     </div>
@@ -147,10 +158,10 @@ function TopBar({ onMenu }: { onMenu: () => void }) {
           <Link href="/app/achievements" className="hidden items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-sm font-bold shadow-card ring-1 ring-line sm:flex" aria-label="Streak">
             <Flame size={20} active={!!g?.streak?.active_today} />{g?.streak?.current ?? 0}
           </Link>
-          <Link href="/app/achievements" className="flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-sm font-bold shadow-card ring-1 ring-line" aria-label="XP" id="xp-counter">
+          <Link href="/app/achievements" className="flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-sm font-bold shadow-card ring-1 ring-line" aria-label="XP" id="xp-counter" data-tour="xp">
             <XPGem size={18} /><span className="tabular-nums">{(g?.xp ?? me.profile.total_xp).toLocaleString()}</span>
           </Link>
-          <Link href="/app/wallet" className="flex items-center gap-1.5 rounded-full bg-ink px-3 py-1.5 text-sm font-bold text-white shadow-card" aria-label={`Wallet: ${balance} credits`}>
+          <Link href="/app/wallet" data-tour="credits" className="flex items-center gap-1.5 rounded-full bg-ink px-3 py-1.5 text-sm font-bold text-white shadow-card" aria-label={`Wallet: ${balance} credits`}>
             <CreditCoin size={18} /><span className="tabular-nums">{balance.toLocaleString()}</span>
           </Link>
           <Notifications />
@@ -175,7 +186,7 @@ function ExamSwitcher() {
   const active = exams.find((x) => x.id === me.profile.active_student_exam) ?? exams[0];
   return (
     <div className="relative" ref={ref}>
-      <button onClick={() => setOpen(!open)} className="flex items-center gap-2 rounded-xl px-2 py-1.5 hover:bg-white" aria-expanded={open} aria-haspopup="menu">
+      <button onClick={() => setOpen(!open)} data-tour="exam" className="flex items-center gap-2 rounded-xl px-2 py-1.5 hover:bg-white" aria-expanded={open} aria-haspopup="menu">
         <span className="flex h-8 w-8 items-center justify-center rounded-lg text-white" style={{ background: active?.examination.color ?? "#16A34A" }}><GraduationCap className="h-4 w-4" /></span>
         <span className="hidden text-left sm:block">
           <span className="block text-sm font-bold leading-tight">{active?.examination.name ?? "Choose exam"}</span>
@@ -256,6 +267,7 @@ function ProfileMenu() {
           <motion.div initial={{ opacity: 0, y: -6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -6 }} className="absolute right-0 top-12 z-50 w-60 rounded-2xl bg-white p-2 shadow-lift ring-1 ring-line">
             <div className="px-3 py-2"><p className="truncate font-bold">{name}</p><p className="truncate text-xs text-muted">{me.email}</p></div>
             <Link href="/app/profile" className="flex items-center gap-2.5 rounded-xl px-3 py-2 text-sm font-semibold hover:bg-slate-50"><Settings className="h-4 w-4" /> Profile & settings</Link>
+            <button onClick={() => { setOpen(false); startTour(); }} className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 text-sm font-semibold hover:bg-slate-50"><Sparkles className="h-4 w-4" /> Take the tour</button>
             {me.role !== "student" && <Link href="/admin" className="flex items-center gap-2.5 rounded-xl px-3 py-2 text-sm font-semibold hover:bg-slate-50"><LayoutDashboard className="h-4 w-4" /> Admin console</Link>}
             <button onClick={async () => { await signOut(); router.replace("/"); }} className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 text-sm font-semibold text-red-600 hover:bg-red-50"><LogOut className="h-4 w-4" /> Log out</button>
           </motion.div>

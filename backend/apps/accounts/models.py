@@ -112,6 +112,7 @@ class StudentProfile(TimeStampedModel):
         "examinations.StudentExam", null=True, blank=True, on_delete=models.SET_NULL, related_name="+"
     )
     onboarding_completed = models.BooleanField(default=False)
+    tour_completed = models.BooleanField(default=False, help_text="Finished or skipped the first-visit app tour")
 
     def public_name(self):
         if self.leaderboard_visibility == self.LeaderboardVisibility.ANONYMOUS:

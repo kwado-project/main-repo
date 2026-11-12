@@ -13,7 +13,11 @@ export default function ReferralsPage() {
   const [copied, setCopied] = useState<"code" | "link" | null>(null);
   const copy = (text: string, what: "code" | "link") => { navigator.clipboard.writeText(text); setCopied(what); setTimeout(() => setCopied(null), 1600); };
   if (!data) return <div className="space-y-4"><Skeleton className="h-56" /><Skeleton className="h-32" /></div>;
-  const wa = `https://wa.me/?text=${encodeURIComponent(data.share_text)}`;
+  // Use the domain the student is on (e.g. www.kwado.com.ng), not the server's configured FRONTEND_URL.
+  const origin = typeof window !== "undefined" ? window.location.origin : "";
+  const link = origin ? `${origin}/register?ref=${encodeURIComponent(data.code)}` : data.link;
+  const shareText = String(data.share_text).split(data.link).join(link);
+  const wa = `https://wa.me/?text=${encodeURIComponent(shareText)}`;
   return (
     <div className="space-y-6">
       <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-600 to-brand-900 p-6 text-white sm:p-8">
@@ -31,13 +35,13 @@ export default function ReferralsPage() {
             </div>
           </div>
           <div className="mt-3 grid gap-2 sm:grid-cols-2">
-            <Button variant="secondary" className="border-0" onClick={() => copy(data.link, "link")}>{copied === "link" ? <><Check className="h-4 w-4" /> Link copied</> : <><Copy className="h-4 w-4" /> Copy referral link</>}</Button>
+            <Button variant="secondary" className="border-0" onClick={() => copy(link, "link")}>{copied === "link" ? <><Check className="h-4 w-4" /> Link copied</> : <><Copy className="h-4 w-4" /> Copy referral link</>}</Button>
             <a href={wa} target="_blank" rel="noopener noreferrer" className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 font-semibold text-white shadow-press hover:brightness-95">
               <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current" aria-hidden><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.9-2.8-1.2-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z" /></svg>
               Share on WhatsApp
             </a>
           </div>
-          {"share" in navigator && <button onClick={() => navigator.share({ text: data.share_text, url: data.link }).catch(() => {})} className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-white/80 hover:text-white"><Share2 className="h-4 w-4" /> More sharing options</button>}
+          {"share" in navigator && <button onClick={() => navigator.share({ text: shareText }).catch(() => {})} className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-white/80 hover:text-white"><Share2 className="h-4 w-4" /> More sharing options</button>}
         </div>
       </section>
 
