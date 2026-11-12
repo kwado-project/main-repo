@@ -12,7 +12,7 @@ export type Profile = {
   display_name: string; avatar_color: string; state: string; school: string; study_goal: string;
   daily_goal_minutes: number; leaderboard_visibility: "public" | "anonymous" | "hidden";
   notify_email_reminders: boolean; notify_streak: boolean; notify_product: boolean; total_xp: number; level: number;
-  onboarding_completed: boolean; active_student_exam: number | null;
+  onboarding_completed: boolean; active_student_exam: number | null; tour_completed: boolean;
 };
 export type Me = {
   id: number; email: string; full_name: string; role: "student" | "content_manager" | "admin"; referral_code: string;
