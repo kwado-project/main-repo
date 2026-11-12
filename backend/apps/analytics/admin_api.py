@@ -122,7 +122,9 @@ class QuestionVS(crud(Question, IsContentManager, search=("text",), ser=Question
         rows = request.data.get("rows")
         if not isinstance(rows, list) or len(rows) > 1000:
             return Response({"detail": "Send up to 1,000 rows as a JSON list."}, status=400)
-        return Response(import_rows(rows, request.user))
+        res = import_rows(rows, request.user)
+        res.pop("created_ids", None), res.pop("matched_ids", None)
+        return Response(res)
 
     @action(detail=False)
     def stats(self, request):

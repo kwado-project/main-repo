@@ -76,13 +76,15 @@ def transition(q: Question, target: str, actor, *, correct_option_id=None, notes
 
 def import_rows(rows: list[dict], actor, *, skip_existing: bool = False) -> dict:
     """Import JSON rows. Each row: subject_id (or subject: name), topic_id?, text, options[{label,text}],
-    explanation?, difficulty?, exam_year?, source?, examination_id?, answer? (label, recorded as a
+    topic? (name, matched in the subject or created), explanation?, difficulty?, exam_year?, source?, examination_id?, answer? (label, recorded as a
     *suggestion* only), passage? {key, title?, body, source?} — rows sharing a passage key share one Passage."""
-    from apps.examinations.models import Subject
+    from django.utils.text import slugify
+
+    from apps.examinations.models import Subject, Topic
 
     from .models import Passage
 
-    created, skipped, errors = 0, 0, []
+    created, skipped, errors, created_ids, matched_ids = 0, 0, [], [], []
     passages: dict[str, Passage] = {}
     subjects = {n.lower(): pk for pk, n in Subject.objects.values_list("pk", "name")}
     for i, r in enumerate(rows):
@@ -93,6 +95,13 @@ def import_rows(rows: list[dict], actor, *, skip_existing: bool = False) -> dict
                     subject_id = subjects.get(str(r["subject"]).strip().lower())
                     if not subject_id:
                         raise ValueError(f"Unknown subject {r['subject']!r}")
+                topic_id = r.get("topic_id")
+                if name := str(r.get("topic") or "").strip():
+                    t = Topic.objects.filter(subject_id=subject_id, name__iexact=name).first()
+                    if not t:
+                        t, _ = Topic.objects.get_or_create(subject_id=subject_id, slug=slugify(name)[:140],
+                                                           defaults={"name": name[:120]})
+                    topic_id = t.pk
                 passage = None
                 if p := r.get("passage"):
                     key = p.get("key") or p["body"][:80]
@@ -101,13 +110,17 @@ def import_rows(rows: list[dict], actor, *, skip_existing: bool = False) -> dict
                                          or Passage.objects.create(title=p.get("title", "")[:200], body=p["body"],
                                                                    source=p.get("source", "")[:200]))
                     passage = passages[key]
-                if skip_existing and Question.objects.filter(subject_id=subject_id, text=r["text"], passage=passage).exists():
+                if skip_existing and (existing := Question.objects.filter(
+                        subject_id=subject_id, text=r["text"], passage=passage).first()):
+                    if topic_id and not existing.topic_id:  # earlier imports had no topic: fill it in
+                        Question.objects.filter(pk=existing.pk).update(topic_id=topic_id)
                     skipped += 1
+                    matched_ids.append((existing.pk, r.get("answer")))
                     continue
                 if not 2 <= len(r["options"]) <= 6 or len({o["label"] for o in r["options"]}) != len(r["options"]):
                     raise ValueError("Each question needs 2–6 options with distinct labels.")
                 q = Question.objects.create(
-                    subject_id=subject_id, topic_id=r.get("topic_id"), examination_id=r.get("examination_id"),
+                    subject_id=subject_id, topic_id=topic_id, examination_id=r.get("examination_id"),
                     passage=passage, text=r["text"], explanation=r.get("explanation", ""),
                     difficulty=int(r.get("difficulty", 2)), exam_year=r.get("exam_year"),
                     source=r.get("source", "")[:200], is_official_past_question=bool(r.get("is_official_past_question")),
@@ -117,6 +130,8 @@ def import_rows(rows: list[dict], actor, *, skip_existing: bool = False) -> dict
                 for j, o in enumerate(r["options"]):
                     QuestionOption.objects.create(question=q, label=o["label"][:2], text=o["text"], order=j)
                 created += 1
+                created_ids.append((q.pk, r.get("answer")))
         except Exception as e:  # noqa: BLE001
             errors.append({"row": i, "error": str(e)[:200]})
-    return {"created": created, "skipped": skipped, "errors": errors}
+    return {"created": created, "skipped": skipped, "errors": errors, "created_ids": created_ids,
+            "matched_ids": matched_ids}

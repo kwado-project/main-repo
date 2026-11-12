@@ -2,7 +2,7 @@
  {
   "subject": "English Language",
   "subject_id": 23,
-  "topic_id": null,
+  "topic": "Concord",
   "text": "Choose the option that best completes the sentence: Neither the principal nor the teachers ___ present at the meeting.",
   "options": [
    {
@@ -30,7 +30,7 @@
  {
   "subject": "English Language",
   "subject_id": 23,
-  "topic_id": null,
+  "topic": "Concord",
   "text": "Choose the option that best completes the sentence: The furniture in the new hall ___ very expensive.",
   "options": [
    {
@@ -58,7 +58,7 @@
  {
   "subject": "English Language",
   "subject_id": 23,
-  "topic_id": null,
+  "topic": "Synonyms",
   "text": "Choose the word nearest in meaning to the word in italics: The witness gave a *lucid* account of the accident.",
   "options": [
    {
@@ -86,7 +86,7 @@
  {
   "subject": "English Language",
   "subject_id": 23,
-  "topic_id": null,
+  "topic": "Antonyms",
   "text": "Choose the word opposite in meaning to the word in italics: Tunde is known for his *generosity*.",
   "options": [
    {
@@ -114,7 +114,7 @@
  {
   "subject": "English Language",
   "subject_id": 23,
-  "topic_id": null,
+  "topic": "Spelling",
   "text": "Choose the correctly spelt word.",
   "options": [
    {
@@ -142,7 +142,7 @@
  {
   "subject": "English Language",
   "subject_id": 23,
-  "topic_id": null,
+  "topic": "Prepositions",
   "text": "Choose the option that best completes the sentence: The students were warned to desist ___ noise-making.",
   "options": [
    {
@@ -170,7 +170,7 @@
  {
   "subject": "English Language",
   "subject_id": 23,
-  "topic_id": null,
+  "topic": "Idioms",
   "text": "Choose the option that best explains the idiom: Chika *let the cat out of the bag* at the party.",
   "options": [
    {
@@ -198,7 +198,7 @@
  {
   "subject": "English Language",
   "subject_id": 23,
-  "topic_id": null,
+  "topic": "Sentence Structure",
   "text": "Choose the option that best completes the sentence: Hardly had we arrived ___ the rain started.",
   "options": [
    {
@@ -226,7 +226,7 @@
  {
   "subject": "English Language",
   "subject_id": 23,
-  "topic_id": null,
+  "topic": "Oral English: Vowels",
   "text": "Choose the option with a different vowel sound from the others.",
   "options": [
    {
@@ -254,24 +254,24 @@
  {
   "subject": "English Language",
   "subject_id": 23,
-  "topic_id": null,
-  "text": "Choose the option that has the correct stress (capital letters show the stressed syllable): photographer",
+  "topic": "Oral English: Stress",
+  "text": "Which syllable carries the primary stress in the word 'photographer'?",
   "options": [
    {
     "label": "A",
-    "text": "PHOtographer"
+    "text": "the first syllable (pho-)"
    },
    {
     "label": "B",
-    "text": "phoTOgrapher"
+    "text": "the second syllable (-to-)"
    },
    {
     "label": "C",
-    "text": "photoGRApher"
+    "text": "the third syllable (-gra-)"
    },
    {
     "label": "D",
-    "text": "photograPHER"
+    "text": "the fourth syllable (-pher)"
    }
   ],
   "explanation": "In 'photographer' the stress falls on the second syllable: pho-TO-gra-pher.",
@@ -282,7 +282,7 @@
  {
   "subject": "Mathematics",
   "subject_id": 24,
-  "topic_id": null,
+  "topic": "Logarithms",
   "text": "Evaluate $\\log_{10} 8 + \\log_{10} 125$.",
   "options": [
    {
@@ -310,7 +310,7 @@
  {
   "subject": "Mathematics",
   "subject_id": 24,
-  "topic_id": null,
+  "topic": "Linear Equations",
   "text": "Solve for $x$: $2x - 7 = 3x + 5$.",
   "options": [
    {
@@ -338,7 +338,7 @@
  {
   "subject": "Mathematics",
   "subject_id": 24,
-  "topic_id": null,
+  "topic": "Quadratic Equations",
   "text": "Find the roots of $x^2 - 5x + 6 = 0$.",
   "options": [
    {
@@ -366,7 +366,7 @@
  {
   "subject": "Mathematics",
   "subject_id": 24,
-  "topic_id": null,
+  "topic": "Number Bases",
   "text": "Convert $101101_2$ to a number in base ten.",
   "options": [
    {
@@ -394,7 +394,7 @@
  {
   "subject": "Mathematics",
   "subject_id": 24,
-  "topic_id": null,
+  "topic": "Statistics",
   "text": "Find the mean of 4, 7, 9, 12 and 8.",
   "options": [
    {
@@ -422,7 +422,7 @@
  {
   "subject": "Mathematics",
   "subject_id": 24,
-  "topic_id": null,
+  "topic": "Commercial Arithmetic",
   "text": "Find the simple interest on ₦5,000 at 4% per annum for 3 years.",
   "options": [
    {
@@ -450,7 +450,7 @@
  {
   "subject": "Mathematics",
   "subject_id": 24,
-  "topic_id": null,
+  "topic": "Coordinate Geometry",
   "text": "Find the gradient of the line joining $(2, 3)$ and $(6, 11)$.",
   "options": [
    {
@@ -478,7 +478,7 @@
  {
   "subject": "Mathematics",
   "subject_id": 24,
-  "topic_id": null,
+  "topic": "Polygons",
   "text": "Find the sum of the interior angles of a hexagon.",
   "options": [
    {
@@ -506,7 +506,7 @@
  {
   "subject": "Mathematics",
   "subject_id": 24,
-  "topic_id": null,
+  "topic": "Integration",
   "text": "Evaluate $\\int_0^2 3x^2\\,dx$.",
   "options": [
    {
@@ -534,7 +534,7 @@
  {
   "subject": "Mathematics",
   "subject_id": 24,
-  "topic_id": null,
+  "topic": "Differentiation",
   "text": "If $y = 4x^3 - 2x$, find $\\frac{dy}{dx}$.",
   "options": [
    {
@@ -562,7 +562,7 @@
  {
   "subject": "Physics",
   "subject_id": 25,
-  "topic_id": null,
+  "topic": "Work, Energy and Power",
   "text": "What is the SI unit of power?",
   "options": [
    {
@@ -590,7 +590,7 @@
  {
   "subject": "Physics",
   "subject_id": 25,
-  "topic_id": null,
+  "topic": "Motion",
   "text": "A car starts from rest and reaches 20 m/s in 5 s with uniform acceleration. Find its acceleration.",
   "options": [
    {
@@ -618,7 +618,7 @@
  {
   "subject": "Physics",
   "subject_id": 25,
-  "topic_id": null,
+  "topic": "Work, Energy and Power",
   "text": "Find the kinetic energy of a 2 kg body moving at 3 m/s.",
   "options": [
    {
@@ -646,7 +646,7 @@
  {
   "subject": "Physics",
   "subject_id": 25,
-  "topic_id": null,
+  "topic": "Current Electricity",
   "text": "Resistors of 6 Ω and 3 Ω are connected in parallel. Find the effective resistance.",
   "options": [
    {
@@ -674,7 +674,7 @@
  {
   "subject": "Physics",
   "subject_id": 25,
-  "topic_id": null,
+  "topic": "Waves",
   "text": "A wave has a frequency of 50 Hz and a wavelength of 2 m. Find its speed.",
   "options": [
    {
@@ -702,7 +702,7 @@
  {
   "subject": "Physics",
   "subject_id": 25,
-  "topic_id": null,
+  "topic": "Scalars and Vectors",
   "text": "Which of the following is a scalar quantity?",
   "options": [
    {
@@ -730,7 +730,7 @@
  {
   "subject": "Physics",
   "subject_id": 25,
-  "topic_id": null,
+  "topic": "Heat Energy",
   "text": "How much heat is needed to raise the temperature of 2 kg of water by 10 °C? (Specific heat capacity of water = 4200 J kg⁻¹ K⁻¹)",
   "options": [
    {
@@ -758,7 +758,7 @@
  {
   "subject": "Physics",
   "subject_id": 25,
-  "topic_id": null,
+  "topic": "Lenses",
   "text": "An object is placed beyond 2F in front of a converging lens. The image formed is",
   "options": [
    {
@@ -786,7 +786,7 @@
  {
   "subject": "Physics",
   "subject_id": 25,
-  "topic_id": null,
+  "topic": "Radioactivity",
   "text": "A radioactive sample decays from 80 g to 10 g in 15 days. What is its half-life?",
   "options": [
    {
@@ -814,7 +814,7 @@
  {
   "subject": "Physics",
   "subject_id": 25,
-  "topic_id": null,
+  "topic": "Pressure",
   "text": "A force of 200 N acts on an area of 0.5 m². Find the pressure.",
   "options": [
    {
@@ -842,7 +842,7 @@
  {
   "subject": "Chemistry",
   "subject_id": 26,
-  "topic_id": null,
+  "topic": "Mole Concept",
   "text": "How many moles are there in 22 g of carbon(IV) oxide? (C = 12, O = 16)",
   "options": [
    {
@@ -870,7 +870,7 @@
  {
   "subject": "Chemistry",
   "subject_id": 26,
-  "topic_id": null,
+  "topic": "Periodic Table",
   "text": "An element with electronic configuration 1s² 2s² 2p⁶ 3s² 3p¹ belongs to group",
   "options": [
    {
@@ -898,7 +898,7 @@
  {
   "subject": "Chemistry",
   "subject_id": 26,
-  "topic_id": null,
+  "topic": "Acids, Bases and Salts",
   "text": "What is the pH of a neutral solution at 25 °C?",
   "options": [
    {
@@ -926,7 +926,7 @@
  {
   "subject": "Chemistry",
   "subject_id": 26,
-  "topic_id": null,
+  "topic": "Non-metals and their Compounds",
   "text": "Which gas turns lime water milky?",
   "options": [
    {
@@ -954,7 +954,7 @@
  {
   "subject": "Chemistry",
   "subject_id": 26,
-  "topic_id": null,
+  "topic": "Redox Reactions",
   "text": "What is the oxidation number of manganese in KMnO₄?",
   "options": [
    {
@@ -982,7 +982,7 @@
  {
   "subject": "Chemistry",
   "subject_id": 26,
-  "topic_id": null,
+  "topic": "Hydrocarbons",
   "text": "Which of the following is an alkane?",
   "options": [
    {
@@ -1010,7 +1010,7 @@
  {
   "subject": "Chemistry",
   "subject_id": 26,
-  "topic_id": null,
+  "topic": "Separation Techniques",
   "text": "Common salt can be recovered from its solution in water by",
   "options": [
    {
@@ -1038,7 +1038,7 @@
  {
   "subject": "Chemistry",
   "subject_id": 26,
-  "topic_id": null,
+  "topic": "Atomic Structure",
   "text": "Isotopes of an element differ in their number of",
   "options": [
    {
@@ -1066,7 +1066,7 @@
  {
   "subject": "Chemistry",
   "subject_id": 26,
-  "topic_id": null,
+  "topic": "Water",
   "text": "Temporary hardness of water is caused by dissolved",
   "options": [
    {
@@ -1094,7 +1094,7 @@
  {
   "subject": "Chemistry",
   "subject_id": 26,
-  "topic_id": null,
+  "topic": "Mole Concept",
   "text": "The Avogadro constant is approximately",
   "options": [
    {
@@ -1122,7 +1122,7 @@
  {
   "subject": "Biology",
   "subject_id": 27,
-  "topic_id": null,
+  "topic": "Cell Structure",
   "text": "Which organelle is the site of aerobic respiration in a cell?",
   "options": [
    {
@@ -1150,7 +1150,7 @@
  {
   "subject": "Biology",
   "subject_id": 27,
-  "topic_id": null,
+  "topic": "Photosynthesis",
   "text": "In green plants, photosynthesis takes place in the",
   "options": [
    {
@@ -1178,7 +1178,7 @@
  {
   "subject": "Biology",
   "subject_id": 27,
-  "topic_id": null,
+  "topic": "Circulatory System",
   "text": "Which blood vessel carries oxygenated blood from the lungs to the heart?",
   "options": [
    {
@@ -1206,7 +1206,7 @@
  {
   "subject": "Biology",
   "subject_id": 27,
-  "topic_id": null,
+  "topic": "Digestion",
   "text": "The enzyme in human saliva that begins starch digestion is",
   "options": [
    {
@@ -1234,7 +1234,7 @@
  {
   "subject": "Biology",
   "subject_id": 27,
-  "topic_id": null,
+  "topic": "Genetics",
   "text": "Two heterozygous tall plants (Tt × Tt) are crossed. What is the expected ratio of tall to dwarf offspring?",
   "options": [
    {
@@ -1262,7 +1262,7 @@
  {
   "subject": "Biology",
   "subject_id": 27,
-  "topic_id": null,
+  "topic": "Nutrition",
   "text": "An organism that makes its own food from simple inorganic substances is called",
   "options": [
    {
@@ -1290,7 +1290,7 @@
  {
   "subject": "Biology",
   "subject_id": 27,
-  "topic_id": null,
+  "topic": "Diseases and Parasites",
   "text": "Malaria is caused by",
   "options": [
    {
@@ -1318,7 +1318,7 @@
  {
   "subject": "Biology",
   "subject_id": 27,
-  "topic_id": null,
+  "topic": "Transport in Plants",
   "text": "The main function of xylem in plants is to",
   "options": [
    {
@@ -1346,7 +1346,7 @@
  {
   "subject": "Biology",
   "subject_id": 27,
-  "topic_id": null,
+  "topic": "Endocrine System",
   "text": "Insulin is produced by the",
   "options": [
    {
@@ -1374,7 +1374,7 @@
  {
   "subject": "Biology",
   "subject_id": 27,
-  "topic_id": null,
+  "topic": "Characteristics of Living Things",
   "text": "Which of the following is NOT a characteristic of living things?",
   "options": [
    {
@@ -1402,7 +1402,7 @@
  {
   "subject": "Economics",
   "subject_id": 29,
-  "topic_id": null,
+  "topic": "Basic Concepts",
   "text": "Opportunity cost is best described as",
   "options": [
    {
@@ -1430,7 +1430,7 @@
  {
   "subject": "Economics",
   "subject_id": 29,
-  "topic_id": null,
+  "topic": "Demand",
   "text": "Other things being equal, a rise in the price of a normal good leads to",
   "options": [
    {
@@ -1458,7 +1458,7 @@
  {
   "subject": "Economics",
   "subject_id": 29,
-  "topic_id": null,
+  "topic": "Elasticity",
   "text": "If the price of a good rises by 10% and the quantity demanded falls by 20%, the price elasticity of demand is",
   "options": [
    {
@@ -1486,7 +1486,7 @@
  {
   "subject": "Economics",
   "subject_id": 29,
-  "topic_id": null,
+  "topic": "Market Structures",
   "text": "A market with a single seller and no close substitutes is",
   "options": [
    {
@@ -1514,7 +1514,7 @@
  {
   "subject": "Economics",
   "subject_id": 29,
-  "topic_id": null,
+  "topic": "Inflation",
   "text": "Inflation is",
   "options": [
    {
@@ -1542,7 +1542,7 @@
  {
   "subject": "Economics",
   "subject_id": 29,
-  "topic_id": null,
+  "topic": "National Income",
   "text": "Gross National Product (GNP) equals",
   "options": [
    {
@@ -1570,7 +1570,7 @@
  {
   "subject": "Economics",
   "subject_id": 29,
-  "topic_id": null,
+  "topic": "Money and Banking",
   "text": "The Central Bank of Nigeria acts as the lender of last resort to",
   "options": [
    {
@@ -1598,7 +1598,7 @@
  {
   "subject": "Economics",
   "subject_id": 29,
-  "topic_id": null,
+  "topic": "Factors of Production",
   "text": "The reward for land as a factor of production is",
   "options": [
    {
@@ -1626,7 +1626,7 @@
  {
   "subject": "Economics",
   "subject_id": 29,
-  "topic_id": null,
+  "topic": "Theory of Production",
   "text": "The law of diminishing returns states that as more units of a variable factor are added to a fixed factor, eventually",
   "options": [
    {
@@ -1654,7 +1654,7 @@
  {
   "subject": "Economics",
   "subject_id": 29,
-  "topic_id": null,
+  "topic": "Public Finance",
   "text": "Which of the following is a direct tax?",
   "options": [
    {
@@ -1682,7 +1682,7 @@
  {
   "subject": "Government",
   "subject_id": 32,
-  "topic_id": null,
+  "topic": "Separation of Powers",
   "text": "The theory of separation of powers is associated with",
   "options": [
    {
@@ -1710,7 +1710,7 @@
  {
   "subject": "Government",
   "subject_id": 32,
-  "topic_id": null,
+  "topic": "The Legislature",
   "text": "Nigeria's federal legislature is called the",
   "options": [
    {
@@ -1738,7 +1738,7 @@
  {
   "subject": "Government",
   "subject_id": 32,
-  "topic_id": null,
+  "topic": "The Legislature",
   "text": "How many members does the Nigerian Senate have?",
   "options": [
    {
@@ -1766,7 +1766,7 @@
  {
   "subject": "Government",
   "subject_id": 32,
-  "topic_id": null,
+  "topic": "Rule of Law",
   "text": "The rule of law was popularised by",
   "options": [
    {
@@ -1794,7 +1794,7 @@
  {
   "subject": "Government",
   "subject_id": 32,
-  "topic_id": null,
+  "topic": "Systems of Government",
   "text": "In a unitary system of government, power is concentrated in the",
   "options": [
    {
@@ -1822,7 +1822,7 @@
  {
   "subject": "Government",
   "subject_id": 32,
-  "topic_id": null,
+  "topic": "Nigerian Constitutional Development",
   "text": "Nigeria became independent on",
   "options": [
    {
@@ -1850,7 +1850,7 @@
  {
   "subject": "Government",
   "subject_id": 32,
-  "topic_id": null,
+  "topic": "Nigerian Constitutional Development",
   "text": "Nigeria became a republic in",
   "options": [
    {
@@ -1878,7 +1878,7 @@
  {
   "subject": "Government",
   "subject_id": 32,
-  "topic_id": null,
+  "topic": "Elections and Franchise",
   "text": "Franchise means the right to",
   "options": [
    {
@@ -1906,7 +1906,7 @@
  {
   "subject": "Government",
   "subject_id": 32,
-  "topic_id": null,
+  "topic": "The Judiciary",
   "text": "The head of the judiciary in Nigeria is the",
   "options": [
    {
@@ -1934,7 +1934,7 @@
  {
   "subject": "Government",
   "subject_id": 32,
-  "topic_id": null,
+  "topic": "International Organisations",
   "text": "ECOWAS was established in",
   "options": [
    {
@@ -1962,7 +1962,7 @@
  {
   "subject": "Literature in English",
   "subject_id": 33,
-  "topic_id": null,
+  "topic": "Poetry",
   "text": "A poem of fourteen lines is called",
   "options": [
    {
@@ -1990,7 +1990,7 @@
  {
   "subject": "Literature in English",
   "subject_id": 33,
-  "topic_id": null,
+  "topic": "Prose",
   "text": "A story told by a character who uses 'I' is written in the",
   "options": [
    {
@@ -2018,7 +2018,7 @@
  {
   "subject": "Literature in English",
   "subject_id": 33,
-  "topic_id": null,
+  "topic": "Figures of Speech",
   "text": "'Her voice was as sweet as honey' is an example of",
   "options": [
    {
@@ -2046,7 +2046,7 @@
  {
   "subject": "Literature in English",
   "subject_id": 33,
-  "topic_id": null,
+  "topic": "Characterisation",
   "text": "The character who opposes the main character in a story is the",
   "options": [
    {
@@ -2074,7 +2074,7 @@
  {
   "subject": "Literature in English",
   "subject_id": 33,
-  "topic_id": null,
+  "topic": "Figures of Speech",
   "text": "The repetition of the same consonant sound at the start of nearby words is",
   "options": [
    {
@@ -2102,7 +2102,7 @@
  {
   "subject": "Literature in English",
   "subject_id": 33,
-  "topic_id": null,
+  "topic": "Drama",
   "text": "A play in which the main character suffers a downfall, often through a personal flaw, is a",
   "options": [
    {
@@ -2130,7 +2130,7 @@
  {
   "subject": "Literature in English",
   "subject_id": 33,
-  "topic_id": null,
+  "topic": "Figures of Speech",
   "text": "'I have told you a million times' is an example of",
   "options": [
    {
@@ -2158,7 +2158,7 @@
  {
   "subject": "Literature in English",
   "subject_id": 33,
-  "topic_id": null,
+  "topic": "Drama",
   "text": "A speech in which a character alone on stage speaks their thoughts aloud is a",
   "options": [
    {
@@ -2186,7 +2186,7 @@
  {
   "subject": "Literature in English",
   "subject_id": 33,
-  "topic_id": null,
+  "topic": "Poetry",
   "text": "An elegy is a poem that",
   "options": [
    {
@@ -2214,7 +2214,7 @@
  {
   "subject": "Literature in English",
   "subject_id": 33,
-  "topic_id": null,
+  "topic": "Prose",
   "text": "The time and place in which a story happens is its",
   "options": [
    {
@@ -2242,7 +2242,7 @@
  {
   "subject": "Geography",
   "subject_id": 34,
-  "topic_id": null,
+  "topic": "The Earth and the Solar System",
   "text": "The earth rotates once on its axis in about",
   "options": [
    {
@@ -2270,7 +2270,7 @@
  {
   "subject": "Geography",
   "subject_id": 34,
-  "topic_id": null,
+  "topic": "Longitude and Time",
   "text": "When it is 12 noon at Greenwich (0°), what is the local time at a place on longitude 45° E?",
   "options": [
    {
@@ -2298,7 +2298,7 @@
  {
   "subject": "Geography",
   "subject_id": 34,
-  "topic_id": null,
+  "topic": "Map Reading",
   "text": "On a map of scale 1 : 50,000, a distance of 4 cm represents",
   "options": [
    {
@@ -2326,7 +2326,7 @@
  {
   "subject": "Geography",
   "subject_id": 34,
-  "topic_id": null,
+  "topic": "Rocks",
   "text": "Which of the following is an igneous rock?",
   "options": [
    {
@@ -2354,7 +2354,7 @@
  {
   "subject": "Geography",
   "subject_id": 34,
-  "topic_id": null,
+  "topic": "Climate",
   "text": "The harmattan wind in Nigeria blows from the",
   "options": [
    {
@@ -2382,7 +2382,7 @@
  {
   "subject": "Geography",
   "subject_id": 34,
-  "topic_id": null,
+  "topic": "Latitude and Longitude",
   "text": "The line of latitude 0° is the",
   "options": [
    {
@@ -2410,7 +2410,7 @@
  {
   "subject": "Geography",
   "subject_id": 34,
-  "topic_id": null,
+  "topic": "Drainage of Nigeria",
   "text": "The Rivers Niger and Benue meet at",
   "options": [
    {
@@ -2438,7 +2438,7 @@
  {
   "subject": "Geography",
   "subject_id": 34,
-  "topic_id": null,
+  "topic": "The Atmosphere",
   "text": "Most weather occurs in the layer of the atmosphere called the",
   "options": [
    {
@@ -2466,7 +2466,7 @@
  {
   "subject": "Geography",
   "subject_id": 34,
-  "topic_id": null,
+  "topic": "Map Reading",
   "text": "Contour lines drawn close together on a map indicate",
   "options": [
    {
@@ -2494,7 +2494,7 @@
  {
   "subject": "Geography",
   "subject_id": 34,
-  "topic_id": null,
+  "topic": "Population",
   "text": "A town has 200,000 people on 50 km² of land. Its population density is",
   "options": [
    {
@@ -2522,7 +2522,7 @@
  {
   "subject": "Commerce",
   "subject_id": 30,
-  "topic_id": null,
+  "topic": "Aids to Trade",
   "text": "Which of the following is NOT an aid to trade?",
   "options": [
    {
@@ -2550,7 +2550,7 @@
  {
   "subject": "Commerce",
   "subject_id": 30,
-  "topic_id": null,
+  "topic": "Retail Trade",
   "text": "A retailer sells goods mainly to",
   "options": [
    {
@@ -2578,7 +2578,7 @@
  {
   "subject": "Commerce",
   "subject_id": 30,
-  "topic_id": null,
+  "topic": "Insurance",
   "text": "The insurance principle that requires both parties to disclose all material facts is",
   "options": [
    {
@@ -2606,7 +2606,7 @@
  {
   "subject": "Commerce",
   "subject_id": 30,
-  "topic_id": null,
+  "topic": "Transport",
   "text": "A bill of lading is a document used in",
   "options": [
    {
@@ -2634,7 +2634,7 @@
  {
   "subject": "Commerce",
   "subject_id": 30,
-  "topic_id": null,
+  "topic": "Business Units",
   "text": "A sole proprietor's liability for the business's debts is",
   "options": [
    {
@@ -2662,7 +2662,7 @@
  {
   "subject": "Commerce",
   "subject_id": 30,
-  "topic_id": null,
+  "topic": "Banking",
   "text": "A crossed cheque can only be",
   "options": [
    {
@@ -2690,7 +2690,7 @@
  {
   "subject": "Commerce",
   "subject_id": 30,
-  "topic_id": null,
+  "topic": "Hire Purchase",
   "text": "Under a hire purchase agreement, ownership of the goods passes to the buyer",
   "options": [
    {
@@ -2718,7 +2718,7 @@
  {
   "subject": "Commerce",
   "subject_id": 30,
-  "topic_id": null,
+  "topic": "Transport",
   "text": "Containerisation is mainly associated with",
   "options": [
    {
@@ -2746,7 +2746,7 @@
  {
   "subject": "Commerce",
   "subject_id": 30,
-  "topic_id": null,
+  "topic": "Trade Discounts",
   "text": "Trade discount is usually given to",
   "options": [
    {
@@ -2774,7 +2774,7 @@
  {
   "subject": "Commerce",
   "subject_id": 30,
-  "topic_id": null,
+  "topic": "Introduction to Commerce",
   "text": "Commerce is best defined as",
   "options": [
    {
@@ -2802,7 +2802,7 @@
  {
   "subject": "Financial Accounting",
   "subject_id": 31,
-  "topic_id": null,
+  "topic": "Accounting Equation",
   "text": "The accounting equation is",
   "options": [
    {
@@ -2830,7 +2830,7 @@
  {
   "subject": "Financial Accounting",
   "subject_id": 31,
-  "topic_id": null,
+  "topic": "Double Entry",
   "text": "Under the double-entry principle, every debit entry has",
   "options": [
    {
@@ -2858,7 +2858,7 @@
  {
   "subject": "Financial Accounting",
   "subject_id": 31,
-  "topic_id": null,
+  "topic": "Depreciation",
   "text": "A machine costs ₦100,000, has a residual value of ₦10,000 and a useful life of 5 years. Using the straight-line method, the annual depreciation is",
   "options": [
    {
@@ -2886,7 +2886,7 @@
  {
   "subject": "Financial Accounting",
   "subject_id": 31,
-  "topic_id": null,
+  "topic": "Trial Balance",
   "text": "The main purpose of a trial balance is to",
   "options": [
    {
@@ -2914,7 +2914,7 @@
  {
   "subject": "Financial Accounting",
   "subject_id": 31,
-  "topic_id": null,
+  "topic": "Trading Account",
   "text": "Opening stock ₦5,000, purchases ₦20,000, closing stock ₦3,000. Find the cost of goods sold.",
   "options": [
    {
@@ -2942,7 +2942,7 @@
  {
   "subject": "Financial Accounting",
   "subject_id": 31,
-  "topic_id": null,
+  "topic": "Trading Account",
   "text": "Sales ₦50,000 and cost of sales ₦32,000 give a gross profit of",
   "options": [
    {
@@ -2970,7 +2970,7 @@
  {
   "subject": "Financial Accounting",
   "subject_id": 31,
-  "topic_id": null,
+  "topic": "Final Accounts",
   "text": "A prepaid expense is shown in the statement of financial position as",
   "options": [
    {
@@ -2998,7 +2998,7 @@
  {
   "subject": "Financial Accounting",
   "subject_id": 31,
-  "topic_id": null,
+  "topic": "Final Accounts",
   "text": "Drawings by the owner reduce",
   "options": [
    {
@@ -3026,7 +3026,7 @@
  {
   "subject": "Financial Accounting",
   "subject_id": 31,
-  "topic_id": null,
+  "topic": "Bank Reconciliation",
   "text": "In a bank reconciliation, cheques issued but not yet presented to the bank are called",
   "options": [
    {
@@ -3054,7 +3054,7 @@
  {
   "subject": "Financial Accounting",
   "subject_id": 31,
-  "topic_id": null,
+  "topic": "Petty Cash",
   "text": "Under the imprest system, the petty cashier is reimbursed",
   "options": [
    {
@@ -3082,7 +3082,7 @@
  {
   "subject": "Christian Religious Studies",
   "subject_id": 35,
-  "topic_id": null,
+  "topic": "The Exodus",
   "text": "Who led the Israelites out of Egypt?",
   "options": [
    {
@@ -3110,7 +3110,7 @@
  {
   "subject": "Christian Religious Studies",
   "subject_id": 35,
-  "topic_id": null,
+  "topic": "The Monarchy",
   "text": "Who was the first king of Israel?",
   "options": [
    {
@@ -3138,7 +3138,7 @@
  {
   "subject": "Christian Religious Studies",
   "subject_id": 35,
-  "topic_id": null,
+  "topic": "Life of Jesus",
   "text": "Jesus was baptised in the River Jordan by",
   "options": [
    {
@@ -3166,7 +3166,7 @@
  {
   "subject": "Christian Religious Studies",
   "subject_id": 35,
-  "topic_id": null,
+  "topic": "Passion of Jesus",
   "text": "Which disciple denied Jesus three times?",
   "options": [
    {
@@ -3194,7 +3194,7 @@
  {
   "subject": "Christian Religious Studies",
   "subject_id": 35,
-  "topic_id": null,
+  "topic": "The Early Church",
   "text": "Saul (Paul) was converted on the road to",
   "options": [
    {
@@ -3222,7 +3222,7 @@
  {
   "subject": "Christian Religious Studies",
   "subject_id": 35,
-  "topic_id": null,
+  "topic": "The Prophets",
   "text": "Which prophet was swallowed by a great fish?",
   "options": [
    {
@@ -3250,7 +3250,7 @@
  {
   "subject": "Christian Religious Studies",
   "subject_id": 35,
-  "topic_id": null,
+  "topic": "Christian Living",
   "text": "Which of the following is listed as a fruit of the Spirit in Galatians 5?",
   "options": [
    {
@@ -3278,7 +3278,7 @@
  {
   "subject": "Christian Religious Studies",
   "subject_id": 35,
-  "topic_id": null,
+  "topic": "The Patriarchs",
   "text": "Who interpreted Pharaoh's dreams of fat and thin cows?",
   "options": [
    {
@@ -3306,7 +3306,7 @@
  {
   "subject": "Christian Religious Studies",
   "subject_id": 35,
-  "topic_id": null,
+  "topic": "The Early Church",
   "text": "On the day of Pentecost, the disciples",
   "options": [
    {
@@ -3334,7 +3334,7 @@
  {
   "subject": "Christian Religious Studies",
   "subject_id": 35,
-  "topic_id": null,
+  "topic": "The Prophets",
   "text": "Elijah challenged the prophets of Baal on Mount",
   "options": [
    {
@@ -3362,7 +3362,7 @@
  {
   "subject": "Islamic Studies",
   "subject_id": 36,
-  "topic_id": null,
+  "topic": "Revelation of the Qur'an",
   "text": "The first verses revealed to Prophet Muhammad (SAW) are in Surah",
   "options": [
    {
@@ -3390,7 +3390,7 @@
  {
   "subject": "Islamic Studies",
   "subject_id": 36,
-  "topic_id": null,
+  "topic": "The Qur'an",
   "text": "How many surahs are in the Qur'an?",
   "options": [
    {
@@ -3418,7 +3418,7 @@
  {
   "subject": "Islamic Studies",
   "subject_id": 36,
-  "topic_id": null,
+  "topic": "Pillars of Islam",
   "text": "How many pillars of Islam are there?",
   "options": [
    {
@@ -3446,7 +3446,7 @@
  {
   "subject": "Islamic Studies",
   "subject_id": 36,
-  "topic_id": null,
+  "topic": "Sawm (Fasting)",
   "text": "Muslims fast during the month of",
   "options": [
    {
@@ -3474,7 +3474,7 @@
  {
   "subject": "Islamic Studies",
   "subject_id": 36,
-  "topic_id": null,
+  "topic": "Sirah",
   "text": "The Hijrah from Makkah to Madinah took place in",
   "options": [
    {
@@ -3502,7 +3502,7 @@
  {
   "subject": "Islamic Studies",
   "subject_id": 36,
-  "topic_id": null,
+  "topic": "The Caliphate",
   "text": "The first Caliph after the Prophet (SAW) was",
   "options": [
    {
@@ -3530,7 +3530,7 @@
  {
   "subject": "Islamic Studies",
   "subject_id": 36,
-  "topic_id": null,
+  "topic": "Zakat",
   "text": "Zakat is",
   "options": [
    {
@@ -3558,7 +3558,7 @@
  {
   "subject": "Islamic Studies",
   "subject_id": 36,
-  "topic_id": null,
+  "topic": "The Qur'an",
   "text": "The opening chapter of the Qur'an is",
   "options": [
    {
@@ -3586,7 +3586,7 @@
  {
   "subject": "Islamic Studies",
   "subject_id": 36,
-  "topic_id": null,
+  "topic": "Sawm (Fasting)",
   "text": "Laylat al-Qadr (the Night of Power) falls in the month of",
   "options": [
    {
@@ -3614,7 +3614,7 @@
  {
   "subject": "Islamic Studies",
   "subject_id": 36,
-  "topic_id": null,
+  "topic": "Salat (Prayer)",
   "text": "How many obligatory daily prayers are there?",
   "options": [
    {
@@ -3642,7 +3642,7 @@
  {
   "subject": "History",
   "subject_id": 12,
-  "topic_id": null,
+  "topic": "Colonial Rule",
   "text": "The Northern and Southern Protectorates of Nigeria were amalgamated in 1914 by",
   "options": [
    {
@@ -3670,7 +3670,7 @@
  {
   "subject": "History",
   "subject_id": 12,
-  "topic_id": null,
+  "topic": "The Sokoto Caliphate",
   "text": "The Sokoto Caliphate was founded following the jihad led by",
   "options": [
    {
@@ -3698,7 +3698,7 @@
  {
   "subject": "History",
   "subject_id": 12,
-  "topic_id": null,
+  "topic": "Post-Independence Nigeria",
   "text": "Nigeria's seat of government moved officially from Lagos to Abuja in",
   "options": [
    {
@@ -3726,7 +3726,7 @@
  {
   "subject": "History",
   "subject_id": 12,
-  "topic_id": null,
+  "topic": "Pre-colonial States",
   "text": "The traditional ruler of the Benin kingdom is called the",
   "options": [
    {
@@ -3754,7 +3754,7 @@
  {
   "subject": "History",
   "subject_id": 12,
-  "topic_id": null,
+  "topic": "Pre-colonial States",
   "text": "In the old Oyo Empire, the council of kingmakers was the",
   "options": [
    {
@@ -3782,7 +3782,7 @@
  {
   "subject": "History",
   "subject_id": 12,
-  "topic_id": null,
+  "topic": "Nationalism and Independence",
   "text": "Nigeria's first Prime Minister was",
   "options": [
    {
@@ -3810,7 +3810,7 @@
  {
   "subject": "History",
   "subject_id": 12,
-  "topic_id": null,
+  "topic": "Pre-colonial States",
   "text": "The ruler of the Kanem-Bornu Empire was known as the",
   "options": [
    {
@@ -3838,7 +3838,7 @@
  {
   "subject": "History",
   "subject_id": 12,
-  "topic_id": null,
+  "topic": "Post-Independence Nigeria",
   "text": "The Nigerian Civil War lasted from",
   "options": [
    {
@@ -3866,7 +3866,7 @@
  {
   "subject": "History",
   "subject_id": 12,
-  "topic_id": null,
+  "topic": "Pre-colonial States",
   "text": "The Aro oracle known as the 'Long Juju' was",
   "options": [
    {
@@ -3894,7 +3894,7 @@
  {
   "subject": "History",
   "subject_id": 12,
-  "topic_id": null,
+  "topic": "Colonial Rule",
   "text": "The system of governing through traditional rulers that the British used in Northern Nigeria was",
   "options": [
    {
@@ -3922,7 +3922,7 @@
  {
   "subject": "Agricultural Science",
   "subject_id": 28,
-  "topic_id": null,
+  "topic": "Soil Science",
   "text": "Which soil type holds the most water?",
   "options": [
    {
@@ -3950,7 +3950,7 @@
  {
   "subject": "Agricultural Science",
   "subject_id": 28,
-  "topic_id": null,
+  "topic": "Crop Production",
   "text": "Which of the following is a leguminous crop?",
   "options": [
    {
@@ -3978,7 +3978,7 @@
  {
   "subject": "Agricultural Science",
   "subject_id": 28,
-  "topic_id": null,
+  "topic": "Animal Production",
   "text": "Which of the following is a ruminant?",
   "options": [
    {
@@ -4006,7 +4006,7 @@
  {
   "subject": "Agricultural Science",
   "subject_id": 28,
-  "topic_id": null,
+  "topic": "Soil Fertility",
   "text": "In NPK fertiliser, N stands for",
   "options": [
    {
@@ -4034,7 +4034,7 @@
  {
   "subject": "Agricultural Science",
   "subject_id": 28,
-  "topic_id": null,
+  "topic": "Animal Production",
   "text": "The gestation period of a cow is about",
   "options": [
    {
@@ -4062,7 +4062,7 @@
  {
   "subject": "Agricultural Science",
   "subject_id": 28,
-  "topic_id": null,
+  "topic": "Crop Production",
   "text": "Covering the soil surface with dry grass or leaves to conserve moisture is called",
   "options": [
    {
@@ -4090,7 +4090,7 @@
  {
   "subject": "Agricultural Science",
   "subject_id": 28,
-  "topic_id": null,
+  "topic": "Animal Health",
   "text": "Newcastle disease mainly affects",
   "options": [
    {
@@ -4118,7 +4118,7 @@
  {
   "subject": "Agricultural Science",
   "subject_id": 28,
-  "topic_id": null,
+  "topic": "Soil and Water Management",
   "text": "Removing excess water from waterlogged soil is called",
   "options": [
    {
@@ -4146,7 +4146,7 @@
  {
   "subject": "Agricultural Science",
   "subject_id": 28,
-  "topic_id": null,
+  "topic": "Animal Production",
   "text": "Which of the following is a cattle breed indigenous to Nigeria?",
   "options": [
    {
@@ -4174,7 +4174,7 @@
  {
   "subject": "Agricultural Science",
   "subject_id": 28,
-  "topic_id": null,
+  "topic": "Crop Production",
   "text": "A major benefit of crop rotation is that it",
   "options": [
    {
@@ -4202,7 +4202,7 @@
  {
   "subject": "Civic Education",
   "subject_id": 37,
-  "topic_id": null,
+  "topic": "Human Rights",
   "text": "Freedom of expression is guaranteed in the 1999 Constitution of Nigeria as",
   "options": [
    {
@@ -4230,7 +4230,7 @@
  {
   "subject": "Civic Education",
   "subject_id": 37,
-  "topic_id": null,
+  "topic": "Citizenship",
   "text": "Nigerian citizenship may be acquired by birth, registration or",
   "options": [
    {
@@ -4258,7 +4258,7 @@
  {
   "subject": "Civic Education",
   "subject_id": 37,
-  "topic_id": null,
+  "topic": "National Values",
   "text": "The National Pledge begins with",
   "options": [
    {
@@ -4286,7 +4286,7 @@
  {
   "subject": "Civic Education",
   "subject_id": 37,
-  "topic_id": null,
+  "topic": "Corruption",
   "text": "Which agency fights economic and financial crimes in Nigeria?",
   "options": [
    {
@@ -4314,7 +4314,7 @@
  {
   "subject": "Civic Education",
   "subject_id": 37,
-  "topic_id": null,
+  "topic": "Drug Abuse",
   "text": "The agency that fights the trafficking of illegal drugs in Nigeria is",
   "options": [
    {
@@ -4342,7 +4342,7 @@
  {
   "subject": "Civic Education",
   "subject_id": 37,
-  "topic_id": null,
+  "topic": "Human Trafficking",
   "text": "The agency responsible for fighting human trafficking in Nigeria is",
   "options": [
    {
@@ -4370,7 +4370,7 @@
  {
   "subject": "Civic Education",
   "subject_id": 37,
-  "topic_id": null,
+  "topic": "Elections",
   "text": "The minimum voting age in Nigeria is",
   "options": [
    {
@@ -4398,7 +4398,7 @@
  {
   "subject": "Civic Education",
   "subject_id": 37,
-  "topic_id": null,
+  "topic": "Rule of Law",
   "text": "The rule of law means",
   "options": [
    {
@@ -4426,7 +4426,7 @@
  {
   "subject": "Civic Education",
   "subject_id": 37,
-  "topic_id": null,
+  "topic": "Human Rights",
   "text": "The fundamental human rights in the 1999 Constitution are in",
   "options": [
    {
@@ -4454,7 +4454,7 @@
  {
   "subject": "Civic Education",
   "subject_id": 37,
-  "topic_id": null,
+  "topic": "Civil Society",
   "text": "A non-governmental organisation (NGO) is an example of",
   "options": [
    {
@@ -4482,7 +4482,7 @@
  {
   "subject": "Computer Studies",
   "subject_id": 13,
-  "topic_id": null,
+  "topic": "Computer Hardware",
   "text": "Which part of a computer is called its 'brain'?",
   "options": [
    {
@@ -4510,7 +4510,7 @@
  {
   "subject": "Computer Studies",
   "subject_id": 13,
-  "topic_id": null,
+  "topic": "Data Representation",
   "text": "One byte is equal to",
   "options": [
    {
@@ -4538,7 +4538,7 @@
  {
   "subject": "Computer Studies",
   "subject_id": 13,
-  "topic_id": null,
+  "topic": "Computer Hardware",
   "text": "Which of the following is an input device?",
   "options": [
    {
@@ -4566,7 +4566,7 @@
  {
   "subject": "Computer Studies",
   "subject_id": 13,
-  "topic_id": null,
+  "topic": "Computer Memory",
   "text": "Which type of memory loses its contents when power is switched off?",
   "options": [
    {
@@ -4594,7 +4594,7 @@
  {
   "subject": "Computer Studies",
   "subject_id": 13,
-  "topic_id": null,
+  "topic": "Data Representation",
   "text": "What is 13 in binary?",
   "options": [
    {
@@ -4622,7 +4622,7 @@
  {
   "subject": "Computer Studies",
   "subject_id": 13,
-  "topic_id": null,
+  "topic": "The Internet",
   "text": "The World Wide Web was invented by",
   "options": [
    {
@@ -4650,7 +4650,7 @@
  {
   "subject": "Computer Studies",
   "subject_id": 13,
-  "topic_id": null,
+  "topic": "Computer Software",
   "text": "Which of the following is an operating system?",
   "options": [
    {
@@ -4678,7 +4678,7 @@
  {
   "subject": "Computer Studies",
   "subject_id": 13,
-  "topic_id": null,
+  "topic": "Logic Gates",
   "text": "Which logic gate gives an output of 1 only when all its inputs are 1?",
   "options": [
    {
@@ -4706,7 +4706,7 @@
  {
   "subject": "Computer Studies",
   "subject_id": 13,
-  "topic_id": null,
+  "topic": "The Internet",
   "text": "HTTP stands for",
   "options": [
    {
@@ -4734,7 +4734,7 @@
  {
   "subject": "Computer Studies",
   "subject_id": 13,
-  "topic_id": null,
+  "topic": "Computer Security",
   "text": "Malicious software that attaches itself to files and spreads when they are run is a",
   "options": [
    {
@@ -4762,7 +4762,7 @@
  {
   "subject": "Home Economics",
   "subject_id": 14,
-  "topic_id": null,
+  "topic": "Nutrition",
   "text": "The nutrient mainly needed for body building and repair is",
   "options": [
    {
@@ -4790,7 +4790,7 @@
  {
   "subject": "Home Economics",
   "subject_id": 14,
-  "topic_id": null,
+  "topic": "Nutrition",
   "text": "Scurvy is caused by a lack of",
   "options": [
    {
@@ -4818,7 +4818,7 @@
  {
   "subject": "Home Economics",
   "subject_id": 14,
-  "topic_id": null,
+  "topic": "Nutrition",
   "text": "Kwashiorkor is caused mainly by a lack of",
   "options": [
    {
@@ -4846,7 +4846,7 @@
  {
   "subject": "Home Economics",
   "subject_id": 14,
-  "topic_id": null,
+  "topic": "Nutrition",
   "text": "Rickets in children is caused by a lack of",
   "options": [
    {
@@ -4874,7 +4874,7 @@
  {
   "subject": "Home Economics",
   "subject_id": 14,
-  "topic_id": null,
+  "topic": "Nutrition",
   "text": "Anaemia is commonly caused by a lack of",
   "options": [
    {
@@ -4902,7 +4902,7 @@
  {
   "subject": "Home Economics",
   "subject_id": 14,
-  "topic_id": null,
+  "topic": "Food Preparation",
   "text": "Cooking food in hot oil is called",
   "options": [
    {
@@ -4930,7 +4930,7 @@
  {
   "subject": "Home Economics",
   "subject_id": 14,
-  "topic_id": null,
+  "topic": "Textiles",
   "text": "Which fabric comes from a plant?",
   "options": [
    {
@@ -4958,7 +4958,7 @@
  {
   "subject": "Home Economics",
   "subject_id": 14,
-  "topic_id": null,
+  "topic": "Family Living",
   "text": "A family made up of a father, mother and their children is",
   "options": [
    {
@@ -4986,7 +4986,7 @@
  {
   "subject": "Home Economics",
   "subject_id": 14,
-  "topic_id": null,
+  "topic": "Food Preservation",
   "text": "Preserving food by removing its moisture is",
   "options": [
    {
@@ -5014,7 +5014,7 @@
  {
   "subject": "Home Economics",
   "subject_id": 14,
-  "topic_id": null,
+  "topic": "Nutrition",
   "text": "Goitre is linked to a lack of",
   "options": [
    {
@@ -5042,7 +5042,7 @@
  {
   "subject": "Physical and Health Education",
   "subject_id": 15,
-  "topic_id": null,
+  "topic": "Ball Games",
   "text": "How many players does a football team have on the field?",
   "options": [
    {
@@ -5070,7 +5070,7 @@
  {
   "subject": "Physical and Health Education",
   "subject_id": 15,
-  "topic_id": null,
+  "topic": "Ball Games",
   "text": "How many players does a basketball team have on the court?",
   "options": [
    {
@@ -5098,7 +5098,7 @@
  {
   "subject": "Physical and Health Education",
   "subject_id": 15,
-  "topic_id": null,
+  "topic": "Ball Games",
   "text": "How many players does a volleyball team have on the court?",
   "options": [
    {
@@ -5126,7 +5126,7 @@
  {
   "subject": "Physical and Health Education",
   "subject_id": 15,
-  "topic_id": null,
+  "topic": "Olympic Games",
   "text": "The Olympic Games are held every",
   "options": [
    {
@@ -5154,7 +5154,7 @@
  {
   "subject": "Physical and Health Education",
   "subject_id": 15,
-  "topic_id": null,
+  "topic": "Athletics",
   "text": "The official marathon distance is",
   "options": [
    {
@@ -5182,7 +5182,7 @@
  {
   "subject": "Physical and Health Education",
   "subject_id": 15,
-  "topic_id": null,
+  "topic": "First Aid",
   "text": "In first aid for sprains, RICE stands for",
   "options": [
    {
@@ -5210,7 +5210,7 @@
  {
   "subject": "Physical and Health Education",
   "subject_id": 15,
-  "topic_id": null,
+  "topic": "First Aid",
   "text": "The best first aid for a nosebleed is to",
   "options": [
    {
@@ -5238,7 +5238,7 @@
  {
   "subject": "Physical and Health Education",
   "subject_id": 15,
-  "topic_id": null,
+  "topic": "Communicable Diseases",
   "text": "Malaria is transmitted by the",
   "options": [
    {
@@ -5266,7 +5266,7 @@
  {
   "subject": "Physical and Health Education",
   "subject_id": 15,
-  "topic_id": null,
+  "topic": "Human Anatomy",
   "text": "The large group of muscles at the front of the thigh is the",
   "options": [
    {
@@ -5294,7 +5294,7 @@
  {
   "subject": "Physical and Health Education",
   "subject_id": 15,
-  "topic_id": null,
+  "topic": "Athletics",
   "text": "A standard outdoor running track is",
   "options": [
    {
@@ -5322,7 +5322,7 @@
  {
   "subject": "Fine Art",
   "subject_id": 16,
-  "topic_id": null,
+  "topic": "Colour",
   "text": "The primary colours in pigment are",
   "options": [
    {
@@ -5350,7 +5350,7 @@
  {
   "subject": "Fine Art",
   "subject_id": 16,
-  "topic_id": null,
+  "topic": "Colour",
   "text": "Mixing blue and yellow gives",
   "options": [
    {
@@ -5378,7 +5378,7 @@
  {
   "subject": "Fine Art",
   "subject_id": 16,
-  "topic_id": null,
+  "topic": "Colour",
   "text": "The complementary colour of red is",
   "options": [
    {
@@ -5406,7 +5406,7 @@
  {
   "subject": "Fine Art",
   "subject_id": 16,
-  "topic_id": null,
+  "topic": "Colour",
   "text": "Adding white to a colour produces a",
   "options": [
    {
@@ -5434,7 +5434,7 @@
  {
   "subject": "Fine Art",
   "subject_id": 16,
-  "topic_id": null,
+  "topic": "Nigerian Art History",
   "text": "The Nok culture is best known for its",
   "options": [
    {
@@ -5462,7 +5462,7 @@
  {
   "subject": "Fine Art",
   "subject_id": 16,
-  "topic_id": null,
+  "topic": "Nigerian Art History",
   "text": "The Benin bronzes were made by the",
   "options": [
    {
@@ -5490,7 +5490,7 @@
  {
   "subject": "Fine Art",
   "subject_id": 16,
-  "topic_id": null,
+  "topic": "Textile Design",
   "text": "Adire is a resist-dyed cloth associated with the",
   "options": [
    {
@@ -5518,7 +5518,7 @@
  {
   "subject": "Fine Art",
   "subject_id": 16,
-  "topic_id": null,
+  "topic": "Nigerian Traditional Art",
   "text": "Uli body and wall painting is associated with the",
   "options": [
    {
@@ -5546,7 +5546,7 @@
  {
   "subject": "Fine Art",
   "subject_id": 16,
-  "topic_id": null,
+  "topic": "Drawing",
   "text": "The technique of showing depth and distance on a flat surface is",
   "options": [
    {
@@ -5574,7 +5574,7 @@
  {
   "subject": "Fine Art",
   "subject_id": 16,
-  "topic_id": null,
+  "topic": "Nigerian Artists",
   "text": "The sculptor of the bronze 'Anyanwu' at the National Museum, Lagos, is",
   "options": [
    {
@@ -5602,7 +5602,7 @@
  {
   "subject": "Music",
   "subject_id": 17,
-  "topic_id": null,
+  "topic": "Rudiments of Music",
   "text": "How many lines does a musical staff have?",
   "options": [
    {
@@ -5630,7 +5630,7 @@
  {
   "subject": "Music",
   "subject_id": 17,
-  "topic_id": null,
+  "topic": "Rudiments of Music",
   "text": "A semibreve is equal in value to",
   "options": [
    {
@@ -5658,7 +5658,7 @@
  {
   "subject": "Music",
   "subject_id": 17,
-  "topic_id": null,
+  "topic": "Rudiments of Music",
   "text": "The treble clef is also called the",
   "options": [
    {
@@ -5686,7 +5686,7 @@
  {
   "subject": "Music",
   "subject_id": 17,
-  "topic_id": null,
+  "topic": "Musical Terms",
   "text": "The tempo marking 'allegro' means",
   "options": [
    {
@@ -5714,7 +5714,7 @@
  {
   "subject": "Music",
   "subject_id": 17,
-  "topic_id": null,
+  "topic": "Musical Terms",
   "text": "The dynamic marking 'forte' (f) means",
   "options": [
    {
@@ -5742,7 +5742,7 @@
  {
   "subject": "Music",
   "subject_id": 17,
-  "topic_id": null,
+  "topic": "Scales",
   "text": "The pattern of tones (T) and semitones (S) in a major scale is",
   "options": [
    {
@@ -5770,7 +5770,7 @@
  {
   "subject": "Music",
   "subject_id": 17,
-  "topic_id": null,
+  "topic": "Intervals",
   "text": "The interval from C up to G is a",
   "options": [
    {
@@ -5798,7 +5798,7 @@
  {
   "subject": "Music",
   "subject_id": 17,
-  "topic_id": null,
+  "topic": "Key Signatures",
   "text": "Which major key has one sharp in its key signature?",
   "options": [
    {
@@ -5826,7 +5826,7 @@
  {
   "subject": "Music",
   "subject_id": 17,
-  "topic_id": null,
+  "topic": "African Musical Instruments",
   "text": "The Yoruba 'talking drum' is called",
   "options": [
    {
@@ -5854,7 +5854,7 @@
  {
   "subject": "Music",
   "subject_id": 17,
-  "topic_id": null,
+  "topic": "Western Music History",
   "text": "The oratorio 'Messiah' was composed by",
   "options": [
    {
@@ -5882,7 +5882,7 @@
  {
   "subject": "French",
   "subject_id": 18,
-  "topic_id": null,
+  "topic": "Grammar",
   "text": "Choisissez la bonne réponse : Je ___ étudiant.",
   "options": [
    {
@@ -5910,7 +5910,7 @@
  {
   "subject": "French",
   "subject_id": 18,
-  "topic_id": null,
+  "topic": "Grammar",
   "text": "Le pluriel de « le cheval » est",
   "options": [
    {
@@ -5938,7 +5938,7 @@
  {
   "subject": "French",
   "subject_id": 18,
-  "topic_id": null,
+  "topic": "Grammar",
   "text": "Choisissez la bonne réponse : Hier, nous ___ au marché.",
   "options": [
    {
@@ -5966,7 +5966,7 @@
  {
   "subject": "French",
   "subject_id": 18,
-  "topic_id": null,
+  "topic": "Vocabulary",
   "text": "« I am hungry » se dit",
   "options": [
    {
@@ -5994,7 +5994,7 @@
  {
   "subject": "French",
   "subject_id": 18,
-  "topic_id": null,
+  "topic": "Grammar",
   "text": "Choisissez la bonne réponse : Comment ___-vous ?",
   "options": [
    {
@@ -6022,7 +6022,7 @@
  {
   "subject": "French",
   "subject_id": 18,
-  "topic_id": null,
+  "topic": "Grammar",
   "text": "Le féminin de « acteur » est",
   "options": [
    {
@@ -6050,7 +6050,7 @@
  {
   "subject": "French",
   "subject_id": 18,
-  "topic_id": null,
+  "topic": "Vocabulary",
   "text": "« Il fait chaud » veut dire",
   "options": [
    {
@@ -6078,7 +6078,7 @@
  {
   "subject": "French",
   "subject_id": 18,
-  "topic_id": null,
+  "topic": "Grammar",
   "text": "Choisissez la bonne réponse : Elle ___ ses devoirs chaque soir.",
   "options": [
    {
@@ -6106,7 +6106,7 @@
  {
   "subject": "French",
   "subject_id": 18,
-  "topic_id": null,
+  "topic": "Vocabulary",
   "text": "Le contraire de « grand » est",
   "options": [
    {
@@ -6134,7 +6134,7 @@
  {
   "subject": "French",
   "subject_id": 18,
-  "topic_id": null,
+  "topic": "Vocabulary",
   "text": "« The book is on the table » : Le livre est ___ la table.",
   "options": [
    {
@@ -6162,7 +6162,7 @@
  {
   "subject": "Arabic",
   "subject_id": 19,
-  "topic_id": null,
+  "topic": "Vocabulary",
   "text": "What is the meaning of « كِتَاب »?",
   "options": [
    {
@@ -6190,7 +6190,7 @@
  {
   "subject": "Arabic",
   "subject_id": 19,
-  "topic_id": null,
+  "topic": "Grammar",
   "text": "What is the plural of « قَلَم » (pen)?",
   "options": [
    {
@@ -6218,7 +6218,7 @@
  {
   "subject": "Arabic",
   "subject_id": 19,
-  "topic_id": null,
+  "topic": "Vocabulary",
   "text": "What is the meaning of « بَيْت »?",
   "options": [
    {
@@ -6246,7 +6246,7 @@
  {
   "subject": "Arabic",
   "subject_id": 19,
-  "topic_id": null,
+  "topic": "Vocabulary",
   "text": "What is the meaning of « مَدْرَسَة »?",
   "options": [
    {
@@ -6274,7 +6274,7 @@
  {
   "subject": "Arabic",
   "subject_id": 19,
-  "topic_id": null,
+  "topic": "Vocabulary",
   "text": "Which word means 'teacher' (masculine)?",
   "options": [
    {
@@ -6302,7 +6302,7 @@
  {
   "subject": "Arabic",
   "subject_id": 19,
-  "topic_id": null,
+  "topic": "Numbers",
   "text": "What is « ثَلَاثَة » in English?",
   "options": [
    {
@@ -6330,7 +6330,7 @@
  {
   "subject": "Hausa",
   "subject_id": 20,
-  "topic_id": null,
+  "topic": "Greetings",
   "text": "What does « Na gode » mean?",
   "options": [
    {
@@ -6358,7 +6358,7 @@
  {
   "subject": "Hausa",
   "subject_id": 20,
-  "topic_id": null,
+  "topic": "Numbers",
   "text": "What is the Hausa number 'biyu'?",
   "options": [
    {
@@ -6386,7 +6386,7 @@
  {
   "subject": "Hausa",
   "subject_id": 20,
-  "topic_id": null,
+  "topic": "Vocabulary",
   "text": "The Hausa word for 'water' is",
   "options": [
    {
@@ -6414,7 +6414,7 @@
  {
   "subject": "Hausa",
   "subject_id": 20,
-  "topic_id": null,
+  "topic": "Greetings",
   "text": "Which greeting is commonly used for 'hello' in Hausa?",
   "options": [
    {
@@ -6442,7 +6442,7 @@
  {
   "subject": "Igbo",
   "subject_id": 21,
-  "topic_id": null,
+  "topic": "Greetings",
   "text": "What does « Ụtụtụ ọma » mean?",
   "options": [
    {
@@ -6470,7 +6470,7 @@
  {
   "subject": "Igbo",
   "subject_id": 21,
-  "topic_id": null,
+  "topic": "Numbers",
   "text": "What is the Igbo number 'abụọ'?",
   "options": [
    {
@@ -6498,7 +6498,7 @@
  {
   "subject": "Igbo",
   "subject_id": 21,
-  "topic_id": null,
+  "topic": "Greetings",
   "text": "« Nnọọ » means",
   "options": [
    {
@@ -6526,7 +6526,7 @@
  {
   "subject": "Igbo",
   "subject_id": 21,
-  "topic_id": null,
+  "topic": "Vocabulary",
   "text": "The Igbo word for 'water' is",
   "options": [
    {
@@ -6554,7 +6554,7 @@
  {
   "subject": "Yoruba",
   "subject_id": 22,
-  "topic_id": null,
+  "topic": "Greetings",
   "text": "What does « Ẹ káàárọ̀ » mean?",
   "options": [
    {
@@ -6582,7 +6582,7 @@
  {
   "subject": "Yoruba",
   "subject_id": 22,
-  "topic_id": null,
+  "topic": "Numbers",
   "text": "What is the Yoruba number 'mẹ́ta'?",
   "options": [
    {
@@ -6610,7 +6610,7 @@
  {
   "subject": "Yoruba",
   "subject_id": 22,
-  "topic_id": null,
+  "topic": "Vocabulary",
   "text": "The Yoruba word for 'water' is",
   "options": [
    {
@@ -6638,7 +6638,7 @@
  {
   "subject": "Yoruba",
   "subject_id": 22,
-  "topic_id": null,
+  "topic": "Greetings",
   "text": "« Ẹ ṣé » means",
   "options": [
    {
@@ -6666,7 +6666,7 @@
  {
   "subject": "English Language",
   "subject_id": 23,
-  "topic_id": null,
+  "topic": "Comprehension",
   "text": "According to the passage, the farmers built the reservoir because",
   "options": [
    {
@@ -6700,7 +6700,7 @@
  {
   "subject": "English Language",
   "subject_id": 23,
-  "topic_id": null,
+  "topic": "Comprehension",
   "text": "The young women's records show that they were",
   "options": [
    {
@@ -6734,7 +6734,7 @@
  {
   "subject": "English Language",
   "subject_id": 23,
-  "topic_id": null,
+  "topic": "Comprehension",
   "text": "The word 'pooled', as used in the passage, means",
   "options": [
    {
@@ -6768,7 +6768,7 @@
  {
   "subject": "English Language",
   "subject_id": 23,
-  "topic_id": null,
+  "topic": "Comprehension",
   "text": "The last sentence suggests that the older men",
   "options": [
    {
@@ -6802,7 +6802,7 @@
  {
   "subject": "English Language",
   "subject_id": 23,
-  "topic_id": null,
+  "topic": "Comprehension",
   "text": "Which title best suits the passage?",
   "options": [
    {
@@ -6836,7 +6836,7 @@
  {
   "subject": "Literature in English",
   "subject_id": 33,
-  "topic_id": null,
+  "topic": "Poetry",
   "text": "'The harmattan comes like a thief at dawn' contains",
   "options": [
    {
@@ -6870,7 +6870,7 @@
  {
   "subject": "Literature in English",
   "subject_id": 33,
-  "topic_id": null,
+  "topic": "Poetry",
   "text": "'it whispers dust on the window-pane' is an example of",
   "options": [
    {
@@ -6904,7 +6904,7 @@
  {
   "subject": "Literature in English",
   "subject_id": 33,
-  "topic_id": null,
+  "topic": "Poetry",
   "text": "The mood of the poem is best described as",
   "options": [
    {
