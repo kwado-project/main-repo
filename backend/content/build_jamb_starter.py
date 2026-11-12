@@ -35,7 +35,7 @@ Q = {
         (2, "Choose the option that best explains the idiom: Chika *let the cat out of the bag* at the party.", "revealed a secret", ["caused confusion", "arrived late", "lost her temper"], "To 'let the cat out of the bag' is to reveal a secret by accident."),
         (3, "Choose the option that best completes the sentence: Hardly had we arrived ___ the rain started.", "when", ["than", "then", "before"], "'Hardly … when' is the correct correlative pair. 'Than' goes with 'no sooner'."),
         (2, "Choose the option with a different vowel sound from the others.", "cut", ["heart", "card", "calm"], "'Heart', 'card' and 'calm' have the long vowel /ɑː/; 'cut' has the short vowel /ʌ/."),
-        (3, "Choose the option that has the correct stress (capital letters show the stressed syllable): photographer", "phoTOgrapher", ["PHOtographer", "photoGRApher", "photograPHER"], "In 'photographer' the stress falls on the second syllable: pho-TO-gra-pher."),
+        (3, "Which syllable carries the primary stress in the word 'photographer'?", "the second syllable (-to-)", ["the first syllable (pho-)", "the third syllable (-gra-)", "the fourth syllable (-pher)"], "In 'photographer' the stress falls on the second syllable: pho-TO-gra-pher."),
     ],
     "Mathematics": [
         (1, "Evaluate $\\log_{10} 8 + \\log_{10} 125$.", "3", ["2", "133", "1000"], "$\\log_{10} 8 + \\log_{10} 125 = \\log_{10}(8 \\times 125) = \\log_{10} 1000 = 3$."),
@@ -317,9 +317,67 @@ Q = {
     ],
 }
 
+# Syllabus topic for each question above, in the same order. The importer matches an existing topic in that
+# subject by name (case-insensitive) and creates it if missing.
+TOPICS = {
+    "English Language": ["Concord", "Concord", "Synonyms", "Antonyms", "Spelling", "Prepositions", "Idioms",
+                         "Sentence Structure", "Oral English: Vowels", "Oral English: Stress"],
+    "Mathematics": ["Logarithms", "Linear Equations", "Quadratic Equations", "Number Bases", "Statistics",
+                    "Commercial Arithmetic", "Coordinate Geometry", "Polygons", "Integration", "Differentiation"],
+    "Physics": ["Work, Energy and Power", "Motion", "Work, Energy and Power", "Current Electricity", "Waves",
+                "Scalars and Vectors", "Heat Energy", "Lenses", "Radioactivity", "Pressure"],
+    "Chemistry": ["Mole Concept", "Periodic Table", "Acids, Bases and Salts", "Non-metals and their Compounds",
+                  "Redox Reactions", "Hydrocarbons", "Separation Techniques", "Atomic Structure", "Water",
+                  "Mole Concept"],
+    "Biology": ["Cell Structure", "Photosynthesis", "Circulatory System", "Digestion", "Genetics", "Nutrition",
+                "Diseases and Parasites", "Transport in Plants", "Endocrine System", "Characteristics of Living Things"],
+    "Economics": ["Basic Concepts", "Demand", "Elasticity", "Market Structures", "Inflation", "National Income",
+                  "Money and Banking", "Factors of Production", "Theory of Production", "Public Finance"],
+    "Government": ["Separation of Powers", "The Legislature", "The Legislature", "Rule of Law", "Systems of Government",
+                   "Nigerian Constitutional Development", "Nigerian Constitutional Development", "Elections and Franchise",
+                   "The Judiciary", "International Organisations"],
+    "Literature in English": ["Poetry", "Prose", "Figures of Speech", "Characterisation", "Figures of Speech", "Drama",
+                              "Figures of Speech", "Drama", "Poetry", "Prose"],
+    "Geography": ["The Earth and the Solar System", "Longitude and Time", "Map Reading", "Rocks", "Climate",
+                  "Latitude and Longitude", "Drainage of Nigeria", "The Atmosphere", "Map Reading", "Population"],
+    "Commerce": ["Aids to Trade", "Retail Trade", "Insurance", "Transport", "Business Units", "Banking",
+                 "Hire Purchase", "Transport", "Trade Discounts", "Introduction to Commerce"],
+    "Financial Accounting": ["Accounting Equation", "Double Entry", "Depreciation", "Trial Balance", "Trading Account",
+                             "Trading Account", "Final Accounts", "Final Accounts", "Bank Reconciliation", "Petty Cash"],
+    "Christian Religious Studies": ["The Exodus", "The Monarchy", "Life of Jesus", "Passion of Jesus", "The Early Church",
+                                    "The Prophets", "Christian Living", "The Patriarchs", "The Early Church", "The Prophets"],
+    "Islamic Studies": ["Revelation of the Qur'an", "The Qur'an", "Pillars of Islam", "Sawm (Fasting)", "Sirah",
+                        "The Caliphate", "Zakat", "The Qur'an", "Sawm (Fasting)", "Salat (Prayer)"],
+    "History": ["Colonial Rule", "The Sokoto Caliphate", "Post-Independence Nigeria", "Pre-colonial States",
+                "Pre-colonial States", "Nationalism and Independence", "Pre-colonial States", "Post-Independence Nigeria",
+                "Pre-colonial States", "Colonial Rule"],
+    "Agricultural Science": ["Soil Science", "Crop Production", "Animal Production", "Soil Fertility",
+                             "Animal Production", "Crop Production", "Animal Health", "Soil and Water Management",
+                             "Animal Production", "Crop Production"],
+    "Civic Education": ["Human Rights", "Citizenship", "National Values", "Corruption", "Drug Abuse",
+                        "Human Trafficking", "Elections", "Rule of Law", "Human Rights", "Civil Society"],
+    "Computer Studies": ["Computer Hardware", "Data Representation", "Computer Hardware", "Computer Memory",
+                         "Data Representation", "The Internet", "Computer Software", "Logic Gates", "The Internet",
+                         "Computer Security"],
+    "Home Economics": ["Nutrition", "Nutrition", "Nutrition", "Nutrition", "Nutrition", "Food Preparation", "Textiles",
+                       "Family Living", "Food Preservation", "Nutrition"],
+    "Physical and Health Education": ["Ball Games", "Ball Games", "Ball Games", "Olympic Games", "Athletics",
+                                      "First Aid", "First Aid", "Communicable Diseases", "Human Anatomy", "Athletics"],
+    "Fine Art": ["Colour", "Colour", "Colour", "Colour", "Nigerian Art History", "Nigerian Art History",
+                 "Textile Design", "Nigerian Traditional Art", "Drawing", "Nigerian Artists"],
+    "Music": ["Rudiments of Music", "Rudiments of Music", "Rudiments of Music", "Musical Terms", "Musical Terms",
+              "Scales", "Intervals", "Key Signatures", "African Musical Instruments", "Western Music History"],
+    "French": ["Grammar", "Grammar", "Grammar", "Vocabulary", "Grammar", "Grammar", "Vocabulary", "Grammar",
+               "Vocabulary", "Vocabulary"],
+    "Arabic": ["Vocabulary", "Grammar", "Vocabulary", "Vocabulary", "Vocabulary", "Numbers"],
+    "Hausa": ["Greetings", "Numbers", "Vocabulary", "Greetings"],
+    "Igbo": ["Greetings", "Numbers", "Greetings", "Vocabulary"],
+    "Yoruba": ["Greetings", "Numbers", "Vocabulary", "Greetings"],
+}
+
 # Passage-based (stimulus-based) question sets: one passage shared by several questions.
 PASSAGES = [
-    ("English Language", "eng-farm-cooperative", "Comprehension passage", (
+    ("English Language", "Comprehension", "eng-farm-cooperative", "Comprehension passage", (
         "When the rains failed for the second year running, the farmers of Ikeji did not wait for help from "
         "the capital. They pooled their savings and dug a shallow reservoir at the edge of the village, "
         "lining it with clay from the riverbank. The older men doubted that such a small pond could make any "
@@ -334,7 +392,7 @@ PASSAGES = [
         (3, "The last sentence suggests that the older men", "changed their minds after seeing the results", ["still opposed the reservoir", "left the village", "built a reservoir of their own"], "Those who doubted it were the first to ask for a larger one: the success convinced them."),
         (2, "Which title best suits the passage?", "Self-Help in Ikeji", ["The Failure of the Rains", "Traders of the Capital", "A Quarrel in Ikeji"], "The passage is about villagers solving their own problem."),
     ]),
-    ("Literature in English", "lit-poem-harmattan", "Read the poem and answer the questions", (
+    ("Literature in English", "Poetry", "lit-poem-harmattan", "Read the poem and answer the questions", (
         "The harmattan comes like a thief at dawn,\n"
         "stealing the green from the mango leaves;\n"
         "it whispers dust on the window-pane\n"
@@ -350,13 +408,13 @@ def _position(text: str) -> int:
     return int(hashlib.sha256(text.encode()).hexdigest(), 16) % 4
 
 
-def _row(subject, diff, text, correct, wrongs, expl, passage=None):
+def _row(subject, topic, diff, text, correct, wrongs, expl, passage=None):
     assert len(wrongs) == 3 and correct not in wrongs, text
     opts = list(wrongs)
     pos = _position(text)
     opts.insert(pos, correct)
     letters = "ABCD"
-    row = {"subject": subject, "subject_id": SUBJECT_IDS[subject], "topic_id": None, "text": text,
+    row = {"subject": subject, "subject_id": SUBJECT_IDS[subject], "topic": topic, "text": text,
            "options": [{"label": letters[i], "text": o} for i, o in enumerate(opts)],
            "explanation": expl, "difficulty": diff, "source": SOURCE, "answer": letters[pos]}
     if passage:
@@ -365,10 +423,11 @@ def _row(subject, diff, text, correct, wrongs, expl, passage=None):
 
 
 def build():
-    rows = [_row(s, *q) for s, qs in Q.items() for q in qs]
-    for subject, key, title, body, qs in PASSAGES:
+    assert TOPICS.keys() == Q.keys() and all(len(TOPICS[s]) == len(Q[s]) for s in Q), "TOPICS must match Q"
+    rows = [_row(s, t, *q) for s, qs in Q.items() for t, q in zip(TOPICS[s], qs)]
+    for subject, topic, key, title, body, qs in PASSAGES:
         p = {"key": key, "title": title, "body": body, "source": SOURCE}
-        rows += [_row(subject, *q, passage=p) for q in qs]
+        rows += [_row(subject, topic, *q, passage=p) for q in qs]
     assert len({(r["subject"], r["text"], (r.get("passage") or {}).get("key")) for r in rows}) == len(rows), "duplicate question"
     return rows
 
