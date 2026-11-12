@@ -1,0 +1,6938 @@
+[
+ {
+  "subject": "English Language",
+  "subject_id": 23,
+  "topic_id": null,
+  "text": "Choose the option that best completes the sentence: Neither the principal nor the teachers ___ present at the meeting.",
+  "options": [
+   {
+    "label": "A",
+    "text": "were"
+   },
+   {
+    "label": "B",
+    "text": "was"
+   },
+   {
+    "label": "C",
+    "text": "is"
+   },
+   {
+    "label": "D",
+    "text": "has been"
+   }
+  ],
+  "explanation": "With 'neither … nor', the verb agrees with the nearer subject. 'Teachers' is plural, so 'were'.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "English Language",
+  "subject_id": 23,
+  "topic_id": null,
+  "text": "Choose the option that best completes the sentence: The furniture in the new hall ___ very expensive.",
+  "options": [
+   {
+    "label": "A",
+    "text": "is"
+   },
+   {
+    "label": "B",
+    "text": "are"
+   },
+   {
+    "label": "C",
+    "text": "were"
+   },
+   {
+    "label": "D",
+    "text": "have been"
+   }
+  ],
+  "explanation": "'Furniture' is an uncountable noun and takes a singular verb.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "English Language",
+  "subject_id": 23,
+  "topic_id": null,
+  "text": "Choose the word nearest in meaning to the word in italics: The witness gave a *lucid* account of the accident.",
+  "options": [
+   {
+    "label": "A",
+    "text": "clear"
+   },
+   {
+    "label": "B",
+    "text": "confused"
+   },
+   {
+    "label": "C",
+    "text": "brief"
+   },
+   {
+    "label": "D",
+    "text": "false"
+   }
+  ],
+  "explanation": "'Lucid' means expressed clearly and easy to understand.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "English Language",
+  "subject_id": 23,
+  "topic_id": null,
+  "text": "Choose the word opposite in meaning to the word in italics: Tunde is known for his *generosity*.",
+  "options": [
+   {
+    "label": "A",
+    "text": "kindness"
+   },
+   {
+    "label": "B",
+    "text": "wealth"
+   },
+   {
+    "label": "C",
+    "text": "meanness"
+   },
+   {
+    "label": "D",
+    "text": "humility"
+   }
+  ],
+  "explanation": "Generosity is readiness to give freely; its opposite is meanness (stinginess).",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "English Language",
+  "subject_id": 23,
+  "topic_id": null,
+  "text": "Choose the correctly spelt word.",
+  "options": [
+   {
+    "label": "A",
+    "text": "embarass"
+   },
+   {
+    "label": "B",
+    "text": "embarrass"
+   },
+   {
+    "label": "C",
+    "text": "emmbarrass"
+   },
+   {
+    "label": "D",
+    "text": "embarras"
+   }
+  ],
+  "explanation": "'Embarrass' has a double 'r' and a double 's'.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "English Language",
+  "subject_id": 23,
+  "topic_id": null,
+  "text": "Choose the option that best completes the sentence: The students were warned to desist ___ noise-making.",
+  "options": [
+   {
+    "label": "A",
+    "text": "on"
+   },
+   {
+    "label": "B",
+    "text": "from"
+   },
+   {
+    "label": "C",
+    "text": "in"
+   },
+   {
+    "label": "D",
+    "text": "of"
+   }
+  ],
+  "explanation": "'Desist' is followed by the preposition 'from'.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "English Language",
+  "subject_id": 23,
+  "topic_id": null,
+  "text": "Choose the option that best explains the idiom: Chika *let the cat out of the bag* at the party.",
+  "options": [
+   {
+    "label": "A",
+    "text": "revealed a secret"
+   },
+   {
+    "label": "B",
+    "text": "caused confusion"
+   },
+   {
+    "label": "C",
+    "text": "arrived late"
+   },
+   {
+    "label": "D",
+    "text": "lost her temper"
+   }
+  ],
+  "explanation": "To 'let the cat out of the bag' is to reveal a secret by accident.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "English Language",
+  "subject_id": 23,
+  "topic_id": null,
+  "text": "Choose the option that best completes the sentence: Hardly had we arrived ___ the rain started.",
+  "options": [
+   {
+    "label": "A",
+    "text": "than"
+   },
+   {
+    "label": "B",
+    "text": "then"
+   },
+   {
+    "label": "C",
+    "text": "when"
+   },
+   {
+    "label": "D",
+    "text": "before"
+   }
+  ],
+  "explanation": "'Hardly … when' is the correct correlative pair. 'Than' goes with 'no sooner'.",
+  "difficulty": 3,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "English Language",
+  "subject_id": 23,
+  "topic_id": null,
+  "text": "Choose the option with a different vowel sound from the others.",
+  "options": [
+   {
+    "label": "A",
+    "text": "heart"
+   },
+   {
+    "label": "B",
+    "text": "card"
+   },
+   {
+    "label": "C",
+    "text": "cut"
+   },
+   {
+    "label": "D",
+    "text": "calm"
+   }
+  ],
+  "explanation": "'Heart', 'card' and 'calm' have the long vowel /ɑː/; 'cut' has the short vowel /ʌ/.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "English Language",
+  "subject_id": 23,
+  "topic_id": null,
+  "text": "Choose the option that has the correct stress (capital letters show the stressed syllable): photographer",
+  "options": [
+   {
+    "label": "A",
+    "text": "PHOtographer"
+   },
+   {
+    "label": "B",
+    "text": "phoTOgrapher"
+   },
+   {
+    "label": "C",
+    "text": "photoGRApher"
+   },
+   {
+    "label": "D",
+    "text": "photograPHER"
+   }
+  ],
+  "explanation": "In 'photographer' the stress falls on the second syllable: pho-TO-gra-pher.",
+  "difficulty": 3,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Mathematics",
+  "subject_id": 24,
+  "topic_id": null,
+  "text": "Evaluate $\\log_{10} 8 + \\log_{10} 125$.",
+  "options": [
+   {
+    "label": "A",
+    "text": "2"
+   },
+   {
+    "label": "B",
+    "text": "133"
+   },
+   {
+    "label": "C",
+    "text": "3"
+   },
+   {
+    "label": "D",
+    "text": "1000"
+   }
+  ],
+  "explanation": "$\\log_{10} 8 + \\log_{10} 125 = \\log_{10}(8 \\times 125) = \\log_{10} 1000 = 3$.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Mathematics",
+  "subject_id": 24,
+  "topic_id": null,
+  "text": "Solve for $x$: $2x - 7 = 3x + 5$.",
+  "options": [
+   {
+    "label": "A",
+    "text": "$12$"
+   },
+   {
+    "label": "B",
+    "text": "$-2$"
+   },
+   {
+    "label": "C",
+    "text": "$-12$"
+   },
+   {
+    "label": "D",
+    "text": "$2$"
+   }
+  ],
+  "explanation": "Subtract $2x$ from both sides: $-7 = x + 5$, so $x = -12$.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Mathematics",
+  "subject_id": 24,
+  "topic_id": null,
+  "text": "Find the roots of $x^2 - 5x + 6 = 0$.",
+  "options": [
+   {
+    "label": "A",
+    "text": "−2 and −3"
+   },
+   {
+    "label": "B",
+    "text": "2 and 3"
+   },
+   {
+    "label": "C",
+    "text": "1 and 6"
+   },
+   {
+    "label": "D",
+    "text": "−1 and 6"
+   }
+  ],
+  "explanation": "$x^2 - 5x + 6 = (x - 2)(x - 3) = 0$, so $x = 2$ or $x = 3$.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Mathematics",
+  "subject_id": 24,
+  "topic_id": null,
+  "text": "Convert $101101_2$ to a number in base ten.",
+  "options": [
+   {
+    "label": "A",
+    "text": "43"
+   },
+   {
+    "label": "B",
+    "text": "45"
+   },
+   {
+    "label": "C",
+    "text": "47"
+   },
+   {
+    "label": "D",
+    "text": "53"
+   }
+  ],
+  "explanation": "$1\\times32 + 0\\times16 + 1\\times8 + 1\\times4 + 0\\times2 + 1\\times1 = 45$.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Mathematics",
+  "subject_id": 24,
+  "topic_id": null,
+  "text": "Find the mean of 4, 7, 9, 12 and 8.",
+  "options": [
+   {
+    "label": "A",
+    "text": "8"
+   },
+   {
+    "label": "B",
+    "text": "7"
+   },
+   {
+    "label": "C",
+    "text": "9"
+   },
+   {
+    "label": "D",
+    "text": "10"
+   }
+  ],
+  "explanation": "Sum = 40; mean = 40 ÷ 5 = 8.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Mathematics",
+  "subject_id": 24,
+  "topic_id": null,
+  "text": "Find the simple interest on ₦5,000 at 4% per annum for 3 years.",
+  "options": [
+   {
+    "label": "A",
+    "text": "₦200"
+   },
+   {
+    "label": "B",
+    "text": "₦650"
+   },
+   {
+    "label": "C",
+    "text": "₦6,000"
+   },
+   {
+    "label": "D",
+    "text": "₦600"
+   }
+  ],
+  "explanation": "$I = \\frac{PRT}{100} = \\frac{5000 \\times 4 \\times 3}{100} = 600$.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Mathematics",
+  "subject_id": 24,
+  "topic_id": null,
+  "text": "Find the gradient of the line joining $(2, 3)$ and $(6, 11)$.",
+  "options": [
+   {
+    "label": "A",
+    "text": "$\\frac{1}{2}$"
+   },
+   {
+    "label": "B",
+    "text": "4"
+   },
+   {
+    "label": "C",
+    "text": "2"
+   },
+   {
+    "label": "D",
+    "text": "−2"
+   }
+  ],
+  "explanation": "Gradient $= \\frac{11 - 3}{6 - 2} = \\frac{8}{4} = 2$.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Mathematics",
+  "subject_id": 24,
+  "topic_id": null,
+  "text": "Find the sum of the interior angles of a hexagon.",
+  "options": [
+   {
+    "label": "A",
+    "text": "540°"
+   },
+   {
+    "label": "B",
+    "text": "720°"
+   },
+   {
+    "label": "C",
+    "text": "900°"
+   },
+   {
+    "label": "D",
+    "text": "360°"
+   }
+  ],
+  "explanation": "Sum $= (n - 2) \\times 180° = 4 \\times 180° = 720°$.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Mathematics",
+  "subject_id": 24,
+  "topic_id": null,
+  "text": "Evaluate $\\int_0^2 3x^2\\,dx$.",
+  "options": [
+   {
+    "label": "A",
+    "text": "6"
+   },
+   {
+    "label": "B",
+    "text": "8"
+   },
+   {
+    "label": "C",
+    "text": "12"
+   },
+   {
+    "label": "D",
+    "text": "4"
+   }
+  ],
+  "explanation": "$\\int 3x^2\\,dx = x^3$; $2^3 - 0^3 = 8$.",
+  "difficulty": 3,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Mathematics",
+  "subject_id": 24,
+  "topic_id": null,
+  "text": "If $y = 4x^3 - 2x$, find $\\frac{dy}{dx}$.",
+  "options": [
+   {
+    "label": "A",
+    "text": "$12x^2 - 2$"
+   },
+   {
+    "label": "B",
+    "text": "$12x^2 - 2x$"
+   },
+   {
+    "label": "C",
+    "text": "$4x^2 - 2$"
+   },
+   {
+    "label": "D",
+    "text": "$12x^3 - 2$"
+   }
+  ],
+  "explanation": "Differentiate term by term: $\\frac{d}{dx}(4x^3) = 12x^2$ and $\\frac{d}{dx}(2x) = 2$.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Physics",
+  "subject_id": 25,
+  "topic_id": null,
+  "text": "What is the SI unit of power?",
+  "options": [
+   {
+    "label": "A",
+    "text": "joule"
+   },
+   {
+    "label": "B",
+    "text": "newton"
+   },
+   {
+    "label": "C",
+    "text": "pascal"
+   },
+   {
+    "label": "D",
+    "text": "watt"
+   }
+  ],
+  "explanation": "Power is the rate of doing work, measured in watts (1 W = 1 J/s).",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Physics",
+  "subject_id": 25,
+  "topic_id": null,
+  "text": "A car starts from rest and reaches 20 m/s in 5 s with uniform acceleration. Find its acceleration.",
+  "options": [
+   {
+    "label": "A",
+    "text": "100 m/s²"
+   },
+   {
+    "label": "B",
+    "text": "0.25 m/s²"
+   },
+   {
+    "label": "C",
+    "text": "25 m/s²"
+   },
+   {
+    "label": "D",
+    "text": "4 m/s²"
+   }
+  ],
+  "explanation": "$a = \\frac{v - u}{t} = \\frac{20 - 0}{5} = 4$ m/s².",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Physics",
+  "subject_id": 25,
+  "topic_id": null,
+  "text": "Find the kinetic energy of a 2 kg body moving at 3 m/s.",
+  "options": [
+   {
+    "label": "A",
+    "text": "6 J"
+   },
+   {
+    "label": "B",
+    "text": "9 J"
+   },
+   {
+    "label": "C",
+    "text": "18 J"
+   },
+   {
+    "label": "D",
+    "text": "3 J"
+   }
+  ],
+  "explanation": "$KE = \\frac{1}{2}mv^2 = \\frac{1}{2} \\times 2 \\times 3^2 = 9$ J.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Physics",
+  "subject_id": 25,
+  "topic_id": null,
+  "text": "Resistors of 6 Ω and 3 Ω are connected in parallel. Find the effective resistance.",
+  "options": [
+   {
+    "label": "A",
+    "text": "9 Ω"
+   },
+   {
+    "label": "B",
+    "text": "2 Ω"
+   },
+   {
+    "label": "C",
+    "text": "4.5 Ω"
+   },
+   {
+    "label": "D",
+    "text": "0.5 Ω"
+   }
+  ],
+  "explanation": "$\\frac{1}{R} = \\frac{1}{6} + \\frac{1}{3} = \\frac{1}{2}$, so $R = 2$ Ω.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Physics",
+  "subject_id": 25,
+  "topic_id": null,
+  "text": "A wave has a frequency of 50 Hz and a wavelength of 2 m. Find its speed.",
+  "options": [
+   {
+    "label": "A",
+    "text": "100 m/s"
+   },
+   {
+    "label": "B",
+    "text": "25 m/s"
+   },
+   {
+    "label": "C",
+    "text": "52 m/s"
+   },
+   {
+    "label": "D",
+    "text": "0.04 m/s"
+   }
+  ],
+  "explanation": "$v = f\\lambda = 50 \\times 2 = 100$ m/s.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Physics",
+  "subject_id": 25,
+  "topic_id": null,
+  "text": "Which of the following is a scalar quantity?",
+  "options": [
+   {
+    "label": "A",
+    "text": "velocity"
+   },
+   {
+    "label": "B",
+    "text": "force"
+   },
+   {
+    "label": "C",
+    "text": "speed"
+   },
+   {
+    "label": "D",
+    "text": "displacement"
+   }
+  ],
+  "explanation": "Speed has magnitude only; the others also have direction, so they are vectors.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Physics",
+  "subject_id": 25,
+  "topic_id": null,
+  "text": "How much heat is needed to raise the temperature of 2 kg of water by 10 °C? (Specific heat capacity of water = 4200 J kg⁻¹ K⁻¹)",
+  "options": [
+   {
+    "label": "A",
+    "text": "84,000 J"
+   },
+   {
+    "label": "B",
+    "text": "42,000 J"
+   },
+   {
+    "label": "C",
+    "text": "8,400 J"
+   },
+   {
+    "label": "D",
+    "text": "840 J"
+   }
+  ],
+  "explanation": "$Q = mc\\Delta\\theta = 2 \\times 4200 \\times 10 = 84{,}000$ J.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Physics",
+  "subject_id": 25,
+  "topic_id": null,
+  "text": "An object is placed beyond 2F in front of a converging lens. The image formed is",
+  "options": [
+   {
+    "label": "A",
+    "text": "virtual, upright and magnified"
+   },
+   {
+    "label": "B",
+    "text": "real, inverted and magnified"
+   },
+   {
+    "label": "C",
+    "text": "virtual, inverted and diminished"
+   },
+   {
+    "label": "D",
+    "text": "real, inverted and diminished"
+   }
+  ],
+  "explanation": "Beyond 2F, a converging lens forms a real, inverted, diminished image between F and 2F on the other side.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Physics",
+  "subject_id": 25,
+  "topic_id": null,
+  "text": "A radioactive sample decays from 80 g to 10 g in 15 days. What is its half-life?",
+  "options": [
+   {
+    "label": "A",
+    "text": "7.5 days"
+   },
+   {
+    "label": "B",
+    "text": "5 days"
+   },
+   {
+    "label": "C",
+    "text": "3 days"
+   },
+   {
+    "label": "D",
+    "text": "15 days"
+   }
+  ],
+  "explanation": "80 → 40 → 20 → 10 g is three half-lives; 15 ÷ 3 = 5 days.",
+  "difficulty": 3,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Physics",
+  "subject_id": 25,
+  "topic_id": null,
+  "text": "A force of 200 N acts on an area of 0.5 m². Find the pressure.",
+  "options": [
+   {
+    "label": "A",
+    "text": "100 Pa"
+   },
+   {
+    "label": "B",
+    "text": "200.5 Pa"
+   },
+   {
+    "label": "C",
+    "text": "400 Pa"
+   },
+   {
+    "label": "D",
+    "text": "0.0025 Pa"
+   }
+  ],
+  "explanation": "$P = \\frac{F}{A} = \\frac{200}{0.5} = 400$ Pa.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Chemistry",
+  "subject_id": 26,
+  "topic_id": null,
+  "text": "How many moles are there in 22 g of carbon(IV) oxide? (C = 12, O = 16)",
+  "options": [
+   {
+    "label": "A",
+    "text": "1.0 mol"
+   },
+   {
+    "label": "B",
+    "text": "2.0 mol"
+   },
+   {
+    "label": "C",
+    "text": "0.5 mol"
+   },
+   {
+    "label": "D",
+    "text": "0.25 mol"
+   }
+  ],
+  "explanation": "Molar mass of CO₂ = 12 + 32 = 44 g/mol; 22 ÷ 44 = 0.5 mol.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Chemistry",
+  "subject_id": 26,
+  "topic_id": null,
+  "text": "An element with electronic configuration 1s² 2s² 2p⁶ 3s² 3p¹ belongs to group",
+  "options": [
+   {
+    "label": "A",
+    "text": "I"
+   },
+   {
+    "label": "B",
+    "text": "III"
+   },
+   {
+    "label": "C",
+    "text": "II"
+   },
+   {
+    "label": "D",
+    "text": "V"
+   }
+  ],
+  "explanation": "It has 3 electrons in its outermost shell (3s² 3p¹), so it is in group III (aluminium).",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Chemistry",
+  "subject_id": 26,
+  "topic_id": null,
+  "text": "What is the pH of a neutral solution at 25 °C?",
+  "options": [
+   {
+    "label": "A",
+    "text": "0"
+   },
+   {
+    "label": "B",
+    "text": "7"
+   },
+   {
+    "label": "C",
+    "text": "1"
+   },
+   {
+    "label": "D",
+    "text": "14"
+   }
+  ],
+  "explanation": "At 25 °C a neutral solution has [H⁺] = 10⁻⁷ mol/dm³, so pH = 7.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Chemistry",
+  "subject_id": 26,
+  "topic_id": null,
+  "text": "Which gas turns lime water milky?",
+  "options": [
+   {
+    "label": "A",
+    "text": "carbon(IV) oxide"
+   },
+   {
+    "label": "B",
+    "text": "oxygen"
+   },
+   {
+    "label": "C",
+    "text": "hydrogen"
+   },
+   {
+    "label": "D",
+    "text": "nitrogen"
+   }
+  ],
+  "explanation": "CO₂ reacts with calcium hydroxide to form insoluble calcium carbonate, which makes the solution milky.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Chemistry",
+  "subject_id": 26,
+  "topic_id": null,
+  "text": "What is the oxidation number of manganese in KMnO₄?",
+  "options": [
+   {
+    "label": "A",
+    "text": "+2"
+   },
+   {
+    "label": "B",
+    "text": "+4"
+   },
+   {
+    "label": "C",
+    "text": "+6"
+   },
+   {
+    "label": "D",
+    "text": "+7"
+   }
+  ],
+  "explanation": "K = +1, 4 × O = −8, total 0: +1 + Mn − 8 = 0, so Mn = +7.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Chemistry",
+  "subject_id": 26,
+  "topic_id": null,
+  "text": "Which of the following is an alkane?",
+  "options": [
+   {
+    "label": "A",
+    "text": "C₂H₄"
+   },
+   {
+    "label": "B",
+    "text": "C₂H₂"
+   },
+   {
+    "label": "C",
+    "text": "C₆H₆"
+   },
+   {
+    "label": "D",
+    "text": "C₃H₈"
+   }
+  ],
+  "explanation": "Alkanes have the general formula CₙH₂ₙ₊₂; C₃H₈ (propane) fits.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Chemistry",
+  "subject_id": 26,
+  "topic_id": null,
+  "text": "Common salt can be recovered from its solution in water by",
+  "options": [
+   {
+    "label": "A",
+    "text": "filtration"
+   },
+   {
+    "label": "B",
+    "text": "sublimation"
+   },
+   {
+    "label": "C",
+    "text": "decantation"
+   },
+   {
+    "label": "D",
+    "text": "evaporation"
+   }
+  ],
+  "explanation": "Salt is dissolved, so heating to drive off the water leaves the salt behind.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Chemistry",
+  "subject_id": 26,
+  "topic_id": null,
+  "text": "Isotopes of an element differ in their number of",
+  "options": [
+   {
+    "label": "A",
+    "text": "neutrons"
+   },
+   {
+    "label": "B",
+    "text": "protons"
+   },
+   {
+    "label": "C",
+    "text": "electrons"
+   },
+   {
+    "label": "D",
+    "text": "atomic number"
+   }
+  ],
+  "explanation": "Isotopes have the same number of protons but different numbers of neutrons, hence different mass numbers.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Chemistry",
+  "subject_id": 26,
+  "topic_id": null,
+  "text": "Temporary hardness of water is caused by dissolved",
+  "options": [
+   {
+    "label": "A",
+    "text": "calcium sulphate"
+   },
+   {
+    "label": "B",
+    "text": "calcium hydrogencarbonate"
+   },
+   {
+    "label": "C",
+    "text": "sodium chloride"
+   },
+   {
+    "label": "D",
+    "text": "magnesium sulphate"
+   }
+  ],
+  "explanation": "Hydrogencarbonates cause temporary hardness, which boiling removes; sulphates cause permanent hardness.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Chemistry",
+  "subject_id": 26,
+  "topic_id": null,
+  "text": "The Avogadro constant is approximately",
+  "options": [
+   {
+    "label": "A",
+    "text": "6.02 × 10⁻²³ mol⁻¹"
+   },
+   {
+    "label": "B",
+    "text": "3.01 × 10²³ mol⁻¹"
+   },
+   {
+    "label": "C",
+    "text": "1.66 × 10⁻²⁴ mol⁻¹"
+   },
+   {
+    "label": "D",
+    "text": "6.02 × 10²³ mol⁻¹"
+   }
+  ],
+  "explanation": "One mole contains about 6.02 × 10²³ particles.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Biology",
+  "subject_id": 27,
+  "topic_id": null,
+  "text": "Which organelle is the site of aerobic respiration in a cell?",
+  "options": [
+   {
+    "label": "A",
+    "text": "mitochondrion"
+   },
+   {
+    "label": "B",
+    "text": "ribosome"
+   },
+   {
+    "label": "C",
+    "text": "nucleus"
+   },
+   {
+    "label": "D",
+    "text": "vacuole"
+   }
+  ],
+  "explanation": "Mitochondria carry out aerobic respiration and release most of the cell's energy.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Biology",
+  "subject_id": 27,
+  "topic_id": null,
+  "text": "In green plants, photosynthesis takes place in the",
+  "options": [
+   {
+    "label": "A",
+    "text": "mitochondrion"
+   },
+   {
+    "label": "B",
+    "text": "cell wall"
+   },
+   {
+    "label": "C",
+    "text": "chloroplast"
+   },
+   {
+    "label": "D",
+    "text": "nucleus"
+   }
+  ],
+  "explanation": "Chloroplasts contain chlorophyll, which traps light energy for photosynthesis.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Biology",
+  "subject_id": 27,
+  "topic_id": null,
+  "text": "Which blood vessel carries oxygenated blood from the lungs to the heart?",
+  "options": [
+   {
+    "label": "A",
+    "text": "pulmonary artery"
+   },
+   {
+    "label": "B",
+    "text": "vena cava"
+   },
+   {
+    "label": "C",
+    "text": "pulmonary vein"
+   },
+   {
+    "label": "D",
+    "text": "aorta"
+   }
+  ],
+  "explanation": "The pulmonary vein is the only vein that carries oxygenated blood; it returns blood from the lungs to the left atrium.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Biology",
+  "subject_id": 27,
+  "topic_id": null,
+  "text": "The enzyme in human saliva that begins starch digestion is",
+  "options": [
+   {
+    "label": "A",
+    "text": "pepsin"
+   },
+   {
+    "label": "B",
+    "text": "lipase"
+   },
+   {
+    "label": "C",
+    "text": "trypsin"
+   },
+   {
+    "label": "D",
+    "text": "salivary amylase (ptyalin)"
+   }
+  ],
+  "explanation": "Salivary amylase breaks starch down into maltose in the mouth.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Biology",
+  "subject_id": 27,
+  "topic_id": null,
+  "text": "Two heterozygous tall plants (Tt × Tt) are crossed. What is the expected ratio of tall to dwarf offspring?",
+  "options": [
+   {
+    "label": "A",
+    "text": "3 : 1"
+   },
+   {
+    "label": "B",
+    "text": "1 : 1"
+   },
+   {
+    "label": "C",
+    "text": "1 : 2 : 1"
+   },
+   {
+    "label": "D",
+    "text": "all tall"
+   }
+  ],
+  "explanation": "Offspring are TT, Tt, Tt and tt; three show the dominant tall trait and one is dwarf.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Biology",
+  "subject_id": 27,
+  "topic_id": null,
+  "text": "An organism that makes its own food from simple inorganic substances is called",
+  "options": [
+   {
+    "label": "A",
+    "text": "an autotroph"
+   },
+   {
+    "label": "B",
+    "text": "a heterotroph"
+   },
+   {
+    "label": "C",
+    "text": "a saprophyte"
+   },
+   {
+    "label": "D",
+    "text": "a parasite"
+   }
+  ],
+  "explanation": "Autotrophs, such as green plants, make their own food by photosynthesis or chemosynthesis.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Biology",
+  "subject_id": 27,
+  "topic_id": null,
+  "text": "Malaria is caused by",
+  "options": [
+   {
+    "label": "A",
+    "text": "Plasmodium"
+   },
+   {
+    "label": "B",
+    "text": "a virus"
+   },
+   {
+    "label": "C",
+    "text": "Trypanosoma"
+   },
+   {
+    "label": "D",
+    "text": "the Anopheles mosquito"
+   }
+  ],
+  "explanation": "Malaria is caused by the protozoan Plasmodium; the female Anopheles mosquito is only the vector.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Biology",
+  "subject_id": 27,
+  "topic_id": null,
+  "text": "The main function of xylem in plants is to",
+  "options": [
+   {
+    "label": "A",
+    "text": "transport manufactured food"
+   },
+   {
+    "label": "B",
+    "text": "store starch"
+   },
+   {
+    "label": "C",
+    "text": "carry out photosynthesis"
+   },
+   {
+    "label": "D",
+    "text": "transport water and mineral salts"
+   }
+  ],
+  "explanation": "Xylem carries water and dissolved mineral salts from the roots upwards; phloem carries food.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Biology",
+  "subject_id": 27,
+  "topic_id": null,
+  "text": "Insulin is produced by the",
+  "options": [
+   {
+    "label": "A",
+    "text": "liver"
+   },
+   {
+    "label": "B",
+    "text": "pancreas"
+   },
+   {
+    "label": "C",
+    "text": "adrenal gland"
+   },
+   {
+    "label": "D",
+    "text": "thyroid gland"
+   }
+  ],
+  "explanation": "The islets of Langerhans in the pancreas secrete insulin, which lowers blood glucose.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Biology",
+  "subject_id": 27,
+  "topic_id": null,
+  "text": "Which of the following is NOT a characteristic of living things?",
+  "options": [
+   {
+    "label": "A",
+    "text": "excretion"
+   },
+   {
+    "label": "B",
+    "text": "combustion"
+   },
+   {
+    "label": "C",
+    "text": "irritability"
+   },
+   {
+    "label": "D",
+    "text": "reproduction"
+   }
+  ],
+  "explanation": "Combustion is a chemical process, not a characteristic of life.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Economics",
+  "subject_id": 29,
+  "topic_id": null,
+  "text": "Opportunity cost is best described as",
+  "options": [
+   {
+    "label": "A",
+    "text": "the alternative forgone"
+   },
+   {
+    "label": "B",
+    "text": "the money price of a good"
+   },
+   {
+    "label": "C",
+    "text": "the cost of production"
+   },
+   {
+    "label": "D",
+    "text": "the total cost of all choices"
+   }
+  ],
+  "explanation": "Opportunity cost is the next best alternative given up when a choice is made.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Economics",
+  "subject_id": 29,
+  "topic_id": null,
+  "text": "Other things being equal, a rise in the price of a normal good leads to",
+  "options": [
+   {
+    "label": "A",
+    "text": "a rise in quantity demanded"
+   },
+   {
+    "label": "B",
+    "text": "a fall in quantity demanded"
+   },
+   {
+    "label": "C",
+    "text": "a rise in demand"
+   },
+   {
+    "label": "D",
+    "text": "no change in quantity demanded"
+   }
+  ],
+  "explanation": "The law of demand: price and quantity demanded move in opposite directions, ceteris paribus.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Economics",
+  "subject_id": 29,
+  "topic_id": null,
+  "text": "If the price of a good rises by 10% and the quantity demanded falls by 20%, the price elasticity of demand is",
+  "options": [
+   {
+    "label": "A",
+    "text": "0.5 (inelastic)"
+   },
+   {
+    "label": "B",
+    "text": "1 (unitary)"
+   },
+   {
+    "label": "C",
+    "text": "2 (elastic)"
+   },
+   {
+    "label": "D",
+    "text": "0 (perfectly inelastic)"
+   }
+  ],
+  "explanation": "PED = % change in quantity ÷ % change in price = 20 ÷ 10 = 2, which is greater than 1.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Economics",
+  "subject_id": 29,
+  "topic_id": null,
+  "text": "A market with a single seller and no close substitutes is",
+  "options": [
+   {
+    "label": "A",
+    "text": "an oligopoly"
+   },
+   {
+    "label": "B",
+    "text": "a monopoly"
+   },
+   {
+    "label": "C",
+    "text": "perfect competition"
+   },
+   {
+    "label": "D",
+    "text": "a duopoly"
+   }
+  ],
+  "explanation": "A monopoly has one seller of a product with no close substitutes.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Economics",
+  "subject_id": 29,
+  "topic_id": null,
+  "text": "Inflation is",
+  "options": [
+   {
+    "label": "A",
+    "text": "a fall in the general price level"
+   },
+   {
+    "label": "B",
+    "text": "a rise in the price of one good"
+   },
+   {
+    "label": "C",
+    "text": "a persistent rise in the general price level"
+   },
+   {
+    "label": "D",
+    "text": "an increase in output"
+   }
+  ],
+  "explanation": "Inflation is a sustained increase in the general level of prices.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Economics",
+  "subject_id": 29,
+  "topic_id": null,
+  "text": "Gross National Product (GNP) equals",
+  "options": [
+   {
+    "label": "A",
+    "text": "GDP minus depreciation"
+   },
+   {
+    "label": "B",
+    "text": "GDP minus indirect taxes"
+   },
+   {
+    "label": "C",
+    "text": "GDP plus net factor income from abroad"
+   },
+   {
+    "label": "D",
+    "text": "national income plus subsidies"
+   }
+  ],
+  "explanation": "GNP adds the net income residents earn from abroad to GDP.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Economics",
+  "subject_id": 29,
+  "topic_id": null,
+  "text": "The Central Bank of Nigeria acts as the lender of last resort to",
+  "options": [
+   {
+    "label": "A",
+    "text": "individual citizens"
+   },
+   {
+    "label": "B",
+    "text": "foreign governments"
+   },
+   {
+    "label": "C",
+    "text": "insurance companies"
+   },
+   {
+    "label": "D",
+    "text": "commercial banks"
+   }
+  ],
+  "explanation": "The central bank lends to commercial banks when they cannot get funds elsewhere.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Economics",
+  "subject_id": 29,
+  "topic_id": null,
+  "text": "The reward for land as a factor of production is",
+  "options": [
+   {
+    "label": "A",
+    "text": "wages"
+   },
+   {
+    "label": "B",
+    "text": "interest"
+   },
+   {
+    "label": "C",
+    "text": "profit"
+   },
+   {
+    "label": "D",
+    "text": "rent"
+   }
+  ],
+  "explanation": "Land earns rent, labour earns wages, capital earns interest and the entrepreneur earns profit.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Economics",
+  "subject_id": 29,
+  "topic_id": null,
+  "text": "The law of diminishing returns states that as more units of a variable factor are added to a fixed factor, eventually",
+  "options": [
+   {
+    "label": "A",
+    "text": "total product falls immediately"
+   },
+   {
+    "label": "B",
+    "text": "the marginal product falls"
+   },
+   {
+    "label": "C",
+    "text": "average cost falls"
+   },
+   {
+    "label": "D",
+    "text": "the fixed factor increases"
+   }
+  ],
+  "explanation": "After a point, each extra unit of the variable factor adds less to output than the one before.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Economics",
+  "subject_id": 29,
+  "topic_id": null,
+  "text": "Which of the following is a direct tax?",
+  "options": [
+   {
+    "label": "A",
+    "text": "value added tax"
+   },
+   {
+    "label": "B",
+    "text": "import duty"
+   },
+   {
+    "label": "C",
+    "text": "personal income tax"
+   },
+   {
+    "label": "D",
+    "text": "excise duty"
+   }
+  ],
+  "explanation": "A direct tax is paid by the person on whom it is levied; VAT and duties are indirect.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Government",
+  "subject_id": 32,
+  "topic_id": null,
+  "text": "The theory of separation of powers is associated with",
+  "options": [
+   {
+    "label": "A",
+    "text": "Baron de Montesquieu"
+   },
+   {
+    "label": "B",
+    "text": "John Locke"
+   },
+   {
+    "label": "C",
+    "text": "A. V. Dicey"
+   },
+   {
+    "label": "D",
+    "text": "Karl Marx"
+   }
+  ],
+  "explanation": "Montesquieu set out the separation of powers in The Spirit of the Laws (1748).",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Government",
+  "subject_id": 32,
+  "topic_id": null,
+  "text": "Nigeria's federal legislature is called the",
+  "options": [
+   {
+    "label": "A",
+    "text": "National Assembly"
+   },
+   {
+    "label": "B",
+    "text": "House of Assembly"
+   },
+   {
+    "label": "C",
+    "text": "Federal Executive Council"
+   },
+   {
+    "label": "D",
+    "text": "Council of State"
+   }
+  ],
+  "explanation": "The National Assembly consists of the Senate and the House of Representatives.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Government",
+  "subject_id": 32,
+  "topic_id": null,
+  "text": "How many members does the Nigerian Senate have?",
+  "options": [
+   {
+    "label": "A",
+    "text": "109"
+   },
+   {
+    "label": "B",
+    "text": "360"
+   },
+   {
+    "label": "C",
+    "text": "36"
+   },
+   {
+    "label": "D",
+    "text": "774"
+   }
+  ],
+  "explanation": "Three senators from each of the 36 states plus one from the FCT: 108 + 1 = 109.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Government",
+  "subject_id": 32,
+  "topic_id": null,
+  "text": "The rule of law was popularised by",
+  "options": [
+   {
+    "label": "A",
+    "text": "Jean Bodin"
+   },
+   {
+    "label": "B",
+    "text": "Montesquieu"
+   },
+   {
+    "label": "C",
+    "text": "A. V. Dicey"
+   },
+   {
+    "label": "D",
+    "text": "Thomas Hobbes"
+   }
+  ],
+  "explanation": "A. V. Dicey set out the principles of the rule of law in 1885.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Government",
+  "subject_id": 32,
+  "topic_id": null,
+  "text": "In a unitary system of government, power is concentrated in the",
+  "options": [
+   {
+    "label": "A",
+    "text": "local governments"
+   },
+   {
+    "label": "B",
+    "text": "regional governments"
+   },
+   {
+    "label": "C",
+    "text": "central government"
+   },
+   {
+    "label": "D",
+    "text": "traditional rulers"
+   }
+  ],
+  "explanation": "A unitary state has one central authority from which any lower bodies get their powers.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Government",
+  "subject_id": 32,
+  "topic_id": null,
+  "text": "Nigeria became independent on",
+  "options": [
+   {
+    "label": "A",
+    "text": "1 October 1963"
+   },
+   {
+    "label": "B",
+    "text": "1 October 1960"
+   },
+   {
+    "label": "C",
+    "text": "1 January 1914"
+   },
+   {
+    "label": "D",
+    "text": "29 May 1999"
+   }
+  ],
+  "explanation": "Nigeria gained independence from Britain on 1 October 1960.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Government",
+  "subject_id": 32,
+  "topic_id": null,
+  "text": "Nigeria became a republic in",
+  "options": [
+   {
+    "label": "A",
+    "text": "1960"
+   },
+   {
+    "label": "B",
+    "text": "1966"
+   },
+   {
+    "label": "C",
+    "text": "1963"
+   },
+   {
+    "label": "D",
+    "text": "1979"
+   }
+  ],
+  "explanation": "On 1 October 1963 Nigeria became a republic, with a Nigerian President replacing the British monarch as head of state.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Government",
+  "subject_id": 32,
+  "topic_id": null,
+  "text": "Franchise means the right to",
+  "options": [
+   {
+    "label": "A",
+    "text": "vote"
+   },
+   {
+    "label": "B",
+    "text": "form a political party"
+   },
+   {
+    "label": "C",
+    "text": "free speech"
+   },
+   {
+    "label": "D",
+    "text": "own property"
+   }
+  ],
+  "explanation": "Franchise (suffrage) is the right to vote in elections.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Government",
+  "subject_id": 32,
+  "topic_id": null,
+  "text": "The head of the judiciary in Nigeria is the",
+  "options": [
+   {
+    "label": "A",
+    "text": "Attorney-General of the Federation"
+   },
+   {
+    "label": "B",
+    "text": "Chief Justice of Nigeria"
+   },
+   {
+    "label": "C",
+    "text": "President of the Court of Appeal"
+   },
+   {
+    "label": "D",
+    "text": "Senate President"
+   }
+  ],
+  "explanation": "The Chief Justice of Nigeria heads the Supreme Court and the judiciary.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Government",
+  "subject_id": 32,
+  "topic_id": null,
+  "text": "ECOWAS was established in",
+  "options": [
+   {
+    "label": "A",
+    "text": "1963"
+   },
+   {
+    "label": "B",
+    "text": "1960"
+   },
+   {
+    "label": "C",
+    "text": "1975"
+   },
+   {
+    "label": "D",
+    "text": "1999"
+   }
+  ],
+  "explanation": "The Treaty of Lagos established ECOWAS in May 1975.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Literature in English",
+  "subject_id": 33,
+  "topic_id": null,
+  "text": "A poem of fourteen lines is called",
+  "options": [
+   {
+    "label": "A",
+    "text": "an ode"
+   },
+   {
+    "label": "B",
+    "text": "an elegy"
+   },
+   {
+    "label": "C",
+    "text": "a ballad"
+   },
+   {
+    "label": "D",
+    "text": "a sonnet"
+   }
+  ],
+  "explanation": "A sonnet has fourteen lines, usually in iambic pentameter.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Literature in English",
+  "subject_id": 33,
+  "topic_id": null,
+  "text": "A story told by a character who uses 'I' is written in the",
+  "options": [
+   {
+    "label": "A",
+    "text": "first-person point of view"
+   },
+   {
+    "label": "B",
+    "text": "third-person point of view"
+   },
+   {
+    "label": "C",
+    "text": "omniscient point of view"
+   },
+   {
+    "label": "D",
+    "text": "second-person point of view"
+   }
+  ],
+  "explanation": "A first-person narrator tells the story from their own perspective using 'I'.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Literature in English",
+  "subject_id": 33,
+  "topic_id": null,
+  "text": "'Her voice was as sweet as honey' is an example of",
+  "options": [
+   {
+    "label": "A",
+    "text": "simile"
+   },
+   {
+    "label": "B",
+    "text": "metaphor"
+   },
+   {
+    "label": "C",
+    "text": "personification"
+   },
+   {
+    "label": "D",
+    "text": "hyperbole"
+   }
+  ],
+  "explanation": "A simile compares two things using 'like' or 'as'.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Literature in English",
+  "subject_id": 33,
+  "topic_id": null,
+  "text": "The character who opposes the main character in a story is the",
+  "options": [
+   {
+    "label": "A",
+    "text": "protagonist"
+   },
+   {
+    "label": "B",
+    "text": "narrator"
+   },
+   {
+    "label": "C",
+    "text": "antagonist"
+   },
+   {
+    "label": "D",
+    "text": "foil"
+   }
+  ],
+  "explanation": "The antagonist works against the protagonist.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Literature in English",
+  "subject_id": 33,
+  "topic_id": null,
+  "text": "The repetition of the same consonant sound at the start of nearby words is",
+  "options": [
+   {
+    "label": "A",
+    "text": "assonance"
+   },
+   {
+    "label": "B",
+    "text": "onomatopoeia"
+   },
+   {
+    "label": "C",
+    "text": "rhyme"
+   },
+   {
+    "label": "D",
+    "text": "alliteration"
+   }
+  ],
+  "explanation": "Example: 'Peter Piper picked…' repeats the /p/ sound.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Literature in English",
+  "subject_id": 33,
+  "topic_id": null,
+  "text": "A play in which the main character suffers a downfall, often through a personal flaw, is a",
+  "options": [
+   {
+    "label": "A",
+    "text": "comedy"
+   },
+   {
+    "label": "B",
+    "text": "tragedy"
+   },
+   {
+    "label": "C",
+    "text": "farce"
+   },
+   {
+    "label": "D",
+    "text": "melodrama"
+   }
+  ],
+  "explanation": "Tragedy traces the fall of a protagonist, often caused by a tragic flaw.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Literature in English",
+  "subject_id": 33,
+  "topic_id": null,
+  "text": "'I have told you a million times' is an example of",
+  "options": [
+   {
+    "label": "A",
+    "text": "hyperbole"
+   },
+   {
+    "label": "B",
+    "text": "litotes"
+   },
+   {
+    "label": "C",
+    "text": "irony"
+   },
+   {
+    "label": "D",
+    "text": "euphemism"
+   }
+  ],
+  "explanation": "Hyperbole is deliberate exaggeration for effect.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Literature in English",
+  "subject_id": 33,
+  "topic_id": null,
+  "text": "A speech in which a character alone on stage speaks their thoughts aloud is a",
+  "options": [
+   {
+    "label": "A",
+    "text": "monologue"
+   },
+   {
+    "label": "B",
+    "text": "dialogue"
+   },
+   {
+    "label": "C",
+    "text": "aside"
+   },
+   {
+    "label": "D",
+    "text": "soliloquy"
+   }
+  ],
+  "explanation": "In a soliloquy the character is alone and reveals inner thoughts to the audience.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Literature in English",
+  "subject_id": 33,
+  "topic_id": null,
+  "text": "An elegy is a poem that",
+  "options": [
+   {
+    "label": "A",
+    "text": "celebrates a wedding"
+   },
+   {
+    "label": "B",
+    "text": "tells a funny story"
+   },
+   {
+    "label": "C",
+    "text": "praises nature"
+   },
+   {
+    "label": "D",
+    "text": "mourns the dead"
+   }
+  ],
+  "explanation": "An elegy is a lament for someone who has died.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Literature in English",
+  "subject_id": 33,
+  "topic_id": null,
+  "text": "The time and place in which a story happens is its",
+  "options": [
+   {
+    "label": "A",
+    "text": "plot"
+   },
+   {
+    "label": "B",
+    "text": "theme"
+   },
+   {
+    "label": "C",
+    "text": "setting"
+   },
+   {
+    "label": "D",
+    "text": "climax"
+   }
+  ],
+  "explanation": "Setting is the when and where of a story.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Geography",
+  "subject_id": 34,
+  "topic_id": null,
+  "text": "The earth rotates once on its axis in about",
+  "options": [
+   {
+    "label": "A",
+    "text": "365 days"
+   },
+   {
+    "label": "B",
+    "text": "24 hours"
+   },
+   {
+    "label": "C",
+    "text": "12 hours"
+   },
+   {
+    "label": "D",
+    "text": "30 days"
+   }
+  ],
+  "explanation": "One rotation takes about 24 hours and causes day and night.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Geography",
+  "subject_id": 34,
+  "topic_id": null,
+  "text": "When it is 12 noon at Greenwich (0°), what is the local time at a place on longitude 45° E?",
+  "options": [
+   {
+    "label": "A",
+    "text": "3:00 p.m."
+   },
+   {
+    "label": "B",
+    "text": "9:00 a.m."
+   },
+   {
+    "label": "C",
+    "text": "12:45 p.m."
+   },
+   {
+    "label": "D",
+    "text": "3:00 a.m."
+   }
+  ],
+  "explanation": "Each 15° of longitude is 1 hour; places east are ahead. 45 ÷ 15 = 3 hours ahead.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Geography",
+  "subject_id": 34,
+  "topic_id": null,
+  "text": "On a map of scale 1 : 50,000, a distance of 4 cm represents",
+  "options": [
+   {
+    "label": "A",
+    "text": "20 km"
+   },
+   {
+    "label": "B",
+    "text": "0.2 km"
+   },
+   {
+    "label": "C",
+    "text": "200 km"
+   },
+   {
+    "label": "D",
+    "text": "2 km"
+   }
+  ],
+  "explanation": "4 × 50,000 = 200,000 cm = 2,000 m = 2 km.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Geography",
+  "subject_id": 34,
+  "topic_id": null,
+  "text": "Which of the following is an igneous rock?",
+  "options": [
+   {
+    "label": "A",
+    "text": "limestone"
+   },
+   {
+    "label": "B",
+    "text": "granite"
+   },
+   {
+    "label": "C",
+    "text": "sandstone"
+   },
+   {
+    "label": "D",
+    "text": "marble"
+   }
+  ],
+  "explanation": "Granite forms from cooled magma; limestone and sandstone are sedimentary, marble is metamorphic.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Geography",
+  "subject_id": 34,
+  "topic_id": null,
+  "text": "The harmattan wind in Nigeria blows from the",
+  "options": [
+   {
+    "label": "A",
+    "text": "south-west"
+   },
+   {
+    "label": "B",
+    "text": "north-east"
+   },
+   {
+    "label": "C",
+    "text": "south-east"
+   },
+   {
+    "label": "D",
+    "text": "north-west"
+   }
+  ],
+  "explanation": "The harmattan is the dry, dusty north-east trade wind from the Sahara.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Geography",
+  "subject_id": 34,
+  "topic_id": null,
+  "text": "The line of latitude 0° is the",
+  "options": [
+   {
+    "label": "A",
+    "text": "Prime Meridian"
+   },
+   {
+    "label": "B",
+    "text": "Tropic of Cancer"
+   },
+   {
+    "label": "C",
+    "text": "Equator"
+   },
+   {
+    "label": "D",
+    "text": "Arctic Circle"
+   }
+  ],
+  "explanation": "The Equator is latitude 0°; the Prime Meridian is longitude 0°.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Geography",
+  "subject_id": 34,
+  "topic_id": null,
+  "text": "The Rivers Niger and Benue meet at",
+  "options": [
+   {
+    "label": "A",
+    "text": "Onitsha"
+   },
+   {
+    "label": "B",
+    "text": "Jebba"
+   },
+   {
+    "label": "C",
+    "text": "Lokoja"
+   },
+   {
+    "label": "D",
+    "text": "Makurdi"
+   }
+  ],
+  "explanation": "The confluence of the Niger and Benue is at Lokoja in Kogi State.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Geography",
+  "subject_id": 34,
+  "topic_id": null,
+  "text": "Most weather occurs in the layer of the atmosphere called the",
+  "options": [
+   {
+    "label": "A",
+    "text": "stratosphere"
+   },
+   {
+    "label": "B",
+    "text": "troposphere"
+   },
+   {
+    "label": "C",
+    "text": "mesosphere"
+   },
+   {
+    "label": "D",
+    "text": "thermosphere"
+   }
+  ],
+  "explanation": "The troposphere is the lowest layer and holds most water vapour, so weather happens there.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Geography",
+  "subject_id": 34,
+  "topic_id": null,
+  "text": "Contour lines drawn close together on a map indicate",
+  "options": [
+   {
+    "label": "A",
+    "text": "a gentle slope"
+   },
+   {
+    "label": "B",
+    "text": "flat land"
+   },
+   {
+    "label": "C",
+    "text": "a steep slope"
+   },
+   {
+    "label": "D",
+    "text": "a river valley floor"
+   }
+  ],
+  "explanation": "Closely spaced contours mean height changes quickly over a short distance.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Geography",
+  "subject_id": 34,
+  "topic_id": null,
+  "text": "A town has 200,000 people on 50 km² of land. Its population density is",
+  "options": [
+   {
+    "label": "A",
+    "text": "250 persons per km²"
+   },
+   {
+    "label": "B",
+    "text": "4,000 persons per km²"
+   },
+   {
+    "label": "C",
+    "text": "10,000,000 persons per km²"
+   },
+   {
+    "label": "D",
+    "text": "40 persons per km²"
+   }
+  ],
+  "explanation": "Density = population ÷ area = 200,000 ÷ 50 = 4,000 per km².",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Commerce",
+  "subject_id": 30,
+  "topic_id": null,
+  "text": "Which of the following is NOT an aid to trade?",
+  "options": [
+   {
+    "label": "A",
+    "text": "banking"
+   },
+   {
+    "label": "B",
+    "text": "insurance"
+   },
+   {
+    "label": "C",
+    "text": "manufacturing"
+   },
+   {
+    "label": "D",
+    "text": "transport"
+   }
+  ],
+  "explanation": "Aids to trade help the exchange of goods (banking, insurance, transport, advertising, warehousing); manufacturing is production.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Commerce",
+  "subject_id": 30,
+  "topic_id": null,
+  "text": "A retailer sells goods mainly to",
+  "options": [
+   {
+    "label": "A",
+    "text": "manufacturers"
+   },
+   {
+    "label": "B",
+    "text": "wholesalers"
+   },
+   {
+    "label": "C",
+    "text": "final consumers"
+   },
+   {
+    "label": "D",
+    "text": "importers"
+   }
+  ],
+  "explanation": "The retailer is the last link in the chain of distribution.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Commerce",
+  "subject_id": 30,
+  "topic_id": null,
+  "text": "The insurance principle that requires both parties to disclose all material facts is",
+  "options": [
+   {
+    "label": "A",
+    "text": "utmost good faith"
+   },
+   {
+    "label": "B",
+    "text": "indemnity"
+   },
+   {
+    "label": "C",
+    "text": "subrogation"
+   },
+   {
+    "label": "D",
+    "text": "contribution"
+   }
+  ],
+  "explanation": "Uberrimae fidei (utmost good faith) requires full disclosure of all material facts.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Commerce",
+  "subject_id": 30,
+  "topic_id": null,
+  "text": "A bill of lading is a document used in",
+  "options": [
+   {
+    "label": "A",
+    "text": "air transport"
+   },
+   {
+    "label": "B",
+    "text": "rail transport"
+   },
+   {
+    "label": "C",
+    "text": "sea transport"
+   },
+   {
+    "label": "D",
+    "text": "road transport"
+   }
+  ],
+  "explanation": "It is a receipt and document of title for goods shipped by sea.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Commerce",
+  "subject_id": 30,
+  "topic_id": null,
+  "text": "A sole proprietor's liability for the business's debts is",
+  "options": [
+   {
+    "label": "A",
+    "text": "limited"
+   },
+   {
+    "label": "B",
+    "text": "shared with shareholders"
+   },
+   {
+    "label": "C",
+    "text": "unlimited"
+   },
+   {
+    "label": "D",
+    "text": "covered by the government"
+   }
+  ],
+  "explanation": "A sole trader's personal assets can be used to pay business debts.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Commerce",
+  "subject_id": 30,
+  "topic_id": null,
+  "text": "A crossed cheque can only be",
+  "options": [
+   {
+    "label": "A",
+    "text": "cashed over the counter"
+   },
+   {
+    "label": "B",
+    "text": "used once a year"
+   },
+   {
+    "label": "C",
+    "text": "issued by a company"
+   },
+   {
+    "label": "D",
+    "text": "paid into a bank account"
+   }
+  ],
+  "explanation": "Crossing a cheque means it must be paid into a bank account, not cashed.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Commerce",
+  "subject_id": 30,
+  "topic_id": null,
+  "text": "Under a hire purchase agreement, ownership of the goods passes to the buyer",
+  "options": [
+   {
+    "label": "A",
+    "text": "after the last instalment is paid"
+   },
+   {
+    "label": "B",
+    "text": "when the first instalment is paid"
+   },
+   {
+    "label": "C",
+    "text": "at the signing of the agreement"
+   },
+   {
+    "label": "D",
+    "text": "never"
+   }
+  ],
+  "explanation": "The seller keeps ownership until the final instalment is paid.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Commerce",
+  "subject_id": 30,
+  "topic_id": null,
+  "text": "Containerisation is mainly associated with",
+  "options": [
+   {
+    "label": "A",
+    "text": "banking"
+   },
+   {
+    "label": "B",
+    "text": "transport"
+   },
+   {
+    "label": "C",
+    "text": "advertising"
+   },
+   {
+    "label": "D",
+    "text": "insurance"
+   }
+  ],
+  "explanation": "Containerisation moves goods in standard containers across ships, trains and lorries.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Commerce",
+  "subject_id": 30,
+  "topic_id": null,
+  "text": "Trade discount is usually given to",
+  "options": [
+   {
+    "label": "A",
+    "text": "encourage bulk buying by traders"
+   },
+   {
+    "label": "B",
+    "text": "encourage prompt payment"
+   },
+   {
+    "label": "C",
+    "text": "penalise late payment"
+   },
+   {
+    "label": "D",
+    "text": "reduce taxes"
+   }
+  ],
+  "explanation": "Trade discount is a reduction off list price for traders, often for buying in bulk; cash discount rewards prompt payment.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Commerce",
+  "subject_id": 30,
+  "topic_id": null,
+  "text": "Commerce is best defined as",
+  "options": [
+   {
+    "label": "A",
+    "text": "trade and aids to trade"
+   },
+   {
+    "label": "B",
+    "text": "the production of goods"
+   },
+   {
+    "label": "C",
+    "text": "buying only"
+   },
+   {
+    "label": "D",
+    "text": "the work of government"
+   }
+  ],
+  "explanation": "Commerce covers trade (buying and selling) and the services that make it possible.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Financial Accounting",
+  "subject_id": 31,
+  "topic_id": null,
+  "text": "The accounting equation is",
+  "options": [
+   {
+    "label": "A",
+    "text": "Assets = Capital − Liabilities"
+   },
+   {
+    "label": "B",
+    "text": "Capital = Assets + Liabilities"
+   },
+   {
+    "label": "C",
+    "text": "Liabilities = Assets + Capital"
+   },
+   {
+    "label": "D",
+    "text": "Assets = Capital + Liabilities"
+   }
+  ],
+  "explanation": "What a business owns equals what it owes to the owner and to outsiders.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Financial Accounting",
+  "subject_id": 31,
+  "topic_id": null,
+  "text": "Under the double-entry principle, every debit entry has",
+  "options": [
+   {
+    "label": "A",
+    "text": "another debit entry"
+   },
+   {
+    "label": "B",
+    "text": "no other entry"
+   },
+   {
+    "label": "C",
+    "text": "a corresponding credit entry"
+   },
+   {
+    "label": "D",
+    "text": "a cash entry"
+   }
+  ],
+  "explanation": "Each transaction is recorded twice: a debit in one account and a credit in another.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Financial Accounting",
+  "subject_id": 31,
+  "topic_id": null,
+  "text": "A machine costs ₦100,000, has a residual value of ₦10,000 and a useful life of 5 years. Using the straight-line method, the annual depreciation is",
+  "options": [
+   {
+    "label": "A",
+    "text": "₦20,000"
+   },
+   {
+    "label": "B",
+    "text": "₦18,000"
+   },
+   {
+    "label": "C",
+    "text": "₦22,000"
+   },
+   {
+    "label": "D",
+    "text": "₦10,000"
+   }
+  ],
+  "explanation": "(100,000 − 10,000) ÷ 5 = ₦18,000 per year.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Financial Accounting",
+  "subject_id": 31,
+  "topic_id": null,
+  "text": "The main purpose of a trial balance is to",
+  "options": [
+   {
+    "label": "A",
+    "text": "find the net profit"
+   },
+   {
+    "label": "B",
+    "text": "show the financial position"
+   },
+   {
+    "label": "C",
+    "text": "check the arithmetical accuracy of the ledger"
+   },
+   {
+    "label": "D",
+    "text": "record cash transactions"
+   }
+  ],
+  "explanation": "Matching debit and credit totals shows the double entries balance.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Financial Accounting",
+  "subject_id": 31,
+  "topic_id": null,
+  "text": "Opening stock ₦5,000, purchases ₦20,000, closing stock ₦3,000. Find the cost of goods sold.",
+  "options": [
+   {
+    "label": "A",
+    "text": "₦28,000"
+   },
+   {
+    "label": "B",
+    "text": "₦18,000"
+   },
+   {
+    "label": "C",
+    "text": "₦25,000"
+   },
+   {
+    "label": "D",
+    "text": "₦22,000"
+   }
+  ],
+  "explanation": "Cost of goods sold = 5,000 + 20,000 − 3,000 = ₦22,000.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Financial Accounting",
+  "subject_id": 31,
+  "topic_id": null,
+  "text": "Sales ₦50,000 and cost of sales ₦32,000 give a gross profit of",
+  "options": [
+   {
+    "label": "A",
+    "text": "₦82,000"
+   },
+   {
+    "label": "B",
+    "text": "₦32,000"
+   },
+   {
+    "label": "C",
+    "text": "₦50,000"
+   },
+   {
+    "label": "D",
+    "text": "₦18,000"
+   }
+  ],
+  "explanation": "Gross profit = sales − cost of sales = 50,000 − 32,000 = ₦18,000.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Financial Accounting",
+  "subject_id": 31,
+  "topic_id": null,
+  "text": "A prepaid expense is shown in the statement of financial position as",
+  "options": [
+   {
+    "label": "A",
+    "text": "a current liability"
+   },
+   {
+    "label": "B",
+    "text": "a non-current asset"
+   },
+   {
+    "label": "C",
+    "text": "a current asset"
+   },
+   {
+    "label": "D",
+    "text": "capital"
+   }
+  ],
+  "explanation": "Payment made in advance gives the business a benefit to come, so it is a current asset.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Financial Accounting",
+  "subject_id": 31,
+  "topic_id": null,
+  "text": "Drawings by the owner reduce",
+  "options": [
+   {
+    "label": "A",
+    "text": "liabilities"
+   },
+   {
+    "label": "B",
+    "text": "capital"
+   },
+   {
+    "label": "C",
+    "text": "sales"
+   },
+   {
+    "label": "D",
+    "text": "expenses"
+   }
+  ],
+  "explanation": "Drawings are withdrawals for personal use, so they reduce the owner's capital.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Financial Accounting",
+  "subject_id": 31,
+  "topic_id": null,
+  "text": "In a bank reconciliation, cheques issued but not yet presented to the bank are called",
+  "options": [
+   {
+    "label": "A",
+    "text": "dishonoured cheques"
+   },
+   {
+    "label": "B",
+    "text": "uncredited cheques"
+   },
+   {
+    "label": "C",
+    "text": "standing orders"
+   },
+   {
+    "label": "D",
+    "text": "unpresented cheques"
+   }
+  ],
+  "explanation": "They are in the cash book but not yet on the bank statement.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Financial Accounting",
+  "subject_id": 31,
+  "topic_id": null,
+  "text": "Under the imprest system, the petty cashier is reimbursed",
+  "options": [
+   {
+    "label": "A",
+    "text": "a fixed salary"
+   },
+   {
+    "label": "B",
+    "text": "half of the float"
+   },
+   {
+    "label": "C",
+    "text": "nothing"
+   },
+   {
+    "label": "D",
+    "text": "the amount spent during the period"
+   }
+  ],
+  "explanation": "The float is restored by reimbursing exactly what was spent.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Christian Religious Studies",
+  "subject_id": 35,
+  "topic_id": null,
+  "text": "Who led the Israelites out of Egypt?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Moses"
+   },
+   {
+    "label": "B",
+    "text": "Joshua"
+   },
+   {
+    "label": "C",
+    "text": "Aaron"
+   },
+   {
+    "label": "D",
+    "text": "Abraham"
+   }
+  ],
+  "explanation": "God called Moses to lead Israel out of Egypt (Exodus 3–14).",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Christian Religious Studies",
+  "subject_id": 35,
+  "topic_id": null,
+  "text": "Who was the first king of Israel?",
+  "options": [
+   {
+    "label": "A",
+    "text": "David"
+   },
+   {
+    "label": "B",
+    "text": "Saul"
+   },
+   {
+    "label": "C",
+    "text": "Solomon"
+   },
+   {
+    "label": "D",
+    "text": "Samuel"
+   }
+  ],
+  "explanation": "Samuel anointed Saul as Israel's first king (1 Samuel 10).",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Christian Religious Studies",
+  "subject_id": 35,
+  "topic_id": null,
+  "text": "Jesus was baptised in the River Jordan by",
+  "options": [
+   {
+    "label": "A",
+    "text": "Peter"
+   },
+   {
+    "label": "B",
+    "text": "John the Baptist"
+   },
+   {
+    "label": "C",
+    "text": "Andrew"
+   },
+   {
+    "label": "D",
+    "text": "John the apostle"
+   }
+  ],
+  "explanation": "Matthew 3:13–17.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Christian Religious Studies",
+  "subject_id": 35,
+  "topic_id": null,
+  "text": "Which disciple denied Jesus three times?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Judas Iscariot"
+   },
+   {
+    "label": "B",
+    "text": "Thomas"
+   },
+   {
+    "label": "C",
+    "text": "John"
+   },
+   {
+    "label": "D",
+    "text": "Peter"
+   }
+  ],
+  "explanation": "Peter denied Jesus three times before the cock crowed (Luke 22:54–62).",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Christian Religious Studies",
+  "subject_id": 35,
+  "topic_id": null,
+  "text": "Saul (Paul) was converted on the road to",
+  "options": [
+   {
+    "label": "A",
+    "text": "Jerusalem"
+   },
+   {
+    "label": "B",
+    "text": "Antioch"
+   },
+   {
+    "label": "C",
+    "text": "Emmaus"
+   },
+   {
+    "label": "D",
+    "text": "Damascus"
+   }
+  ],
+  "explanation": "Acts 9:1–19.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Christian Religious Studies",
+  "subject_id": 35,
+  "topic_id": null,
+  "text": "Which prophet was swallowed by a great fish?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Elijah"
+   },
+   {
+    "label": "B",
+    "text": "Jeremiah"
+   },
+   {
+    "label": "C",
+    "text": "Amos"
+   },
+   {
+    "label": "D",
+    "text": "Jonah"
+   }
+  ],
+  "explanation": "Jonah 1:17.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Christian Religious Studies",
+  "subject_id": 35,
+  "topic_id": null,
+  "text": "Which of the following is listed as a fruit of the Spirit in Galatians 5?",
+  "options": [
+   {
+    "label": "A",
+    "text": "wealth"
+   },
+   {
+    "label": "B",
+    "text": "wisdom"
+   },
+   {
+    "label": "C",
+    "text": "self-control"
+   },
+   {
+    "label": "D",
+    "text": "courage"
+   }
+  ],
+  "explanation": "Galatians 5:22–23 lists love, joy, peace, patience, kindness, goodness, faithfulness, gentleness and self-control.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Christian Religious Studies",
+  "subject_id": 35,
+  "topic_id": null,
+  "text": "Who interpreted Pharaoh's dreams of fat and thin cows?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Daniel"
+   },
+   {
+    "label": "B",
+    "text": "Moses"
+   },
+   {
+    "label": "C",
+    "text": "Joseph"
+   },
+   {
+    "label": "D",
+    "text": "Jacob"
+   }
+  ],
+  "explanation": "Genesis 41.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Christian Religious Studies",
+  "subject_id": 35,
+  "topic_id": null,
+  "text": "On the day of Pentecost, the disciples",
+  "options": [
+   {
+    "label": "A",
+    "text": "chose Matthias"
+   },
+   {
+    "label": "B",
+    "text": "were filled with the Holy Spirit"
+   },
+   {
+    "label": "C",
+    "text": "saw Jesus ascend"
+   },
+   {
+    "label": "D",
+    "text": "were scattered from Jerusalem"
+   }
+  ],
+  "explanation": "Acts 2:1–4.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Christian Religious Studies",
+  "subject_id": 35,
+  "topic_id": null,
+  "text": "Elijah challenged the prophets of Baal on Mount",
+  "options": [
+   {
+    "label": "A",
+    "text": "Sinai"
+   },
+   {
+    "label": "B",
+    "text": "Carmel"
+   },
+   {
+    "label": "C",
+    "text": "Zion"
+   },
+   {
+    "label": "D",
+    "text": "Olives"
+   }
+  ],
+  "explanation": "1 Kings 18:19–40.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Islamic Studies",
+  "subject_id": 36,
+  "topic_id": null,
+  "text": "The first verses revealed to Prophet Muhammad (SAW) are in Surah",
+  "options": [
+   {
+    "label": "A",
+    "text": "al-Fatihah"
+   },
+   {
+    "label": "B",
+    "text": "al-Alaq"
+   },
+   {
+    "label": "C",
+    "text": "al-Baqarah"
+   },
+   {
+    "label": "D",
+    "text": "al-Ikhlas"
+   }
+  ],
+  "explanation": "Q96:1–5 (Iqra) were revealed first, in the cave of Hira.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Islamic Studies",
+  "subject_id": 36,
+  "topic_id": null,
+  "text": "How many surahs are in the Qur'an?",
+  "options": [
+   {
+    "label": "A",
+    "text": "99"
+   },
+   {
+    "label": "B",
+    "text": "114"
+   },
+   {
+    "label": "C",
+    "text": "112"
+   },
+   {
+    "label": "D",
+    "text": "124"
+   }
+  ],
+  "explanation": "The Qur'an has 114 surahs.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Islamic Studies",
+  "subject_id": 36,
+  "topic_id": null,
+  "text": "How many pillars of Islam are there?",
+  "options": [
+   {
+    "label": "A",
+    "text": "three"
+   },
+   {
+    "label": "B",
+    "text": "six"
+   },
+   {
+    "label": "C",
+    "text": "five"
+   },
+   {
+    "label": "D",
+    "text": "seven"
+   }
+  ],
+  "explanation": "Shahadah, Salat, Zakat, Sawm and Hajj.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Islamic Studies",
+  "subject_id": 36,
+  "topic_id": null,
+  "text": "Muslims fast during the month of",
+  "options": [
+   {
+    "label": "A",
+    "text": "Shawwal"
+   },
+   {
+    "label": "B",
+    "text": "Ramadan"
+   },
+   {
+    "label": "C",
+    "text": "Muharram"
+   },
+   {
+    "label": "D",
+    "text": "Rajab"
+   }
+  ],
+  "explanation": "Fasting in Ramadan is the fourth pillar of Islam.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Islamic Studies",
+  "subject_id": 36,
+  "topic_id": null,
+  "text": "The Hijrah from Makkah to Madinah took place in",
+  "options": [
+   {
+    "label": "A",
+    "text": "622 CE"
+   },
+   {
+    "label": "B",
+    "text": "570 CE"
+   },
+   {
+    "label": "C",
+    "text": "610 CE"
+   },
+   {
+    "label": "D",
+    "text": "632 CE"
+   }
+  ],
+  "explanation": "The Hijrah in 622 CE marks the start of the Islamic calendar.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Islamic Studies",
+  "subject_id": 36,
+  "topic_id": null,
+  "text": "The first Caliph after the Prophet (SAW) was",
+  "options": [
+   {
+    "label": "A",
+    "text": "Umar"
+   },
+   {
+    "label": "B",
+    "text": "Uthman"
+   },
+   {
+    "label": "C",
+    "text": "Ali"
+   },
+   {
+    "label": "D",
+    "text": "Abu Bakr"
+   }
+  ],
+  "explanation": "Abu Bakr as-Siddiq became the first caliph in 632 CE.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Islamic Studies",
+  "subject_id": 36,
+  "topic_id": null,
+  "text": "Zakat is",
+  "options": [
+   {
+    "label": "A",
+    "text": "voluntary charity"
+   },
+   {
+    "label": "B",
+    "text": "pilgrimage"
+   },
+   {
+    "label": "C",
+    "text": "fasting"
+   },
+   {
+    "label": "D",
+    "text": "obligatory alms"
+   }
+  ],
+  "explanation": "Zakat is compulsory alms on qualifying wealth; voluntary charity is sadaqah.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Islamic Studies",
+  "subject_id": 36,
+  "topic_id": null,
+  "text": "The opening chapter of the Qur'an is",
+  "options": [
+   {
+    "label": "A",
+    "text": "al-Nas"
+   },
+   {
+    "label": "B",
+    "text": "al-Baqarah"
+   },
+   {
+    "label": "C",
+    "text": "al-Fatihah"
+   },
+   {
+    "label": "D",
+    "text": "Yasin"
+   }
+  ],
+  "explanation": "Al-Fatihah is the first surah and is recited in every rak'ah.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Islamic Studies",
+  "subject_id": 36,
+  "topic_id": null,
+  "text": "Laylat al-Qadr (the Night of Power) falls in the month of",
+  "options": [
+   {
+    "label": "A",
+    "text": "Dhul-Hijjah"
+   },
+   {
+    "label": "B",
+    "text": "Sha'ban"
+   },
+   {
+    "label": "C",
+    "text": "Ramadan"
+   },
+   {
+    "label": "D",
+    "text": "Rabi' al-Awwal"
+   }
+  ],
+  "explanation": "Q97 and hadith place it in the last ten nights of Ramadan.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Islamic Studies",
+  "subject_id": 36,
+  "topic_id": null,
+  "text": "How many obligatory daily prayers are there?",
+  "options": [
+   {
+    "label": "A",
+    "text": "three"
+   },
+   {
+    "label": "B",
+    "text": "five"
+   },
+   {
+    "label": "C",
+    "text": "four"
+   },
+   {
+    "label": "D",
+    "text": "six"
+   }
+  ],
+  "explanation": "Fajr, Zuhr, Asr, Maghrib and Isha.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "History",
+  "subject_id": 12,
+  "topic_id": null,
+  "text": "The Northern and Southern Protectorates of Nigeria were amalgamated in 1914 by",
+  "options": [
+   {
+    "label": "A",
+    "text": "Sir Arthur Richards"
+   },
+   {
+    "label": "B",
+    "text": "Lord Lugard"
+   },
+   {
+    "label": "C",
+    "text": "Sir Hugh Clifford"
+   },
+   {
+    "label": "D",
+    "text": "Sir John Macpherson"
+   }
+  ],
+  "explanation": "Frederick Lugard carried out the amalgamation in 1914.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "History",
+  "subject_id": 12,
+  "topic_id": null,
+  "text": "The Sokoto Caliphate was founded following the jihad led by",
+  "options": [
+   {
+    "label": "A",
+    "text": "Muhammad Bello"
+   },
+   {
+    "label": "B",
+    "text": "El-Kanemi"
+   },
+   {
+    "label": "C",
+    "text": "Mai Idris Alooma"
+   },
+   {
+    "label": "D",
+    "text": "Usman dan Fodio"
+   }
+  ],
+  "explanation": "Usman dan Fodio launched the jihad in 1804.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "History",
+  "subject_id": 12,
+  "topic_id": null,
+  "text": "Nigeria's seat of government moved officially from Lagos to Abuja in",
+  "options": [
+   {
+    "label": "A",
+    "text": "1976"
+   },
+   {
+    "label": "B",
+    "text": "1983"
+   },
+   {
+    "label": "C",
+    "text": "1991"
+   },
+   {
+    "label": "D",
+    "text": "1999"
+   }
+  ],
+  "explanation": "The move was made official on 12 December 1991.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "History",
+  "subject_id": 12,
+  "topic_id": null,
+  "text": "The traditional ruler of the Benin kingdom is called the",
+  "options": [
+   {
+    "label": "A",
+    "text": "Alaafin"
+   },
+   {
+    "label": "B",
+    "text": "Emir"
+   },
+   {
+    "label": "C",
+    "text": "Obi"
+   },
+   {
+    "label": "D",
+    "text": "Oba"
+   }
+  ],
+  "explanation": "The Oba of Benin; the Alaafin rules Oyo.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "History",
+  "subject_id": 12,
+  "topic_id": null,
+  "text": "In the old Oyo Empire, the council of kingmakers was the",
+  "options": [
+   {
+    "label": "A",
+    "text": "Ogboni"
+   },
+   {
+    "label": "B",
+    "text": "Ilari"
+   },
+   {
+    "label": "C",
+    "text": "Ekpe"
+   },
+   {
+    "label": "D",
+    "text": "Oyo Mesi"
+   }
+  ],
+  "explanation": "The Oyo Mesi, led by the Bashorun, checked the Alaafin's power.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "History",
+  "subject_id": 12,
+  "topic_id": null,
+  "text": "Nigeria's first Prime Minister was",
+  "options": [
+   {
+    "label": "A",
+    "text": "Sir Abubakar Tafawa Balewa"
+   },
+   {
+    "label": "B",
+    "text": "Dr Nnamdi Azikiwe"
+   },
+   {
+    "label": "C",
+    "text": "Chief Obafemi Awolowo"
+   },
+   {
+    "label": "D",
+    "text": "Sir Ahmadu Bello"
+   }
+  ],
+  "explanation": "Balewa was Prime Minister from 1957 (federal) through independence until 1966.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "History",
+  "subject_id": 12,
+  "topic_id": null,
+  "text": "The ruler of the Kanem-Bornu Empire was known as the",
+  "options": [
+   {
+    "label": "A",
+    "text": "Mai"
+   },
+   {
+    "label": "B",
+    "text": "Sarki"
+   },
+   {
+    "label": "C",
+    "text": "Oba"
+   },
+   {
+    "label": "D",
+    "text": "Eze"
+   }
+  ],
+  "explanation": "Kanem-Bornu rulers bore the title Mai.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "History",
+  "subject_id": 12,
+  "topic_id": null,
+  "text": "The Nigerian Civil War lasted from",
+  "options": [
+   {
+    "label": "A",
+    "text": "1960 to 1963"
+   },
+   {
+    "label": "B",
+    "text": "1966 to 1967"
+   },
+   {
+    "label": "C",
+    "text": "1967 to 1970"
+   },
+   {
+    "label": "D",
+    "text": "1970 to 1975"
+   }
+  ],
+  "explanation": "It began in July 1967 and ended in January 1970.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "History",
+  "subject_id": 12,
+  "topic_id": null,
+  "text": "The Aro oracle known as the 'Long Juju' was",
+  "options": [
+   {
+    "label": "A",
+    "text": "Ogun"
+   },
+   {
+    "label": "B",
+    "text": "Amadioha"
+   },
+   {
+    "label": "C",
+    "text": "Ibini Ukpabi"
+   },
+   {
+    "label": "D",
+    "text": "Sango"
+   }
+  ],
+  "explanation": "Ibini Ukpabi at Arochukwu was central to Aro influence in the hinterland.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "History",
+  "subject_id": 12,
+  "topic_id": null,
+  "text": "The system of governing through traditional rulers that the British used in Northern Nigeria was",
+  "options": [
+   {
+    "label": "A",
+    "text": "direct rule"
+   },
+   {
+    "label": "B",
+    "text": "assimilation"
+   },
+   {
+    "label": "C",
+    "text": "indirect rule"
+   },
+   {
+    "label": "D",
+    "text": "association"
+   }
+  ],
+  "explanation": "Lugard ruled through emirs and existing institutions: indirect rule.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Agricultural Science",
+  "subject_id": 28,
+  "topic_id": null,
+  "text": "Which soil type holds the most water?",
+  "options": [
+   {
+    "label": "A",
+    "text": "clay"
+   },
+   {
+    "label": "B",
+    "text": "sand"
+   },
+   {
+    "label": "C",
+    "text": "gravel"
+   },
+   {
+    "label": "D",
+    "text": "sandy loam"
+   }
+  ],
+  "explanation": "Clay's fine particles and tiny pores retain much more water.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Agricultural Science",
+  "subject_id": 28,
+  "topic_id": null,
+  "text": "Which of the following is a leguminous crop?",
+  "options": [
+   {
+    "label": "A",
+    "text": "maize"
+   },
+   {
+    "label": "B",
+    "text": "yam"
+   },
+   {
+    "label": "C",
+    "text": "cowpea"
+   },
+   {
+    "label": "D",
+    "text": "cassava"
+   }
+  ],
+  "explanation": "Cowpea is a legume; its root nodules fix nitrogen.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Agricultural Science",
+  "subject_id": 28,
+  "topic_id": null,
+  "text": "Which of the following is a ruminant?",
+  "options": [
+   {
+    "label": "A",
+    "text": "pig"
+   },
+   {
+    "label": "B",
+    "text": "rabbit"
+   },
+   {
+    "label": "C",
+    "text": "chicken"
+   },
+   {
+    "label": "D",
+    "text": "cattle"
+   }
+  ],
+  "explanation": "Cattle have a four-chambered stomach and chew the cud.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Agricultural Science",
+  "subject_id": 28,
+  "topic_id": null,
+  "text": "In NPK fertiliser, N stands for",
+  "options": [
+   {
+    "label": "A",
+    "text": "neon"
+   },
+   {
+    "label": "B",
+    "text": "nickel"
+   },
+   {
+    "label": "C",
+    "text": "sodium"
+   },
+   {
+    "label": "D",
+    "text": "nitrogen"
+   }
+  ],
+  "explanation": "N = nitrogen, P = phosphorus, K = potassium.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Agricultural Science",
+  "subject_id": 28,
+  "topic_id": null,
+  "text": "The gestation period of a cow is about",
+  "options": [
+   {
+    "label": "A",
+    "text": "114 days"
+   },
+   {
+    "label": "B",
+    "text": "150 days"
+   },
+   {
+    "label": "C",
+    "text": "283 days"
+   },
+   {
+    "label": "D",
+    "text": "31 days"
+   }
+  ],
+  "explanation": "About 283 days (roughly 9 months); 114 days is the pig's and 31 days the rabbit's.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Agricultural Science",
+  "subject_id": 28,
+  "topic_id": null,
+  "text": "Covering the soil surface with dry grass or leaves to conserve moisture is called",
+  "options": [
+   {
+    "label": "A",
+    "text": "mulching"
+   },
+   {
+    "label": "B",
+    "text": "ridging"
+   },
+   {
+    "label": "C",
+    "text": "pruning"
+   },
+   {
+    "label": "D",
+    "text": "thinning"
+   }
+  ],
+  "explanation": "Mulch reduces evaporation and controls weeds.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Agricultural Science",
+  "subject_id": 28,
+  "topic_id": null,
+  "text": "Newcastle disease mainly affects",
+  "options": [
+   {
+    "label": "A",
+    "text": "cattle"
+   },
+   {
+    "label": "B",
+    "text": "goats"
+   },
+   {
+    "label": "C",
+    "text": "fish"
+   },
+   {
+    "label": "D",
+    "text": "poultry"
+   }
+  ],
+  "explanation": "Newcastle disease is a viral disease of birds, especially chickens.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Agricultural Science",
+  "subject_id": 28,
+  "topic_id": null,
+  "text": "Removing excess water from waterlogged soil is called",
+  "options": [
+   {
+    "label": "A",
+    "text": "drainage"
+   },
+   {
+    "label": "B",
+    "text": "irrigation"
+   },
+   {
+    "label": "C",
+    "text": "leaching"
+   },
+   {
+    "label": "D",
+    "text": "tillage"
+   }
+  ],
+  "explanation": "Drainage removes excess water; irrigation adds water.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Agricultural Science",
+  "subject_id": 28,
+  "topic_id": null,
+  "text": "Which of the following is a cattle breed indigenous to Nigeria?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Friesian"
+   },
+   {
+    "label": "B",
+    "text": "Jersey"
+   },
+   {
+    "label": "C",
+    "text": "Large White"
+   },
+   {
+    "label": "D",
+    "text": "White Fulani"
+   }
+  ],
+  "explanation": "White Fulani (Bunaji) is a Nigerian zebu breed; Friesian and Jersey are exotic; Large White is a pig.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Agricultural Science",
+  "subject_id": 28,
+  "topic_id": null,
+  "text": "A major benefit of crop rotation is that it",
+  "options": [
+   {
+    "label": "A",
+    "text": "increases soil erosion"
+   },
+   {
+    "label": "B",
+    "text": "removes the need for land"
+   },
+   {
+    "label": "C",
+    "text": "helps maintain soil fertility"
+   },
+   {
+    "label": "D",
+    "text": "makes all crops grow faster"
+   }
+  ],
+  "explanation": "Rotating crops with different needs, including legumes, maintains fertility and breaks pest cycles.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Civic Education",
+  "subject_id": 37,
+  "topic_id": null,
+  "text": "Freedom of expression is guaranteed in the 1999 Constitution of Nigeria as",
+  "options": [
+   {
+    "label": "A",
+    "text": "a directive principle"
+   },
+   {
+    "label": "B",
+    "text": "a duty of citizens"
+   },
+   {
+    "label": "C",
+    "text": "a fundamental human right"
+   },
+   {
+    "label": "D",
+    "text": "a state policy"
+   }
+  ],
+  "explanation": "Chapter IV of the 1999 Constitution (section 39).",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Civic Education",
+  "subject_id": 37,
+  "topic_id": null,
+  "text": "Nigerian citizenship may be acquired by birth, registration or",
+  "options": [
+   {
+    "label": "A",
+    "text": "employment"
+   },
+   {
+    "label": "B",
+    "text": "marriage alone"
+   },
+   {
+    "label": "C",
+    "text": "residence for one year"
+   },
+   {
+    "label": "D",
+    "text": "naturalisation"
+   }
+  ],
+  "explanation": "Chapter III of the 1999 Constitution.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Civic Education",
+  "subject_id": 37,
+  "topic_id": null,
+  "text": "The National Pledge begins with",
+  "options": [
+   {
+    "label": "A",
+    "text": "I pledge to Nigeria my country"
+   },
+   {
+    "label": "B",
+    "text": "Arise, O compatriots"
+   },
+   {
+    "label": "C",
+    "text": "Nigeria, we hail thee"
+   },
+   {
+    "label": "D",
+    "text": "O God of creation"
+   }
+  ],
+  "explanation": "'I pledge to Nigeria my country, to be faithful, loyal and honest…'",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Civic Education",
+  "subject_id": 37,
+  "topic_id": null,
+  "text": "Which agency fights economic and financial crimes in Nigeria?",
+  "options": [
+   {
+    "label": "A",
+    "text": "EFCC"
+   },
+   {
+    "label": "B",
+    "text": "NDLEA"
+   },
+   {
+    "label": "C",
+    "text": "NAFDAC"
+   },
+   {
+    "label": "D",
+    "text": "FRSC"
+   }
+  ],
+  "explanation": "The Economic and Financial Crimes Commission.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Civic Education",
+  "subject_id": 37,
+  "topic_id": null,
+  "text": "The agency that fights the trafficking of illegal drugs in Nigeria is",
+  "options": [
+   {
+    "label": "A",
+    "text": "NAPTIP"
+   },
+   {
+    "label": "B",
+    "text": "EFCC"
+   },
+   {
+    "label": "C",
+    "text": "NCC"
+   },
+   {
+    "label": "D",
+    "text": "NDLEA"
+   }
+  ],
+  "explanation": "The National Drug Law Enforcement Agency.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Civic Education",
+  "subject_id": 37,
+  "topic_id": null,
+  "text": "The agency responsible for fighting human trafficking in Nigeria is",
+  "options": [
+   {
+    "label": "A",
+    "text": "NDLEA"
+   },
+   {
+    "label": "B",
+    "text": "NAPTIP"
+   },
+   {
+    "label": "C",
+    "text": "INEC"
+   },
+   {
+    "label": "D",
+    "text": "NIMC"
+   }
+  ],
+  "explanation": "The National Agency for the Prohibition of Trafficking in Persons.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Civic Education",
+  "subject_id": 37,
+  "topic_id": null,
+  "text": "The minimum voting age in Nigeria is",
+  "options": [
+   {
+    "label": "A",
+    "text": "16 years"
+   },
+   {
+    "label": "B",
+    "text": "18 years"
+   },
+   {
+    "label": "C",
+    "text": "21 years"
+   },
+   {
+    "label": "D",
+    "text": "25 years"
+   }
+  ],
+  "explanation": "Citizens aged 18 and above may register and vote.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Civic Education",
+  "subject_id": 37,
+  "topic_id": null,
+  "text": "The rule of law means",
+  "options": [
+   {
+    "label": "A",
+    "text": "rule by the military"
+   },
+   {
+    "label": "B",
+    "text": "rule by the richest"
+   },
+   {
+    "label": "C",
+    "text": "the supremacy of the law over everyone"
+   },
+   {
+    "label": "D",
+    "text": "rule by traditional rulers"
+   }
+  ],
+  "explanation": "No one is above the law, and everyone is equal before it.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Civic Education",
+  "subject_id": 37,
+  "topic_id": null,
+  "text": "The fundamental human rights in the 1999 Constitution are in",
+  "options": [
+   {
+    "label": "A",
+    "text": "Chapter II"
+   },
+   {
+    "label": "B",
+    "text": "Chapter III"
+   },
+   {
+    "label": "C",
+    "text": "Chapter IV"
+   },
+   {
+    "label": "D",
+    "text": "Chapter VI"
+   }
+  ],
+  "explanation": "Chapter IV, sections 33–46.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Civic Education",
+  "subject_id": 37,
+  "topic_id": null,
+  "text": "A non-governmental organisation (NGO) is an example of",
+  "options": [
+   {
+    "label": "A",
+    "text": "an arm of government"
+   },
+   {
+    "label": "B",
+    "text": "a political party"
+   },
+   {
+    "label": "C",
+    "text": "a civil society organisation"
+   },
+   {
+    "label": "D",
+    "text": "a law court"
+   }
+  ],
+  "explanation": "NGOs are independent of government and part of civil society.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Computer Studies",
+  "subject_id": 13,
+  "topic_id": null,
+  "text": "Which part of a computer is called its 'brain'?",
+  "options": [
+   {
+    "label": "A",
+    "text": "monitor"
+   },
+   {
+    "label": "B",
+    "text": "hard disk"
+   },
+   {
+    "label": "C",
+    "text": "CPU"
+   },
+   {
+    "label": "D",
+    "text": "keyboard"
+   }
+  ],
+  "explanation": "The Central Processing Unit carries out instructions.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Computer Studies",
+  "subject_id": 13,
+  "topic_id": null,
+  "text": "One byte is equal to",
+  "options": [
+   {
+    "label": "A",
+    "text": "4 bits"
+   },
+   {
+    "label": "B",
+    "text": "16 bits"
+   },
+   {
+    "label": "C",
+    "text": "8 bits"
+   },
+   {
+    "label": "D",
+    "text": "1024 bits"
+   }
+  ],
+  "explanation": "A byte is 8 binary digits.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Computer Studies",
+  "subject_id": 13,
+  "topic_id": null,
+  "text": "Which of the following is an input device?",
+  "options": [
+   {
+    "label": "A",
+    "text": "printer"
+   },
+   {
+    "label": "B",
+    "text": "monitor"
+   },
+   {
+    "label": "C",
+    "text": "speaker"
+   },
+   {
+    "label": "D",
+    "text": "keyboard"
+   }
+  ],
+  "explanation": "A keyboard sends data into the computer; the others are output devices.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Computer Studies",
+  "subject_id": 13,
+  "topic_id": null,
+  "text": "Which type of memory loses its contents when power is switched off?",
+  "options": [
+   {
+    "label": "A",
+    "text": "ROM"
+   },
+   {
+    "label": "B",
+    "text": "hard disk"
+   },
+   {
+    "label": "C",
+    "text": "flash drive"
+   },
+   {
+    "label": "D",
+    "text": "RAM"
+   }
+  ],
+  "explanation": "RAM is volatile; the others keep data without power.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Computer Studies",
+  "subject_id": 13,
+  "topic_id": null,
+  "text": "What is 13 in binary?",
+  "options": [
+   {
+    "label": "A",
+    "text": "1101"
+   },
+   {
+    "label": "B",
+    "text": "1011"
+   },
+   {
+    "label": "C",
+    "text": "1110"
+   },
+   {
+    "label": "D",
+    "text": "1001"
+   }
+  ],
+  "explanation": "13 = 8 + 4 + 1 = 1101₂.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Computer Studies",
+  "subject_id": 13,
+  "topic_id": null,
+  "text": "The World Wide Web was invented by",
+  "options": [
+   {
+    "label": "A",
+    "text": "Bill Gates"
+   },
+   {
+    "label": "B",
+    "text": "Tim Berners-Lee"
+   },
+   {
+    "label": "C",
+    "text": "Charles Babbage"
+   },
+   {
+    "label": "D",
+    "text": "Steve Jobs"
+   }
+  ],
+  "explanation": "Tim Berners-Lee proposed the Web in 1989.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Computer Studies",
+  "subject_id": 13,
+  "topic_id": null,
+  "text": "Which of the following is an operating system?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Microsoft Excel"
+   },
+   {
+    "label": "B",
+    "text": "Adobe Photoshop"
+   },
+   {
+    "label": "C",
+    "text": "Mozilla Firefox"
+   },
+   {
+    "label": "D",
+    "text": "Linux"
+   }
+  ],
+  "explanation": "Linux manages hardware and runs programs; the others are applications.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Computer Studies",
+  "subject_id": 13,
+  "topic_id": null,
+  "text": "Which logic gate gives an output of 1 only when all its inputs are 1?",
+  "options": [
+   {
+    "label": "A",
+    "text": "OR"
+   },
+   {
+    "label": "B",
+    "text": "NOT"
+   },
+   {
+    "label": "C",
+    "text": "NOR"
+   },
+   {
+    "label": "D",
+    "text": "AND"
+   }
+  ],
+  "explanation": "AND outputs 1 only if every input is 1.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Computer Studies",
+  "subject_id": 13,
+  "topic_id": null,
+  "text": "HTTP stands for",
+  "options": [
+   {
+    "label": "A",
+    "text": "High Transfer Text Program"
+   },
+   {
+    "label": "B",
+    "text": "HyperText Transfer Protocol"
+   },
+   {
+    "label": "C",
+    "text": "HyperText Transmission Program"
+   },
+   {
+    "label": "D",
+    "text": "Home Tool Transfer Protocol"
+   }
+  ],
+  "explanation": "The protocol used to transfer web pages.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Computer Studies",
+  "subject_id": 13,
+  "topic_id": null,
+  "text": "Malicious software that attaches itself to files and spreads when they are run is a",
+  "options": [
+   {
+    "label": "A",
+    "text": "virus"
+   },
+   {
+    "label": "B",
+    "text": "firewall"
+   },
+   {
+    "label": "C",
+    "text": "compiler"
+   },
+   {
+    "label": "D",
+    "text": "browser"
+   }
+  ],
+  "explanation": "A virus copies itself into other programs or files.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Home Economics",
+  "subject_id": 14,
+  "topic_id": null,
+  "text": "The nutrient mainly needed for body building and repair is",
+  "options": [
+   {
+    "label": "A",
+    "text": "carbohydrate"
+   },
+   {
+    "label": "B",
+    "text": "protein"
+   },
+   {
+    "label": "C",
+    "text": "fat"
+   },
+   {
+    "label": "D",
+    "text": "water"
+   }
+  ],
+  "explanation": "Proteins build and repair body tissues.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Home Economics",
+  "subject_id": 14,
+  "topic_id": null,
+  "text": "Scurvy is caused by a lack of",
+  "options": [
+   {
+    "label": "A",
+    "text": "vitamin A"
+   },
+   {
+    "label": "B",
+    "text": "vitamin C"
+   },
+   {
+    "label": "C",
+    "text": "vitamin D"
+   },
+   {
+    "label": "D",
+    "text": "iron"
+   }
+  ],
+  "explanation": "Vitamin C deficiency causes scurvy (bleeding gums, poor healing).",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Home Economics",
+  "subject_id": 14,
+  "topic_id": null,
+  "text": "Kwashiorkor is caused mainly by a lack of",
+  "options": [
+   {
+    "label": "A",
+    "text": "vitamin B"
+   },
+   {
+    "label": "B",
+    "text": "iodine"
+   },
+   {
+    "label": "C",
+    "text": "protein"
+   },
+   {
+    "label": "D",
+    "text": "calcium"
+   }
+  ],
+  "explanation": "Kwashiorkor is a protein-deficiency disease of young children.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Home Economics",
+  "subject_id": 14,
+  "topic_id": null,
+  "text": "Rickets in children is caused by a lack of",
+  "options": [
+   {
+    "label": "A",
+    "text": "vitamin C"
+   },
+   {
+    "label": "B",
+    "text": "vitamin K"
+   },
+   {
+    "label": "C",
+    "text": "vitamin D"
+   },
+   {
+    "label": "D",
+    "text": "iodine"
+   }
+  ],
+  "explanation": "Vitamin D is needed to absorb calcium for strong bones.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Home Economics",
+  "subject_id": 14,
+  "topic_id": null,
+  "text": "Anaemia is commonly caused by a lack of",
+  "options": [
+   {
+    "label": "A",
+    "text": "iodine"
+   },
+   {
+    "label": "B",
+    "text": "iron"
+   },
+   {
+    "label": "C",
+    "text": "vitamin A"
+   },
+   {
+    "label": "D",
+    "text": "fat"
+   }
+  ],
+  "explanation": "Iron is needed to make haemoglobin.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Home Economics",
+  "subject_id": 14,
+  "topic_id": null,
+  "text": "Cooking food in hot oil is called",
+  "options": [
+   {
+    "label": "A",
+    "text": "frying"
+   },
+   {
+    "label": "B",
+    "text": "boiling"
+   },
+   {
+    "label": "C",
+    "text": "steaming"
+   },
+   {
+    "label": "D",
+    "text": "baking"
+   }
+  ],
+  "explanation": "Frying uses hot fat or oil.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Home Economics",
+  "subject_id": 14,
+  "topic_id": null,
+  "text": "Which fabric comes from a plant?",
+  "options": [
+   {
+    "label": "A",
+    "text": "wool"
+   },
+   {
+    "label": "B",
+    "text": "cotton"
+   },
+   {
+    "label": "C",
+    "text": "silk"
+   },
+   {
+    "label": "D",
+    "text": "nylon"
+   }
+  ],
+  "explanation": "Cotton is a plant fibre; wool and silk are animal fibres; nylon is synthetic.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Home Economics",
+  "subject_id": 14,
+  "topic_id": null,
+  "text": "A family made up of a father, mother and their children is",
+  "options": [
+   {
+    "label": "A",
+    "text": "an extended family"
+   },
+   {
+    "label": "B",
+    "text": "a polygamous family"
+   },
+   {
+    "label": "C",
+    "text": "a nuclear family"
+   },
+   {
+    "label": "D",
+    "text": "a single-parent family"
+   }
+  ],
+  "explanation": "A nuclear family is parents and their children.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Home Economics",
+  "subject_id": 14,
+  "topic_id": null,
+  "text": "Preserving food by removing its moisture is",
+  "options": [
+   {
+    "label": "A",
+    "text": "drying"
+   },
+   {
+    "label": "B",
+    "text": "canning"
+   },
+   {
+    "label": "C",
+    "text": "freezing"
+   },
+   {
+    "label": "D",
+    "text": "pickling"
+   }
+  ],
+  "explanation": "Drying removes water microbes need to grow.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Home Economics",
+  "subject_id": 14,
+  "topic_id": null,
+  "text": "Goitre is linked to a lack of",
+  "options": [
+   {
+    "label": "A",
+    "text": "iron"
+   },
+   {
+    "label": "B",
+    "text": "calcium"
+   },
+   {
+    "label": "C",
+    "text": "iodine"
+   },
+   {
+    "label": "D",
+    "text": "vitamin C"
+   }
+  ],
+  "explanation": "Iodine is needed by the thyroid gland.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Physical and Health Education",
+  "subject_id": 15,
+  "topic_id": null,
+  "text": "How many players does a football team have on the field?",
+  "options": [
+   {
+    "label": "A",
+    "text": "9"
+   },
+   {
+    "label": "B",
+    "text": "7"
+   },
+   {
+    "label": "C",
+    "text": "15"
+   },
+   {
+    "label": "D",
+    "text": "11"
+   }
+  ],
+  "explanation": "Each side fields eleven players.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Physical and Health Education",
+  "subject_id": 15,
+  "topic_id": null,
+  "text": "How many players does a basketball team have on the court?",
+  "options": [
+   {
+    "label": "A",
+    "text": "6"
+   },
+   {
+    "label": "B",
+    "text": "7"
+   },
+   {
+    "label": "C",
+    "text": "5"
+   },
+   {
+    "label": "D",
+    "text": "11"
+   }
+  ],
+  "explanation": "Five players per side are on court.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Physical and Health Education",
+  "subject_id": 15,
+  "topic_id": null,
+  "text": "How many players does a volleyball team have on the court?",
+  "options": [
+   {
+    "label": "A",
+    "text": "5"
+   },
+   {
+    "label": "B",
+    "text": "7"
+   },
+   {
+    "label": "C",
+    "text": "6"
+   },
+   {
+    "label": "D",
+    "text": "9"
+   }
+  ],
+  "explanation": "Six players per side.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Physical and Health Education",
+  "subject_id": 15,
+  "topic_id": null,
+  "text": "The Olympic Games are held every",
+  "options": [
+   {
+    "label": "A",
+    "text": "2 years"
+   },
+   {
+    "label": "B",
+    "text": "4 years"
+   },
+   {
+    "label": "C",
+    "text": "3 years"
+   },
+   {
+    "label": "D",
+    "text": "5 years"
+   }
+  ],
+  "explanation": "The Summer Olympics are held every four years.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Physical and Health Education",
+  "subject_id": 15,
+  "topic_id": null,
+  "text": "The official marathon distance is",
+  "options": [
+   {
+    "label": "A",
+    "text": "21.1 km"
+   },
+   {
+    "label": "B",
+    "text": "42.195 km"
+   },
+   {
+    "label": "C",
+    "text": "40 km"
+   },
+   {
+    "label": "D",
+    "text": "50 km"
+   }
+  ],
+  "explanation": "The marathon has been 42.195 km since 1921.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Physical and Health Education",
+  "subject_id": 15,
+  "topic_id": null,
+  "text": "In first aid for sprains, RICE stands for",
+  "options": [
+   {
+    "label": "A",
+    "text": "Run, Ice, Cool, Exercise"
+   },
+   {
+    "label": "B",
+    "text": "Rest, Inject, Cover, Elevate"
+   },
+   {
+    "label": "C",
+    "text": "Relax, Ice, Clean, Exercise"
+   },
+   {
+    "label": "D",
+    "text": "Rest, Ice, Compression, Elevation"
+   }
+  ],
+  "explanation": "RICE limits swelling and pain.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Physical and Health Education",
+  "subject_id": 15,
+  "topic_id": null,
+  "text": "The best first aid for a nosebleed is to",
+  "options": [
+   {
+    "label": "A",
+    "text": "tilt the head backwards"
+   },
+   {
+    "label": "B",
+    "text": "lean forward and pinch the soft part of the nose"
+   },
+   {
+    "label": "C",
+    "text": "lie flat on the back"
+   },
+   {
+    "label": "D",
+    "text": "blow the nose hard"
+   }
+  ],
+  "explanation": "Leaning forward stops blood running down the throat; pinching applies pressure.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Physical and Health Education",
+  "subject_id": 15,
+  "topic_id": null,
+  "text": "Malaria is transmitted by the",
+  "options": [
+   {
+    "label": "A",
+    "text": "female Anopheles mosquito"
+   },
+   {
+    "label": "B",
+    "text": "housefly"
+   },
+   {
+    "label": "C",
+    "text": "tsetse fly"
+   },
+   {
+    "label": "D",
+    "text": "male Anopheles mosquito"
+   }
+  ],
+  "explanation": "Only the female Anopheles bites and transmits Plasmodium.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Physical and Health Education",
+  "subject_id": 15,
+  "topic_id": null,
+  "text": "The large group of muscles at the front of the thigh is the",
+  "options": [
+   {
+    "label": "A",
+    "text": "hamstrings"
+   },
+   {
+    "label": "B",
+    "text": "quadriceps"
+   },
+   {
+    "label": "C",
+    "text": "biceps"
+   },
+   {
+    "label": "D",
+    "text": "triceps"
+   }
+  ],
+  "explanation": "The quadriceps straighten the knee.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Physical and Health Education",
+  "subject_id": 15,
+  "topic_id": null,
+  "text": "A standard outdoor running track is",
+  "options": [
+   {
+    "label": "A",
+    "text": "200 m"
+   },
+   {
+    "label": "B",
+    "text": "100 m"
+   },
+   {
+    "label": "C",
+    "text": "400 m"
+   },
+   {
+    "label": "D",
+    "text": "800 m"
+   }
+  ],
+  "explanation": "One lap of a standard outdoor track is 400 m.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Fine Art",
+  "subject_id": 16,
+  "topic_id": null,
+  "text": "The primary colours in pigment are",
+  "options": [
+   {
+    "label": "A",
+    "text": "red, green and blue"
+   },
+   {
+    "label": "B",
+    "text": "orange, green and violet"
+   },
+   {
+    "label": "C",
+    "text": "red, yellow and blue"
+   },
+   {
+    "label": "D",
+    "text": "black, white and grey"
+   }
+  ],
+  "explanation": "In painting, red, yellow and blue cannot be mixed from other colours.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Fine Art",
+  "subject_id": 16,
+  "topic_id": null,
+  "text": "Mixing blue and yellow gives",
+  "options": [
+   {
+    "label": "A",
+    "text": "orange"
+   },
+   {
+    "label": "B",
+    "text": "purple"
+   },
+   {
+    "label": "C",
+    "text": "green"
+   },
+   {
+    "label": "D",
+    "text": "brown"
+   }
+  ],
+  "explanation": "Blue + yellow = green.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Fine Art",
+  "subject_id": 16,
+  "topic_id": null,
+  "text": "The complementary colour of red is",
+  "options": [
+   {
+    "label": "A",
+    "text": "green"
+   },
+   {
+    "label": "B",
+    "text": "blue"
+   },
+   {
+    "label": "C",
+    "text": "yellow"
+   },
+   {
+    "label": "D",
+    "text": "orange"
+   }
+  ],
+  "explanation": "Complementary colours sit opposite each other on the colour wheel.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Fine Art",
+  "subject_id": 16,
+  "topic_id": null,
+  "text": "Adding white to a colour produces a",
+  "options": [
+   {
+    "label": "A",
+    "text": "shade"
+   },
+   {
+    "label": "B",
+    "text": "tint"
+   },
+   {
+    "label": "C",
+    "text": "tone"
+   },
+   {
+    "label": "D",
+    "text": "hue"
+   }
+  ],
+  "explanation": "A tint is a colour + white; a shade is a colour + black.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Fine Art",
+  "subject_id": 16,
+  "topic_id": null,
+  "text": "The Nok culture is best known for its",
+  "options": [
+   {
+    "label": "A",
+    "text": "bronze heads"
+   },
+   {
+    "label": "B",
+    "text": "terracotta sculptures"
+   },
+   {
+    "label": "C",
+    "text": "ivory masks"
+   },
+   {
+    "label": "D",
+    "text": "stone monoliths"
+   }
+  ],
+  "explanation": "Nok terracottas are among the oldest sculptures in sub-Saharan Africa.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Fine Art",
+  "subject_id": 16,
+  "topic_id": null,
+  "text": "The Benin bronzes were made by the",
+  "options": [
+   {
+    "label": "A",
+    "text": "lost-wax (cire perdue) method"
+   },
+   {
+    "label": "B",
+    "text": "carving method"
+   },
+   {
+    "label": "C",
+    "text": "weaving method"
+   },
+   {
+    "label": "D",
+    "text": "coiling method"
+   }
+  ],
+  "explanation": "A wax model is covered in clay, melted out, then replaced with molten metal.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Fine Art",
+  "subject_id": 16,
+  "topic_id": null,
+  "text": "Adire is a resist-dyed cloth associated with the",
+  "options": [
+   {
+    "label": "A",
+    "text": "Hausa"
+   },
+   {
+    "label": "B",
+    "text": "Yoruba"
+   },
+   {
+    "label": "C",
+    "text": "Tiv"
+   },
+   {
+    "label": "D",
+    "text": "Efik"
+   }
+  ],
+  "explanation": "Adire is the indigo resist-dyed cloth of the Yoruba.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Fine Art",
+  "subject_id": 16,
+  "topic_id": null,
+  "text": "Uli body and wall painting is associated with the",
+  "options": [
+   {
+    "label": "A",
+    "text": "Igbo"
+   },
+   {
+    "label": "B",
+    "text": "Yoruba"
+   },
+   {
+    "label": "C",
+    "text": "Nupe"
+   },
+   {
+    "label": "D",
+    "text": "Kanuri"
+   }
+  ],
+  "explanation": "Uli is a traditional Igbo design art.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Fine Art",
+  "subject_id": 16,
+  "topic_id": null,
+  "text": "The technique of showing depth and distance on a flat surface is",
+  "options": [
+   {
+    "label": "A",
+    "text": "perspective"
+   },
+   {
+    "label": "B",
+    "text": "texture"
+   },
+   {
+    "label": "C",
+    "text": "rhythm"
+   },
+   {
+    "label": "D",
+    "text": "symmetry"
+   }
+  ],
+  "explanation": "Linear perspective makes distant objects smaller and lines converge.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Fine Art",
+  "subject_id": 16,
+  "topic_id": null,
+  "text": "The sculptor of the bronze 'Anyanwu' at the National Museum, Lagos, is",
+  "options": [
+   {
+    "label": "A",
+    "text": "Bruce Onobrakpeya"
+   },
+   {
+    "label": "B",
+    "text": "Yusuf Grillo"
+   },
+   {
+    "label": "C",
+    "text": "Uche Okeke"
+   },
+   {
+    "label": "D",
+    "text": "Ben Enwonwu"
+   }
+  ],
+  "explanation": "Ben Enwonwu created 'Anyanwu' (1955).",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Music",
+  "subject_id": 17,
+  "topic_id": null,
+  "text": "How many lines does a musical staff have?",
+  "options": [
+   {
+    "label": "A",
+    "text": "4"
+   },
+   {
+    "label": "B",
+    "text": "5"
+   },
+   {
+    "label": "C",
+    "text": "6"
+   },
+   {
+    "label": "D",
+    "text": "3"
+   }
+  ],
+  "explanation": "The staff (stave) has five lines and four spaces.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Music",
+  "subject_id": 17,
+  "topic_id": null,
+  "text": "A semibreve is equal in value to",
+  "options": [
+   {
+    "label": "A",
+    "text": "2 crotchets"
+   },
+   {
+    "label": "B",
+    "text": "8 crotchets"
+   },
+   {
+    "label": "C",
+    "text": "4 crotchets"
+   },
+   {
+    "label": "D",
+    "text": "1 crotchet"
+   }
+  ],
+  "explanation": "Semibreve = 2 minims = 4 crotchets.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Music",
+  "subject_id": 17,
+  "topic_id": null,
+  "text": "The treble clef is also called the",
+  "options": [
+   {
+    "label": "A",
+    "text": "F clef"
+   },
+   {
+    "label": "B",
+    "text": "G clef"
+   },
+   {
+    "label": "C",
+    "text": "C clef"
+   },
+   {
+    "label": "D",
+    "text": "bass clef"
+   }
+  ],
+  "explanation": "It curls around the G line.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Music",
+  "subject_id": 17,
+  "topic_id": null,
+  "text": "The tempo marking 'allegro' means",
+  "options": [
+   {
+    "label": "A",
+    "text": "slowly"
+   },
+   {
+    "label": "B",
+    "text": "very soft"
+   },
+   {
+    "label": "C",
+    "text": "gradually slower"
+   },
+   {
+    "label": "D",
+    "text": "fast and lively"
+   }
+  ],
+  "explanation": "Allegro indicates a quick, lively tempo.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Music",
+  "subject_id": 17,
+  "topic_id": null,
+  "text": "The dynamic marking 'forte' (f) means",
+  "options": [
+   {
+    "label": "A",
+    "text": "loud"
+   },
+   {
+    "label": "B",
+    "text": "soft"
+   },
+   {
+    "label": "C",
+    "text": "fast"
+   },
+   {
+    "label": "D",
+    "text": "slow"
+   }
+  ],
+  "explanation": "Forte means loud; piano (p) means soft.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Music",
+  "subject_id": 17,
+  "topic_id": null,
+  "text": "The pattern of tones (T) and semitones (S) in a major scale is",
+  "options": [
+   {
+    "label": "A",
+    "text": "T T S T T T S"
+   },
+   {
+    "label": "B",
+    "text": "T S T T S T T"
+   },
+   {
+    "label": "C",
+    "text": "T T T S T T S"
+   },
+   {
+    "label": "D",
+    "text": "S T T T S T T"
+   }
+  ],
+  "explanation": "e.g. C D E F G A B C.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Music",
+  "subject_id": 17,
+  "topic_id": null,
+  "text": "The interval from C up to G is a",
+  "options": [
+   {
+    "label": "A",
+    "text": "perfect fifth"
+   },
+   {
+    "label": "B",
+    "text": "major third"
+   },
+   {
+    "label": "C",
+    "text": "perfect fourth"
+   },
+   {
+    "label": "D",
+    "text": "major sixth"
+   }
+  ],
+  "explanation": "C–D–E–F–G spans five letter names and seven semitones.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Music",
+  "subject_id": 17,
+  "topic_id": null,
+  "text": "Which major key has one sharp in its key signature?",
+  "options": [
+   {
+    "label": "A",
+    "text": "G major"
+   },
+   {
+    "label": "B",
+    "text": "D major"
+   },
+   {
+    "label": "C",
+    "text": "F major"
+   },
+   {
+    "label": "D",
+    "text": "C major"
+   }
+  ],
+  "explanation": "G major has F♯; D major has two sharps; F major has one flat.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Music",
+  "subject_id": 17,
+  "topic_id": null,
+  "text": "The Yoruba 'talking drum' is called",
+  "options": [
+   {
+    "label": "A",
+    "text": "dùndún"
+   },
+   {
+    "label": "B",
+    "text": "ogene"
+   },
+   {
+    "label": "C",
+    "text": "goje"
+   },
+   {
+    "label": "D",
+    "text": "udu"
+   }
+  ],
+  "explanation": "The dùndún imitates the tones of spoken Yoruba.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Music",
+  "subject_id": 17,
+  "topic_id": null,
+  "text": "The oratorio 'Messiah' was composed by",
+  "options": [
+   {
+    "label": "A",
+    "text": "Johann Sebastian Bach"
+   },
+   {
+    "label": "B",
+    "text": "Wolfgang Amadeus Mozart"
+   },
+   {
+    "label": "C",
+    "text": "Ludwig van Beethoven"
+   },
+   {
+    "label": "D",
+    "text": "George Frideric Handel"
+   }
+  ],
+  "explanation": "Handel composed Messiah in 1741.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "French",
+  "subject_id": 18,
+  "topic_id": null,
+  "text": "Choisissez la bonne réponse : Je ___ étudiant.",
+  "options": [
+   {
+    "label": "A",
+    "text": "es"
+   },
+   {
+    "label": "B",
+    "text": "est"
+   },
+   {
+    "label": "C",
+    "text": "sommes"
+   },
+   {
+    "label": "D",
+    "text": "suis"
+   }
+  ],
+  "explanation": "Être: je suis, tu es, il est, nous sommes.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "French",
+  "subject_id": 18,
+  "topic_id": null,
+  "text": "Le pluriel de « le cheval » est",
+  "options": [
+   {
+    "label": "A",
+    "text": "les chevals"
+   },
+   {
+    "label": "B",
+    "text": "les chevaus"
+   },
+   {
+    "label": "C",
+    "text": "les chevaux"
+   },
+   {
+    "label": "D",
+    "text": "les chevales"
+   }
+  ],
+  "explanation": "Most nouns in -al take -aux in the plural.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "French",
+  "subject_id": 18,
+  "topic_id": null,
+  "text": "Choisissez la bonne réponse : Hier, nous ___ au marché.",
+  "options": [
+   {
+    "label": "A",
+    "text": "sommes allés"
+   },
+   {
+    "label": "B",
+    "text": "avons allé"
+   },
+   {
+    "label": "C",
+    "text": "allons"
+   },
+   {
+    "label": "D",
+    "text": "sommes allé"
+   }
+  ],
+  "explanation": "Aller takes être in the passé composé; the participle agrees with 'nous' (masculine plural).",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "French",
+  "subject_id": 18,
+  "topic_id": null,
+  "text": "« I am hungry » se dit",
+  "options": [
+   {
+    "label": "A",
+    "text": "J'ai faim"
+   },
+   {
+    "label": "B",
+    "text": "Je suis faim"
+   },
+   {
+    "label": "C",
+    "text": "J'ai soif"
+   },
+   {
+    "label": "D",
+    "text": "Je suis fatigué"
+   }
+  ],
+  "explanation": "French uses avoir: j'ai faim.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "French",
+  "subject_id": 18,
+  "topic_id": null,
+  "text": "Choisissez la bonne réponse : Comment ___-vous ?",
+  "options": [
+   {
+    "label": "A",
+    "text": "allons"
+   },
+   {
+    "label": "B",
+    "text": "allez"
+   },
+   {
+    "label": "C",
+    "text": "vas"
+   },
+   {
+    "label": "D",
+    "text": "va"
+   }
+  ],
+  "explanation": "Vous allez → Comment allez-vous ?",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "French",
+  "subject_id": 18,
+  "topic_id": null,
+  "text": "Le féminin de « acteur » est",
+  "options": [
+   {
+    "label": "A",
+    "text": "acteuse"
+   },
+   {
+    "label": "B",
+    "text": "acteure"
+   },
+   {
+    "label": "C",
+    "text": "actresse"
+   },
+   {
+    "label": "D",
+    "text": "actrice"
+   }
+  ],
+  "explanation": "Nouns in -teur often become -trice.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "French",
+  "subject_id": 18,
+  "topic_id": null,
+  "text": "« Il fait chaud » veut dire",
+  "options": [
+   {
+    "label": "A",
+    "text": "It is cold"
+   },
+   {
+    "label": "B",
+    "text": "It is hot"
+   },
+   {
+    "label": "C",
+    "text": "It is raining"
+   },
+   {
+    "label": "D",
+    "text": "It is windy"
+   }
+  ],
+  "explanation": "Weather expressions use il fait.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "French",
+  "subject_id": 18,
+  "topic_id": null,
+  "text": "Choisissez la bonne réponse : Elle ___ ses devoirs chaque soir.",
+  "options": [
+   {
+    "label": "A",
+    "text": "fais"
+   },
+   {
+    "label": "B",
+    "text": "faisons"
+   },
+   {
+    "label": "C",
+    "text": "font"
+   },
+   {
+    "label": "D",
+    "text": "fait"
+   }
+  ],
+  "explanation": "Faire: je fais, tu fais, il/elle fait.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "French",
+  "subject_id": 18,
+  "topic_id": null,
+  "text": "Le contraire de « grand » est",
+  "options": [
+   {
+    "label": "A",
+    "text": "gros"
+   },
+   {
+    "label": "B",
+    "text": "petit"
+   },
+   {
+    "label": "C",
+    "text": "long"
+   },
+   {
+    "label": "D",
+    "text": "haut"
+   }
+  ],
+  "explanation": "Grand (big/tall) ↔ petit (small).",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "French",
+  "subject_id": 18,
+  "topic_id": null,
+  "text": "« The book is on the table » : Le livre est ___ la table.",
+  "options": [
+   {
+    "label": "A",
+    "text": "sous"
+   },
+   {
+    "label": "B",
+    "text": "dans"
+   },
+   {
+    "label": "C",
+    "text": "devant"
+   },
+   {
+    "label": "D",
+    "text": "sur"
+   }
+  ],
+  "explanation": "Sur = on; sous = under; dans = in; devant = in front of.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Arabic",
+  "subject_id": 19,
+  "topic_id": null,
+  "text": "What is the meaning of « كِتَاب »?",
+  "options": [
+   {
+    "label": "A",
+    "text": "book"
+   },
+   {
+    "label": "B",
+    "text": "pen"
+   },
+   {
+    "label": "C",
+    "text": "house"
+   },
+   {
+    "label": "D",
+    "text": "school"
+   }
+  ],
+  "explanation": "كِتَاب (kitāb) means book.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Arabic",
+  "subject_id": 19,
+  "topic_id": null,
+  "text": "What is the plural of « قَلَم » (pen)?",
+  "options": [
+   {
+    "label": "A",
+    "text": "قَلَمَات"
+   },
+   {
+    "label": "B",
+    "text": "أَقْلَام"
+   },
+   {
+    "label": "C",
+    "text": "قُلُوم"
+   },
+   {
+    "label": "D",
+    "text": "قَلَمُون"
+   }
+  ],
+  "explanation": "قَلَم → أَقْلَام (aqlām).",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Arabic",
+  "subject_id": 19,
+  "topic_id": null,
+  "text": "What is the meaning of « بَيْت »?",
+  "options": [
+   {
+    "label": "A",
+    "text": "house"
+   },
+   {
+    "label": "B",
+    "text": "door"
+   },
+   {
+    "label": "C",
+    "text": "mosque"
+   },
+   {
+    "label": "D",
+    "text": "road"
+   }
+  ],
+  "explanation": "بَيْت (bayt) means house.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Arabic",
+  "subject_id": 19,
+  "topic_id": null,
+  "text": "What is the meaning of « مَدْرَسَة »?",
+  "options": [
+   {
+    "label": "A",
+    "text": "school"
+   },
+   {
+    "label": "B",
+    "text": "teacher"
+   },
+   {
+    "label": "C",
+    "text": "student"
+   },
+   {
+    "label": "D",
+    "text": "lesson"
+   }
+  ],
+  "explanation": "مَدْرَسَة (madrasah) means school.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Arabic",
+  "subject_id": 19,
+  "topic_id": null,
+  "text": "Which word means 'teacher' (masculine)?",
+  "options": [
+   {
+    "label": "A",
+    "text": "طَالِب"
+   },
+   {
+    "label": "B",
+    "text": "مُدَرِّس"
+   },
+   {
+    "label": "C",
+    "text": "مَكْتَب"
+   },
+   {
+    "label": "D",
+    "text": "دَرْس"
+   }
+  ],
+  "explanation": "مُدَرِّس (mudarris) is a male teacher; طَالِب is a student.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Arabic",
+  "subject_id": 19,
+  "topic_id": null,
+  "text": "What is « ثَلَاثَة » in English?",
+  "options": [
+   {
+    "label": "A",
+    "text": "three"
+   },
+   {
+    "label": "B",
+    "text": "two"
+   },
+   {
+    "label": "C",
+    "text": "four"
+   },
+   {
+    "label": "D",
+    "text": "five"
+   }
+  ],
+  "explanation": "ثَلَاثَة (thalāthah) = three.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Hausa",
+  "subject_id": 20,
+  "topic_id": null,
+  "text": "What does « Na gode » mean?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Good morning"
+   },
+   {
+    "label": "B",
+    "text": "Thank you"
+   },
+   {
+    "label": "C",
+    "text": "Welcome"
+   },
+   {
+    "label": "D",
+    "text": "Goodbye"
+   }
+  ],
+  "explanation": "Na gode = thank you.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Hausa",
+  "subject_id": 20,
+  "topic_id": null,
+  "text": "What is the Hausa number 'biyu'?",
+  "options": [
+   {
+    "label": "A",
+    "text": "one"
+   },
+   {
+    "label": "B",
+    "text": "two"
+   },
+   {
+    "label": "C",
+    "text": "three"
+   },
+   {
+    "label": "D",
+    "text": "four"
+   }
+  ],
+  "explanation": "ɗaya = 1, biyu = 2, uku = 3, huɗu = 4.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B"
+ },
+ {
+  "subject": "Hausa",
+  "subject_id": 20,
+  "topic_id": null,
+  "text": "The Hausa word for 'water' is",
+  "options": [
+   {
+    "label": "A",
+    "text": "abinci"
+   },
+   {
+    "label": "B",
+    "text": "gida"
+   },
+   {
+    "label": "C",
+    "text": "rana"
+   },
+   {
+    "label": "D",
+    "text": "ruwa"
+   }
+  ],
+  "explanation": "Ruwa = water; abinci = food; gida = house; rana = sun/day.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Hausa",
+  "subject_id": 20,
+  "topic_id": null,
+  "text": "Which greeting is commonly used for 'hello' in Hausa?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Na gode"
+   },
+   {
+    "label": "B",
+    "text": "Sai an jima"
+   },
+   {
+    "label": "C",
+    "text": "Barka da sallah"
+   },
+   {
+    "label": "D",
+    "text": "Sannu"
+   }
+  ],
+  "explanation": "Sannu is the common greeting; sai an jima means 'see you later'.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Igbo",
+  "subject_id": 21,
+  "topic_id": null,
+  "text": "What does « Ụtụtụ ọma » mean?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Good night"
+   },
+   {
+    "label": "B",
+    "text": "Thank you"
+   },
+   {
+    "label": "C",
+    "text": "Good morning"
+   },
+   {
+    "label": "D",
+    "text": "Welcome"
+   }
+  ],
+  "explanation": "Ụtụtụ ọma = good morning.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Igbo",
+  "subject_id": 21,
+  "topic_id": null,
+  "text": "What is the Igbo number 'abụọ'?",
+  "options": [
+   {
+    "label": "A",
+    "text": "one"
+   },
+   {
+    "label": "B",
+    "text": "three"
+   },
+   {
+    "label": "C",
+    "text": "two"
+   },
+   {
+    "label": "D",
+    "text": "four"
+   }
+  ],
+  "explanation": "otu = 1, abụọ = 2, atọ = 3, anọ = 4.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Igbo",
+  "subject_id": 21,
+  "topic_id": null,
+  "text": "« Nnọọ » means",
+  "options": [
+   {
+    "label": "A",
+    "text": "Welcome"
+   },
+   {
+    "label": "B",
+    "text": "Goodbye"
+   },
+   {
+    "label": "C",
+    "text": "Sorry"
+   },
+   {
+    "label": "D",
+    "text": "Thank you"
+   }
+  ],
+  "explanation": "Nnọọ is used to welcome someone.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Igbo",
+  "subject_id": 21,
+  "topic_id": null,
+  "text": "The Igbo word for 'water' is",
+  "options": [
+   {
+    "label": "A",
+    "text": "nri"
+   },
+   {
+    "label": "B",
+    "text": "ụlọ"
+   },
+   {
+    "label": "C",
+    "text": "mmiri"
+   },
+   {
+    "label": "D",
+    "text": "anyanwụ"
+   }
+  ],
+  "explanation": "Mmiri = water; nri = food; ụlọ = house; anyanwụ = sun.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C"
+ },
+ {
+  "subject": "Yoruba",
+  "subject_id": 22,
+  "topic_id": null,
+  "text": "What does « Ẹ káàárọ̀ » mean?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Good evening"
+   },
+   {
+    "label": "B",
+    "text": "Thank you"
+   },
+   {
+    "label": "C",
+    "text": "Welcome"
+   },
+   {
+    "label": "D",
+    "text": "Good morning"
+   }
+  ],
+  "explanation": "Ẹ káàárọ̀ is the respectful 'good morning'.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "D"
+ },
+ {
+  "subject": "Yoruba",
+  "subject_id": 22,
+  "topic_id": null,
+  "text": "What is the Yoruba number 'mẹ́ta'?",
+  "options": [
+   {
+    "label": "A",
+    "text": "three"
+   },
+   {
+    "label": "B",
+    "text": "one"
+   },
+   {
+    "label": "C",
+    "text": "two"
+   },
+   {
+    "label": "D",
+    "text": "four"
+   }
+  ],
+  "explanation": "ọ̀kan = 1, méjì = 2, mẹ́ta = 3, mẹ́rin = 4.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Yoruba",
+  "subject_id": 22,
+  "topic_id": null,
+  "text": "The Yoruba word for 'water' is",
+  "options": [
+   {
+    "label": "A",
+    "text": "omi"
+   },
+   {
+    "label": "B",
+    "text": "oúnjẹ"
+   },
+   {
+    "label": "C",
+    "text": "ilé"
+   },
+   {
+    "label": "D",
+    "text": "oòrùn"
+   }
+  ],
+  "explanation": "Omi = water; oúnjẹ = food; ilé = house; oòrùn = sun.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "Yoruba",
+  "subject_id": 22,
+  "topic_id": null,
+  "text": "« Ẹ ṣé » means",
+  "options": [
+   {
+    "label": "A",
+    "text": "Thank you"
+   },
+   {
+    "label": "B",
+    "text": "Sorry"
+   },
+   {
+    "label": "C",
+    "text": "Goodbye"
+   },
+   {
+    "label": "D",
+    "text": "Welcome"
+   }
+  ],
+  "explanation": "Ẹ ṣé (ẹ ṣeun) = thank you.",
+  "difficulty": 1,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A"
+ },
+ {
+  "subject": "English Language",
+  "subject_id": 23,
+  "topic_id": null,
+  "text": "According to the passage, the farmers built the reservoir because",
+  "options": [
+   {
+    "label": "A",
+    "text": "the capital ordered them to"
+   },
+   {
+    "label": "B",
+    "text": "traders asked for vegetables"
+   },
+   {
+    "label": "C",
+    "text": "the rains had failed two years in a row"
+   },
+   {
+    "label": "D",
+    "text": "the river had dried up permanently"
+   }
+  ],
+  "explanation": "The first sentence says the rains failed for the second year running and they acted without waiting for help.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C",
+  "passage": {
+   "key": "eng-farm-cooperative",
+   "title": "Comprehension passage",
+   "body": "When the rains failed for the second year running, the farmers of Ikeji did not wait for help from the capital. They pooled their savings and dug a shallow reservoir at the edge of the village, lining it with clay from the riverbank. The older men doubted that such a small pond could make any difference, but the young women who organised the work kept careful records of every naira spent and every bucket of water drawn.\n\nBy the next dry season the reservoir was keeping three hectares of vegetables alive. Traders who had once driven past Ikeji now stopped to buy tomatoes and peppers. The doubters, it is said, were the first to ask for a larger reservoir.",
+   "source": "Kwado original (JAMB-style practice, not an official past question)"
+  }
+ },
+ {
+  "subject": "English Language",
+  "subject_id": 23,
+  "topic_id": null,
+  "text": "The young women's records show that they were",
+  "options": [
+   {
+    "label": "A",
+    "text": "careful and accountable"
+   },
+   {
+    "label": "B",
+    "text": "wasteful"
+   },
+   {
+    "label": "C",
+    "text": "doubtful of the project"
+   },
+   {
+    "label": "D",
+    "text": "working for the government"
+   }
+  ],
+  "explanation": "They 'kept careful records of every naira spent and every bucket of water drawn'.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A",
+  "passage": {
+   "key": "eng-farm-cooperative",
+   "title": "Comprehension passage",
+   "body": "When the rains failed for the second year running, the farmers of Ikeji did not wait for help from the capital. They pooled their savings and dug a shallow reservoir at the edge of the village, lining it with clay from the riverbank. The older men doubted that such a small pond could make any difference, but the young women who organised the work kept careful records of every naira spent and every bucket of water drawn.\n\nBy the next dry season the reservoir was keeping three hectares of vegetables alive. Traders who had once driven past Ikeji now stopped to buy tomatoes and peppers. The doubters, it is said, were the first to ask for a larger reservoir.",
+   "source": "Kwado original (JAMB-style practice, not an official past question)"
+  }
+ },
+ {
+  "subject": "English Language",
+  "subject_id": 23,
+  "topic_id": null,
+  "text": "The word 'pooled', as used in the passage, means",
+  "options": [
+   {
+    "label": "A",
+    "text": "spent"
+   },
+   {
+    "label": "B",
+    "text": "hid"
+   },
+   {
+    "label": "C",
+    "text": "combined"
+   },
+   {
+    "label": "D",
+    "text": "borrowed"
+   }
+  ],
+  "explanation": "To pool savings is to combine them into one shared fund.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C",
+  "passage": {
+   "key": "eng-farm-cooperative",
+   "title": "Comprehension passage",
+   "body": "When the rains failed for the second year running, the farmers of Ikeji did not wait for help from the capital. They pooled their savings and dug a shallow reservoir at the edge of the village, lining it with clay from the riverbank. The older men doubted that such a small pond could make any difference, but the young women who organised the work kept careful records of every naira spent and every bucket of water drawn.\n\nBy the next dry season the reservoir was keeping three hectares of vegetables alive. Traders who had once driven past Ikeji now stopped to buy tomatoes and peppers. The doubters, it is said, were the first to ask for a larger reservoir.",
+   "source": "Kwado original (JAMB-style practice, not an official past question)"
+  }
+ },
+ {
+  "subject": "English Language",
+  "subject_id": 23,
+  "topic_id": null,
+  "text": "The last sentence suggests that the older men",
+  "options": [
+   {
+    "label": "A",
+    "text": "still opposed the reservoir"
+   },
+   {
+    "label": "B",
+    "text": "changed their minds after seeing the results"
+   },
+   {
+    "label": "C",
+    "text": "left the village"
+   },
+   {
+    "label": "D",
+    "text": "built a reservoir of their own"
+   }
+  ],
+  "explanation": "Those who doubted it were the first to ask for a larger one: the success convinced them.",
+  "difficulty": 3,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B",
+  "passage": {
+   "key": "eng-farm-cooperative",
+   "title": "Comprehension passage",
+   "body": "When the rains failed for the second year running, the farmers of Ikeji did not wait for help from the capital. They pooled their savings and dug a shallow reservoir at the edge of the village, lining it with clay from the riverbank. The older men doubted that such a small pond could make any difference, but the young women who organised the work kept careful records of every naira spent and every bucket of water drawn.\n\nBy the next dry season the reservoir was keeping three hectares of vegetables alive. Traders who had once driven past Ikeji now stopped to buy tomatoes and peppers. The doubters, it is said, were the first to ask for a larger reservoir.",
+   "source": "Kwado original (JAMB-style practice, not an official past question)"
+  }
+ },
+ {
+  "subject": "English Language",
+  "subject_id": 23,
+  "topic_id": null,
+  "text": "Which title best suits the passage?",
+  "options": [
+   {
+    "label": "A",
+    "text": "The Failure of the Rains"
+   },
+   {
+    "label": "B",
+    "text": "Traders of the Capital"
+   },
+   {
+    "label": "C",
+    "text": "Self-Help in Ikeji"
+   },
+   {
+    "label": "D",
+    "text": "A Quarrel in Ikeji"
+   }
+  ],
+  "explanation": "The passage is about villagers solving their own problem.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C",
+  "passage": {
+   "key": "eng-farm-cooperative",
+   "title": "Comprehension passage",
+   "body": "When the rains failed for the second year running, the farmers of Ikeji did not wait for help from the capital. They pooled their savings and dug a shallow reservoir at the edge of the village, lining it with clay from the riverbank. The older men doubted that such a small pond could make any difference, but the young women who organised the work kept careful records of every naira spent and every bucket of water drawn.\n\nBy the next dry season the reservoir was keeping three hectares of vegetables alive. Traders who had once driven past Ikeji now stopped to buy tomatoes and peppers. The doubters, it is said, were the first to ask for a larger reservoir.",
+   "source": "Kwado original (JAMB-style practice, not an official past question)"
+  }
+ },
+ {
+  "subject": "Literature in English",
+  "subject_id": 33,
+  "topic_id": null,
+  "text": "'The harmattan comes like a thief at dawn' contains",
+  "options": [
+   {
+    "label": "A",
+    "text": "a simile"
+   },
+   {
+    "label": "B",
+    "text": "a metaphor only"
+   },
+   {
+    "label": "C",
+    "text": "alliteration only"
+   },
+   {
+    "label": "D",
+    "text": "an oxymoron"
+   }
+  ],
+  "explanation": "It compares the harmattan to a thief using 'like'.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "A",
+  "passage": {
+   "key": "lit-poem-harmattan",
+   "title": "Read the poem and answer the questions",
+   "body": "The harmattan comes like a thief at dawn,\nstealing the green from the mango leaves;\nit whispers dust on the window-pane\nand wraps the town in a grey shawl.",
+   "source": "Kwado original (JAMB-style practice, not an official past question)"
+  }
+ },
+ {
+  "subject": "Literature in English",
+  "subject_id": 33,
+  "topic_id": null,
+  "text": "'it whispers dust on the window-pane' is an example of",
+  "options": [
+   {
+    "label": "A",
+    "text": "hyperbole"
+   },
+   {
+    "label": "B",
+    "text": "simile"
+   },
+   {
+    "label": "C",
+    "text": "personification"
+   },
+   {
+    "label": "D",
+    "text": "onomatopoeia"
+   }
+  ],
+  "explanation": "The wind is given a human action: whispering.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "C",
+  "passage": {
+   "key": "lit-poem-harmattan",
+   "title": "Read the poem and answer the questions",
+   "body": "The harmattan comes like a thief at dawn,\nstealing the green from the mango leaves;\nit whispers dust on the window-pane\nand wraps the town in a grey shawl.",
+   "source": "Kwado original (JAMB-style practice, not an official past question)"
+  }
+ },
+ {
+  "subject": "Literature in English",
+  "subject_id": 33,
+  "topic_id": null,
+  "text": "The mood of the poem is best described as",
+  "options": [
+   {
+    "label": "A",
+    "text": "joyful and festive"
+   },
+   {
+    "label": "B",
+    "text": "quiet and gloomy"
+   },
+   {
+    "label": "C",
+    "text": "angry and violent"
+   },
+   {
+    "label": "D",
+    "text": "humorous"
+   }
+  ],
+  "explanation": "Stealing colour, whispering dust and a grey shawl create a quiet, dull mood.",
+  "difficulty": 2,
+  "source": "Kwado original (JAMB-style practice, not an official past question)",
+  "answer": "B",
+  "passage": {
+   "key": "lit-poem-harmattan",
+   "title": "Read the poem and answer the questions",
+   "body": "The harmattan comes like a thief at dawn,\nstealing the green from the mango leaves;\nit whispers dust on the window-pane\nand wraps the town in a grey shawl.",
+   "source": "Kwado original (JAMB-style practice, not an official past question)"
+  }
+ }
+]

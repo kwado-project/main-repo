@@ -74,18 +74,43 @@ def transition(q: Question, target: str, actor, *, correct_option_id=None, notes
     return q
 
 
-def import_rows(rows: list[dict], actor) -> dict:
-    """Import JSON rows. Each row: subject_id, topic_id?, text, options[{label,text}], explanation?,
-    difficulty?, exam_year?, source?, examination_id?, answer? (label, recorded as a *suggestion* only)."""
-    created, errors = 0, []
+def import_rows(rows: list[dict], actor, *, skip_existing: bool = False) -> dict:
+    """Import JSON rows. Each row: subject_id (or subject: name), topic_id?, text, options[{label,text}],
+    explanation?, difficulty?, exam_year?, source?, examination_id?, answer? (label, recorded as a
+    *suggestion* only), passage? {key, title?, body, source?} — rows sharing a passage key share one Passage."""
+    from apps.examinations.models import Subject
+
+    from .models import Passage
+
+    created, skipped, errors = 0, 0, []
+    passages: dict[str, Passage] = {}
+    subjects = {n.lower(): pk for pk, n in Subject.objects.values_list("pk", "name")}
     for i, r in enumerate(rows):
         try:
             with transaction.atomic():
+                subject_id = r.get("subject_id")
+                if r.get("subject"):
+                    subject_id = subjects.get(str(r["subject"]).strip().lower())
+                    if not subject_id:
+                        raise ValueError(f"Unknown subject {r['subject']!r}")
+                passage = None
+                if p := r.get("passage"):
+                    key = p.get("key") or p["body"][:80]
+                    if key not in passages:
+                        passages[key] = (Passage.objects.filter(body=p["body"]).first()
+                                         or Passage.objects.create(title=p.get("title", "")[:200], body=p["body"],
+                                                                   source=p.get("source", "")[:200]))
+                    passage = passages[key]
+                if skip_existing and Question.objects.filter(subject_id=subject_id, text=r["text"], passage=passage).exists():
+                    skipped += 1
+                    continue
+                if not 2 <= len(r["options"]) <= 6 or len({o["label"] for o in r["options"]}) != len(r["options"]):
+                    raise ValueError("Each question needs 2–6 options with distinct labels.")
                 q = Question.objects.create(
-                    subject_id=r["subject_id"], topic_id=r.get("topic_id"), examination_id=r.get("examination_id"),
-                    text=r["text"], explanation=r.get("explanation", ""), difficulty=int(r.get("difficulty", 2)),
-                    exam_year=r.get("exam_year"), source=r.get("source", "")[:200],
-                    is_official_past_question=bool(r.get("is_official_past_question")),
+                    subject_id=subject_id, topic_id=r.get("topic_id"), examination_id=r.get("examination_id"),
+                    passage=passage, text=r["text"], explanation=r.get("explanation", ""),
+                    difficulty=int(r.get("difficulty", 2)), exam_year=r.get("exam_year"),
+                    source=r.get("source", "")[:200], is_official_past_question=bool(r.get("is_official_past_question")),
                     solution_steps=r.get("solution_steps", []), created_by=actor, status=S.DRAFT,
                     review_notes=f"Suggested answer from import: {r['answer']}" if r.get("answer") else "",
                 )
@@ -94,4 +119,4 @@ def import_rows(rows: list[dict], actor) -> dict:
                 created += 1
         except Exception as e:  # noqa: BLE001
             errors.append({"row": i, "error": str(e)[:200]})
-    return {"created": created, "errors": errors}
+    return {"created": created, "skipped": skipped, "errors": errors}
